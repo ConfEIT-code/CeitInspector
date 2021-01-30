@@ -1,0 +1,12 @@
+{
+  "software_name": "Nginx",
+  "test_path": "/nginx-tests",
+  "conf_parse_mode": "Nginx",
+  "misconf_mode": "ConfDiagDetector",
+  "test_mode": "Nginx",
+  "log_file_path": "/tmp",
+  "char2cut": 0,
+  "backup_all_t_files": true,
+  "nginx_backup_dir": "/Docker/NginxTestsBackup/*.t",
+  "interval": 0.1
+}

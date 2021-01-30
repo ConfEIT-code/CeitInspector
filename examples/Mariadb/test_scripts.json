@@ -1,0 +1,25 @@
+{
+
+  "1": {
+    "script": "./mysql-test-run --suite=archive --nowarnings"
+  },
+  "2": {
+    "script": "./mysql-test-run --suite=binlog --nowarnings"
+  },
+  "3": {
+    "script": "./mysql-test-run --suite=csv --nowarnings"
+  },
+  "4": {
+    "script": "./mysql-test-run --suite=federated --nowarnings"
+  },
+  "5": {
+    "script": "./mysql-test-run --suite=heap --nowarnings"
+  },
+  "6": {
+    "script": "./mysql-test-run --suite=innodb --nowarnings"
+  },
+  "7": {
+    "script": "./mysql-test-run --suite=maria --nowarnings"
+  }
+
+}

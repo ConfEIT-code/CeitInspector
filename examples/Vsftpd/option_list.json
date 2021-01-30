@@ -1,0 +1,666 @@
+{
+    "optionList": {
+        "1": {
+            "comment": "doc",
+            "dep": "will work if ssl_enable is YES.",
+            "value": "NO",
+            "key": "allow_anon_ssl",
+            "constraint": "BOOL"
+        },
+        "2": {
+            "comment": "doc",
+            "dep": "will work if write_enable is YES.",
+            "value": "NO",
+            "key": "anon_mkdir_write_enable",
+            "constraint": "BOOL"
+        },
+        "3": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "anon_other_write_enable",
+            "constraint": "BOOL"
+        },
+        "4": {
+            "comment": "doc",
+            "dep": "will work if write_enable is YES.",
+            "value": "NO",
+            "key": "anon_upload_enable",
+            "constraint": "BOOL"
+        },
+        "5": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "anon_world_readable_only",
+            "constraint": "BOOL"
+        },
+        "6": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "anonymous_enable",
+            "constraint": "BOOL"
+        },
+        "7": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "ascii_download_enable",
+            "constraint": "BOOL"
+        },
+        "8": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "ascii_upload_enable",
+            "constraint": "BOOL"
+        },
+        "9": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "async_abor_enable",
+            "constraint": "BOOL"
+        },
+        "10": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "background",
+            "constraint": "BOOL"
+        },
+        "11": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "check_shell",
+            "constraint": "BOOL"
+        },
+        "12": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "chmod_enable",
+            "constraint": "BOOL"
+        },
+        "13": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "chown_uploads",
+            "constraint": "BOOL"
+        },
+        "14": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "chroot_list_enable",
+            "constraint": "BOOL"
+        },
+        "15": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "chroot_local_user",
+            "constraint": "BOOL"
+        },
+        "16": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "connect_from_port_20",
+            "constraint": "BOOL"
+        },
+        "17": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "debug_ssl",
+            "constraint": "BOOL"
+        },
+        "18": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "delete_failed_uploads",
+            "constraint": "BOOL"
+        },
+        "19": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "deny_email_enable",
+            "constraint": "BOOL"
+        },
+        "20": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "dirlist_enable",
+            "constraint": "BOOL"
+        },
+        "21": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "dirmessage_enable",
+            "constraint": "BOOL"
+        },
+        "22": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "download_enable",
+            "constraint": "BOOL"
+        },
+        "23": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "dual_log_enable",
+            "constraint": "BOOL"
+        },
+        "24": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "force_dot_files",
+            "constraint": "BOOL"
+        },
+        "25": {
+            "comment": "doc",
+            "dep": "will work if ssl_enable is YES",
+            "value": "NO",
+            "key": "force_anon_data_ssl",
+            "constraint": "BOOL"
+        },
+        "26": {
+            "comment": "doc",
+            "dep": "will work if ssl_enable is YES",
+            "value": "NO",
+            "key": "force_anon_logins_ssl",
+            "constraint": "BOOL"
+        },
+        "27": {
+            "comment": "doc",
+            "dep": "will work if ssl_enable is YES",
+            "value": "YES",
+            "key": "force_local_data_ssl",
+            "constraint": "BOOL"
+        },
+        "28": {
+            "comment": "doc",
+            "dep": "will work if ssl_enable is YES",
+            "value": "YES",
+            "key": "force_local_logins_ssl",
+            "constraint": "BOOL"
+        },
+        "29": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "guest_enable",
+            "constraint": "BOOL"
+        },
+        "30": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "hide_ids",
+            "constraint": "BOOL"
+        },
+        "31": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "implicit_ssl",
+            "constraint": "BOOL"
+        },
+        "32": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "listen",
+            "constraint": "BOOL"
+        },
+        "33": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "listen_ipv6",
+            "constraint": "BOOL"
+        },
+        "34": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "local_enable",
+            "constraint": "BOOL"
+        },
+        "35": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "lock_upload_files",
+            "constraint": "BOOL"
+        },
+        "36": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "log_ftp_protocol",
+            "constraint": "BOOL"
+        },
+        "37": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "ls_recurse_enable",
+            "constraint": "BOOL"
+        },
+        "38": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "mdtm_write",
+            "constraint": "BOOL"
+        },
+        "39": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "no_anon_password",
+            "constraint": "BOOL"
+        },
+        "40": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "no_log_lock",
+            "constraint": "BOOL"
+        },
+        "41": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "one_process_model",
+            "constraint": "BOOL"
+        },
+        "42": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "passwd_chroot_enable",
+            "constraint": "BOOL"
+        },
+        "43": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "pasv_addr_resolve",
+            "constraint": "BOOL"
+        },
+        "44": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "pasv_enable",
+            "constraint": "BOOL"
+        },
+        "45": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "pasv_promiscuous",
+            "constraint": "BOOL"
+        },
+        "46": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "port_enable",
+            "constraint": "BOOL"
+        },
+        "47": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "port_promiscuous",
+            "constraint": "BOOL"
+        },
+        "48": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "require_cert",
+            "constraint": "BOOL"
+        },
+        "49": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "require_ssl_reuse",
+            "constraint": "BOOL"
+        },
+        "50": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "run_as_launching_user",
+            "constraint": "BOOL"
+        },
+        "51": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "secure_email_list_enable",
+            "constraint": "BOOL"
+        },
+        "52": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "session_support",
+            "constraint": "BOOL"
+        },
+        "53": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "setproctitle_enable",
+            "constraint": "BOOL"
+        },
+        "54": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "ssl_enable",
+            "constraint": "BOOL"
+        },
+        "55": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "ssl_request_cert",
+            "constraint": "BOOL"
+        },
+        "56": {
+            "comment": "doc",
+            "dep": "will work if ssl_enable is YES",
+            "value": "NO",
+            "key": "ssl_sslv2",
+            "constraint": "BOOL"
+        },
+        "57": {
+            "comment": "doc",
+            "dep": "will work if ssl_enable is YES",
+            "value": "NO",
+            "key": "ssl_sslv3",
+            "constraint": "BOOL"
+        },
+        "58": {
+            "comment": "doc",
+            "dep": "will work if ssl_enable is YES",
+            "value": "YES",
+            "key": "ssl_tlsv1",
+            "constraint": "BOOL"
+        },
+        "59": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "strict_ssl_read_eof",
+            "constraint": "BOOL"
+        },
+        "60": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "strict_ssl_write_shutdown",
+            "constraint": "BOOL"
+        },
+        "61": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "syslog_enable",
+            "constraint": "BOOL"
+        },
+        "62": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "tcp_wrappers",
+            "constraint": "BOOL"
+        },
+        "63": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "text_userdb_names",
+            "constraint": "BOOL"
+        },
+        "64": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "tilde_user_enable",
+            "constraint": "BOOL"
+        },
+        "65": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "use_localtime",
+            "constraint": "BOOL"
+        },
+        "66": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "use_sendfile",
+            "constraint": "BOOL"
+        },
+        "67": {
+            "comment": "doc",
+            "dep" : "will work if userlist_enable is YES",
+            "value": "YES",
+            "key": "userlist_deny",
+            "constraint": "BOOL"
+        },
+        "68": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "userlist_enable",
+            "constraint": "BOOL"
+        },
+        "69": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "validate_cert",
+            "constraint": "BOOL"
+        },
+        "70": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "virtual_use_local_privs",
+            "constraint": "BOOL"
+        },
+        "71": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "write_enable",
+            "constraint": "BOOL"
+        },
+        "72": {
+            "comment": "doc",
+            "value": "YES",
+            "key": "xferlog_enable",
+            "constraint": "BOOL"
+        },
+        "73": {
+            "comment": "doc",
+            "value": "NO",
+            "key": "xferlog_std_format",
+            "constraint": "BOOL"
+        },
+        "74": {
+            "comment": "intra",
+            "value": "60",
+            "key": "accept_timeout",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "75": {
+            "comment": "intra",
+            "value": "0",
+            "key": "anon_max_rate",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "76": {
+            "comment": "intra",
+            "value": "60",
+            "key": "connect_timeout",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "77": {
+            "comment": "intra",
+            "value": "300",
+            "key": "data_connection_timeout",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "78": {
+            "comment": "intra",
+            "value": "1",
+            "key": "delay_failed_login",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "79": {
+            "comment": "intra",
+            "value": "0",
+            "key": "delay_successful_login",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "80": {
+            "comment": "doc",
+            "dep": "will work if connect_from_port_20 is YES",
+            "value": "20",
+            "key": "ftp_data_port",
+            "constraint": "PORT"
+        },
+        "81": {
+            "comment": "intra",
+            "value": "300",
+            "key": "idle_session_timeout",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "82": {
+            "comment": "doc",
+            "value": "21",
+            "key": "listen_port",
+            "constraint": "PORT"
+        },
+        "83": {
+            "comment": "intra",
+            "value": "0",
+            "key": "local_max_rate",
+            "constraint": "NUM[INT,,,]"
+        },
+        "84": {
+            "comment": "intra",
+            "value": "0",
+            "key": "max_clients",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "85": {
+            "comment": "intra",
+            "value": "3",
+            "key": "max_login_fails",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "86": {
+            "comment": "intra",
+            "value": "0",
+            "key": "max_per_ip",
+            "constraint": "NUM[UINT,,,]"
+        },
+        "87": {
+            "comment": "doc",
+            "value": "0",
+            "key": "pasv_max_port",
+            "constraint": "NUM[UINT,1024,65535,]"
+        },
+        "88": {
+            "comment": "doc",
+            "value": "0",
+            "key": "pasv_min_port",
+            "constraint": "NUM[UINT,1024,65535,]"
+        },
+        "89": {
+            "comment": "intra",
+            "value": "0",
+            "key": "trans_chunk_size",
+            "constraint": "NUM[UINT,0,65536,]"
+        },
+        "90": {
+            "comment": "inter",
+            "dep": "will work if deny_email_enable is YES",
+            "value": "/etc/vsftpd.banned_emails",
+            "key": "banned_email_file",
+            "constraint": "PATH[,N,F]"
+        },
+        "91": {
+            "comment": "doc",
+            "dep": "will work if chown_uploads is YES",
+            "value": "root",
+            "key": "chown_username",
+            "constraint": "SPECSTR"
+        },
+        "92": {
+            "comment": "inter",
+            "dep": "will work if chroot_list_enable is YES",
+            "value": "/etc/vsftpd.chroot_list",
+            "key": "chroot_list_file",
+            "constraint": "PATH[,N,F]"
+        },
+        "93": {
+            "comment": "inter",
+            "dep": "will work if secure_email_list_enable is YES",
+            "value": "/etc/vsftpd.email_passwords",
+            "key": "email_password_file",
+            "constraint": "PATH[,N,F]"
+        },
+        "94": {
+            "comment": "doc",
+            "value": "ftp",
+            "key": "ftp_username",
+            "constraint": "SPECSTR"
+        },
+        "95": {
+            "comment": "doc",
+            "dep": "will work if guest_enable is YES",
+            "value": "ftp",
+            "key": "guest_username",
+            "constraint": "SPECSTR"
+        },
+        "96": {
+            "comment": "inter",
+            "dep": "will work if dirmessage_enable is YES",
+            "value": ".message",
+            "key": "message_file",
+            "constraint": "PATH[,N,F]"
+        },
+        "97": {
+            "comment": "doc",
+            "value": "nobody",
+            "key": "nopriv_user",
+            "constraint": "SPECSTR"
+        },
+        "98": {
+            "comment": "doc",
+            "value": "vsftpd",
+            "key": "pam_service_name",
+            "constraint": "SPECSTR"
+        },
+        "99": {
+            "comment": "inter",
+            "value": "/usr/share/ssl/certs/vsftpd.pem",
+            "key": "rsa_cert_file",
+            "constraint": "PATH[,N,F]"
+        },
+        "100": {
+            "comment": "inter",
+            "value": "/usr/share/empty",
+            "key": "secure_chroot_dir",
+            "constraint": "PATH[,N,D]"
+        },
+        "101": {
+            "comment": "doc",
+            "value": "DES-CBC3-SHA",
+            "key": "ssl_ciphers",
+            "constraint": "SPECSTR"
+        },
+        "102": {
+            "comment": "inter",
+            "dep": "will work if (xferlog_enable & !xferlog_std_format) | (dual_log_enable) | (!syslog_enable)",
+            "value": "/var/log/vsftpd.log",
+            "key": "vsftpd_log_file",
+            "constraint": "PATH[,Y,F]"
+        },
+        "103": {
+            "comment": "inter",
+            "value": "/var/log/xferlog",
+            "key": "xferlog_file",
+            "constraint": "PATH[,Y,F]"
+        },
+        "104": {
+            "comment": "doc",
+            "value": "077",
+            "key": "anon_umask",
+            "constraint": "SPECSTR"
+        },
+        "105": {
+            "comment": "doc",
+            "value": "0600",
+            "key": "chown_upload_mode",
+            "constraint": "PERMISSION"
+        },
+        "106": {
+            "comment": "doc",
+            "value": "0666",
+            "key": "file_open_mode",
+            "constraint": "PERMISSION"
+        },
+        "107": {
+            "comment": "doc",
+            "value": "022",
+            "key": "local_umask",
+            "constraint": "SPECSTR"
+        }
+    },
+    "format": "$key=$value"
+}

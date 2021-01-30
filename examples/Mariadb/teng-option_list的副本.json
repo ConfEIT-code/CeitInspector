@@ -1,0 +1,590 @@
+{
+    "optionList": {
+        "1": {
+            "comment": "intra",
+            "value": "8388608", 
+            "key": "key_buffer_size", 
+            "constraint": "NUM[LONGLONG,0,,]"
+        }, 
+        "2": {
+            "comment": "intra",
+            "value": "300", 
+            "key": "key_cache_age_threshold", 
+            "constraint": "NUM[LONGLONG,100,18446744073709551615,]"
+        }, 
+        "3": {
+            "comment": "intra",
+            "value": "1024", 
+            "key": "key_cache_block_size", 
+            "constraint": "NUM[INT,512,16384,]"
+        }, 
+        "4": {
+            "comment": "intra",
+            "value": "100", 
+            "key": "key_cache_division_limit", 
+            "constraint": "NUM[INT,1,100,]"
+        }, 
+        "5": {???
+            "comment": "intra",
+            "value": "0", 
+            "key": "key_cache_segments", 
+            "constraint": "NUM[LONGLONG,0,64,]"
+        }, 
+        "6": {???
+            "comment": "intra",
+            "value": "1024", 
+            "key": "myisam-block-size", 
+            "constraint": "NUM[LONGLONG,1024,16384],"
+        }, 
+        "7": {
+            "comment": "intra",
+            "value": "6", 
+            "key": "myisam_data_pointer_size", 
+            "constraint": "NUM[LONGLONG,2,7,]"
+        }, 
+        "8": {/
+            "comment": "intra",
+            "value": "9223372036854775807", 
+            "key": "myisam_max_sort_file_size", 
+            "constraint": "NUM[LONGLONG,,,]"
+        }, 
+        "9": {
+            "comment": "intra",
+            "value": "18446744073709551615", 
+            "key": "myisam_mmap_size", 
+            "constraint": "NUM[LONGLONG,7,18446744073709551615,]"
+        }, 
+        "10": {
+            "comment": "intra",
+            "value": "OFF", 
+            "key": "myisam_recover_options", 
+            "constraint": "ENUM"
+        }, 
+        "11": {
+            "comment": "intra",
+            "value": "1", 
+            "key": "myisam_repair_threads", 
+            "constraint": "NUM[LONGLONG,1,18446744073709547520,]"
+        }, 
+        "12": {
+            "comment": "intra",
+            "value": "8388608", 
+            "key": "myisam_sort_buffer_size", 
+            "constraint": "NUM[LONGLONG,4096,18446744073709551615,]"
+        }, 
+        "13": {
+            "comment": "intra",
+            "value": "nulls_equal", 
+            "key": "myisam_stats_method", 
+            "constraint": "ENUM"
+        }, 
+        "14": {
+            "comment": "doc",
+            "value": "OFF", 
+            "key": "myisam_use_mmap", 
+            "constraint": "BOOL"
+        }, 
+        "15": {
+            "value": "OFF", 
+            "key": "ignore_builtin_innodb", 
+            "constraint": "BOOL"
+        }, 
+        "16": {
+            "value": "ON", 
+            "key": "innodb_adaptive_flushing", 
+            "constraint": "BOOL"
+        }, 
+        "17": {/
+        innodb_adaptive_flushing_lwm
+            "value": "estimate", 
+            "key": "innodb_adaptive_flushing_method", 
+            "constraint": "ENUM"
+        }, 
+        "18": {
+            "value": "ON", 
+            "key": "innodb_adaptive_hash_index", 
+            "constraint": "BOOL"
+        }, 
+        "19": {/
+            "value": "1", 
+            "key": "innodb_adaptive_hash_index_partitions", 
+            "constraint": "NUM[INT,1,64,]"
+        }, 
+        "20": {
+            "value": "64", 
+            "key": "innodb_autoextend_increment", 
+            "constraint": "NUM[INT,1,1000,]"
+        }, 
+        "21": {
+            "value": "1", 
+            "key": "innodb_autoinc_lock_mode", 
+            "constraint": "NUM[INT,0,2,]"
+        }, 
+        "22": {/
+            "value": "OFF", 
+            "key": "innodb_blocking_buffer_pool_restore", 
+            "constraint": "BOOL"
+        }, 
+        "23": {/
+            "value": "\"\"", 
+            "key": "innodb_buffer_pool_evict", 
+            "constraint": "STR"
+        }, 
+        "24": {
+            "value": "1", 
+            "key": "innodb_buffer_pool_instances", 
+            "constraint": "NUM[INT,1,64,]"
+        }, 
+        "25": {/
+            "value": "OFF", 
+            "key": "innodb_buffer_pool_populate", 
+            "constraint": "BOOL"
+        }, 
+        "26": {/
+            "value": "0", 
+            "key": "innodb_buffer_pool_restore_at_startup", 
+            "constraint": "NUM[LONGLONG,0,18446744073709547520]"
+        }, 
+        "27": {/
+            "value": "ON", 
+            "key": "innodb_buffer_pool_shm_checksum", 
+            "constraint": "BOOL"
+        }, 
+        "28": {/
+            "value": "0", 
+            "key": "innodb_buffer_pool_shm_key", 
+            "constraint": "BOOL"
+        }, 
+        "29": {
+            "value": "134217728", 
+            "key": "innodb_buffer_pool_size", 
+            "constraint": "NUM[LONGLONG,5242880,9223372036854775807,]"
+        }, 
+        "30": {
+            "value": "all", 
+            "key": "innodb_change_buffering", 
+            "constraint": "ENUM"
+        }, 
+        "31": {
+            "value": "0", 
+            "key": "innodb_change_buffering_debug", 
+            "constraint": "NUM[INT,0,2,]"
+        }, 
+        "32": {/
+            "value": "0", 
+            "key": "innodb_checkpoint_age_target", 
+            "constraint": "NUM[LONGLONG,0,]"
+        }, 
+        "33": {
+            "value": "ON", 
+            "key": "innodb_checksums", 
+            "constraint": "BOOL"
+        }, 
+        "34": {
+            "value": "0", 
+            "key": "innodb_commit_concurrency", 
+            "constraint": "NUM[INT,0,1000]"
+        }, 
+        "35": {
+            "value": "5000", 
+            "key": "innodb_concurrency_tickets", 
+            "constraint": "NUM[INT,1,4294967295,]"
+        }, 
+        "36": {/
+            "value": "assert", 
+            "key": "innodb_corrupt_table_action", 
+            "constraint": "ENUM"
+        }, 
+        "37": {
+            "value": "ibdata1:10M:autoextend", 
+            "key": "innodb_data_file_path", 
+            "constraint": "STR"
+        }, 
+        "38": {/
+            "value": "0", 
+            "key": "innodb_dict_size_limit", 
+            "constraint": "NUM[LONGLONG,,]"
+        }, 
+        "39": {
+            "value": "ON", 
+            "key": "innodb_doublewrite", 
+            "constraint": "BOOL"
+        }, 
+        "40": {/
+            "value": "NULL", 
+            "key": "innodb_doublewrite_file", 
+            "constraint": "STR"
+        }, 
+        "41": {/
+            "value": "OFF", 
+            "key": "innodb_fake_changes", 
+            "constraint": "BOOL"
+        }, 
+        "42": {/
+            "value": "OFF", 
+            "key": "innodb_fast_checksum", 
+            "constraint": "BOOL"
+        }, 
+        "43": {/
+            "value": "1", 
+            "key": "innodb_fast_shutdown", 
+            "constraint": "NUM[LONGLONG,0,2]"
+        }, 
+        "44": {
+            "value": "Antelope", 
+            "key": "innodb_file_format", 
+            "constraint": "ENUM"
+        }, 
+        "45": {
+            "value": "ON", 
+            "key": "innodb_file_format_check", 
+            "constraint": "BOOL"
+        }, 
+        "46": {
+            "value": "Antelope", 
+            "key": "innodb_file_format_max", 
+            "constraint": "UNUM"
+        }, 
+        "47": {
+            "value": "ON", 
+            "key": "innodb_file_per_table", 
+            "constraint": "BOOL"
+        }, 
+        "48": {
+            "value": "1", 
+            "key": "innodb_flush_log_at_trx_commit", 
+            "constraint": "ENUM"
+        }, 
+        "49": {/
+            "value": "area", 
+            "key": "innodb_flush_neighbor_pages", 
+            "constraint": "ENUM"
+        }, 
+        "50": {
+            "value": "OFF", 
+            "key": "innodb_force_load_corrupted", 
+            "constraint": "BOOL"
+        }, 
+        "51": {
+            "value": "0", 
+            "key": "innodb_force_recovery", 
+            "constraint": "NUM[INT,0,6,]"
+        }, 
+        "52": {/
+            "value": "100", 
+            "key": "innodb_ibuf_accel_rate", 
+            "constraint": "NUM[LONGLONG,100,999999999]"
+        }, 
+        "53": {
+            "value": "1", 
+            "key": "innodb_ibuf_active_contract", 
+            "constraint": "NUM[LONGLONG,0,1]"
+        }, 
+        "54": {/
+            "value": "0", 
+            "key": "innodb_import_table_from_xtrabackup", 
+            "constraint": "NUM[LONGLONG,0,1]"
+        }, 
+        "55": {
+            "value": "200", 
+            "key": "innodb_io_capacity", 
+            "constraint": "NUM[LONGLONG,100,,]"
+        }, 
+        "56": {/
+            "value": "0", 
+            "key": "innodb_kill_idle_transaction", 
+            "constraint": "NUM[LONGLONG,,]"
+        }, 
+        "57": {
+            "value": "OFF", 
+            "key": "innodb_large_prefix", 
+            "constraint": "BOOL"
+        }, 
+        "58": {/
+            "value": "0", 
+            "key": "innodb_lazy_drop_table", 
+            "constraint": "BOOL"
+        }, 
+        "59": {
+            "value": "50", 
+            "key": "innodb_lock_wait_timeout", 
+            "constraint": "NUM[INT,1,1073741824,]"
+        }, 
+        "60": {/
+            "value": "ON", 
+            "key": "innodb_locking_fake_changes", 
+            "constraint": "BOOL"
+        }, 
+        "61": {
+            "value": "OFF", 
+            "key": "innodb_locks_unsafe_for_binlog", 
+            "constraint": "BOOL"
+        }, 
+        "62": {/
+            "value": "512", 
+            "key": "innodb_log_block_size", 
+            "constraint": "NUM[LONGLONG,,]"
+        }, 
+        "63": {
+            "value": "8388608", 
+            "key": "innodb_log_buffer_size", 
+            "constraint": "NUM[INT,262144,4294967295,]"
+        }, 
+        "64": {
+            "value": "50331648", 
+            "key": "innodb_log_file_size", 
+            "constraint": "NUM[LONGLONG,1048576,,]"
+        }, 
+        "65": {
+            "value": "2", 
+            "key": "innodb_log_files_in_group", 
+            "constraint": "NUM[INT,2,100,]"
+        }, 
+        "66": {
+            "value": "1024", 
+            "key": "innodb_lru_scan_depth", 
+            "constraint": "NUM[LONGLONG,100,18446744073709551615,]"
+        }, 
+        "67": {/
+            "value": "4096", 
+            "key": "innodb_max_bitmap_file_size", 
+            "constraint": "NUM[LONGLONG,4096,18446744073709551615]"
+        }, 
+        "68": {/
+            "value": "1000000", 
+            "key": "innodb_max_changed_pages", 
+            "constraint": "NUM[LONGLONG,0,18446744073709551615]"
+        }, 
+        "69": {
+            "value": "75", 
+            "key": "innodb_max_dirty_pages_pct", 
+            "constraint": "NUM[INT,0,99,]"
+        }, 
+        "70": {
+            "value": "0", 
+            "key": "innodb_max_purge_lag", 
+            "constraint": "NUM[INT,0,4294967295]"
+        }, 
+        "71": {/
+            "value": "1048576", 
+            "key": "innodb_merge_sort_block_size", 
+            "constraint": "NUM[LONGLONG,1048576,1073741824]"
+        }, 
+        "72": {
+            "value": "OFF", 
+            "key": "innodb_numa_interleave", 
+            "constraint": "BOOL"
+        }, 
+        "73": {
+            "value": "37", 
+            "key": "innodb_old_blocks_pct", 
+            "constraint": "NUM[INT,5,95,]"
+        }, 
+        "74": { 
+            "value": "0", 
+            "key": "innodb_old_blocks_time", 
+            "constraint": "NUM[UINT,0,,]"
+        }, 
+        "75": {
+            "value": "300", 
+            "key": "innodb_open_files", 
+            "constraint": "NUM[INT,10,4294967295,]"
+        }, 
+        "76": {
+            "value": "16384", 
+            "key": "innodb_page_size", 
+            "constraint": "ENUM"
+        }, 
+        "77": {
+            "value": "OFF", 
+            "key": "innodb_print_all_deadlocks", 
+            "constraint": "BOOL"
+        }, 
+        "78": {
+            "value": "300", 
+            "key": "innodb_purge_batch_size", 
+            "constraint": "NUM[INT,1,5000,]"
+        }, 
+        "79": {
+            "value": "1", 
+            "key": "innodb_purge_threads", 
+            "constraint": "NUM[INT,1,32,]"
+        }, 
+        "80": {
+            "value": "OFF", 
+            "key": "innodb_random_read_ahead", 
+            "constraint": "BOOL"
+        }, 
+        "81": {/
+            "value": "linear", 
+            "key": "innodb_read_ahead", 
+            "constraint": "ENUM"
+        }, 
+        "82": {
+            "value": "56", 
+            "key": "innodb_read_ahead_threshold", 
+            "constraint": "NUM[INT,0,64,]"
+        }, 
+        "83": {
+            "value": "4", 
+            "key": "innodb_read_io_threads", 
+            "constraint": "NUM[INT,1,64,]"
+        }, 
+        "84": {/
+            "value": "OFF", 
+            "key": "innodb_recovery_stats", 
+            "constraint": "BOOL"
+        }, 
+        "85": {/
+            "value": "OFF", 
+            "key": "innodb_recovery_update_relay_log", 
+            "constraint": "BOOL"
+        }, 
+        "86": {
+            "value": "0", 
+            "key": "innodb_replication_delay", 
+            "constraint": "NUM[INT,0,4294967295,]"
+        }, 
+        "87": {
+            "value": "OFF", 
+            "key": "innodb_rollback_on_timeout", 
+            "constraint": "BOOL"
+        }, 
+        "88": {
+            "value": "128", 
+            "key": "innodb_rollback_segments", 
+            "constraint": "NUM[INT,1,128,]"
+        }, 
+        "89": {/
+            "value": "10", 
+            "key": "innodb_show_locks_held", 
+            "constraint": "NUM[LONGLONG,0,1000]"
+        }, 
+        "90": {/
+            "value": "0", 
+            "key": "innodb_show_verbose_locks", 
+            "constraint": "NUM[LONGLONG,0,1]"
+        }, 
+        "91": {
+            "value": "6", 
+            "key": "innodb_spin_wait_delay", 
+            "constraint": "NUM[ULONGLONG,0,,]"
+        }, 
+        "92": {／
+            "value": "1", 
+            "key": "innodb_stats_auto_update", 
+            "constraint": "BOOL"
+        }, 
+        "93": {
+            "value": "nulls_equal", 
+            "key": "innodb_stats_method", 
+            "constraint": "ENUM"
+        }, 
+        "94": {
+            "value": "ON", 
+            "key": "innodb_stats_on_metadata", 
+            "constraint": "BOOL"
+        }, 
+        "95": {
+            "value": "8", 
+            "key": "innodb_stats_sample_pages", 
+            "constraint": "NUM[ULONGLONG,1,,]"
+        }, 
+        "96": {/
+            "value": "ON", 
+            "key": "innodb_stats_traditional", 
+            "constraint": "BOOL"
+        }, 
+        "97": {/
+            "value": "1", 
+            "key": "innodb_stats_update_need_lock", 
+            "constraint": "BOOL"
+        }, 
+        "98": {
+            "value": "OFF", 
+            "key": "innodb_strict_mode", 
+            "constraint": "BOOL"
+        }, 
+        "99": {
+            "value": "ON", 
+            "key": "innodb_support_xa", 
+            "constraint": "BOOL"
+        }, 
+        "100": {
+            "value": "30", 
+            "key": "innodb_sync_spin_loops", 
+            "constraint": "NUM[INT,0,4294967295,]"
+        }, 
+        "101": {
+            "value": "ON", 
+            "key": "innodb_table_locks", 
+            "constraint": "BOOL"
+        }, 
+        "102": {
+            "value": "0", 
+            "key": "innodb_thread_concurrency", 
+            "constraint": "NUM[LONGLONG,0,1000,]"
+        }, 
+        "103": {/
+            "value": "OFF", 
+            "key": "innodb_thread_concurrency_timer_based", 
+            "constraint": "BOOL"
+        }, 
+        "104": {
+            "value": "10000", 
+            "key": "innodb_thread_sleep_delay", 
+            "constraint": "NUM[ULONGLONG,0,,]"
+        }, 
+        "105": {/
+            "value": "OFF", 
+            "key": "innodb_track_redo_log_now", 
+            "constraint": "BOOL"
+        }, 
+        "106": {/
+            "value": "OFF", 
+            "key": "innodb_use_atomic_writes", 
+            "constraint": "BOOL"
+        }, 
+        "107": {/
+            "value": "OFF", 
+            "key": "innodb_use_fallocate", 
+            "constraint": "BOOL"
+        }, 
+        "108": {/
+            "value": "ON", 
+            "key": "innodb_use_global_flush_log_at_trx_commit", 
+            "constraint": "BOOL"
+        }, 
+        "109": {
+            "value": "ON", 
+            "key": "innodb_use_native_aio", 
+            "constraint": "BOOL"
+        }, 
+        "110": {/
+            "value": "1", 
+            "key": "innodb_use_purge_thread", 
+            "constraint": "NUM[LONGLONG,0,32]"
+        }, 
+        "111": {/
+            "value": "OFF", 
+            "key": "innodb_use_stacktrace", 
+            "constraint": "BOOL"
+        }, 
+        "112": {
+            "value": "ON", 
+            "key": "innodb_use_sys_malloc", 
+            "constraint": "BOOL"
+        }, 
+        "113": {/
+            "value": "0", 
+            "key": "innodb_use_sys_stats_table", 
+            "constraint": "BOOL"
+        }, 
+        "114": {
+            "value": "4", 
+            "key": "innodb_write_io_threads", 
+            "constraint": "NUM[INT,1,64,]"
+        }
+    }, 
+    "format": "$key=$value"
+}

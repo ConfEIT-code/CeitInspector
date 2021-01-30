@@ -1,0 +1,542 @@
+{
+    "1": {
+        "script": "ps -ef | grep /root/httpd/prefork/bin/httpd | grep -v grep | awk '{print $2}' | xargs kill -9"
+    },
+    "2": {
+        "script": "t/TEST -verbose -start-httpd"
+    },
+    "3": {
+        "script": "t/TEST -verbose t/apr/finfo.t"
+    },
+    "4": {
+        "script": "t/TEST -verbose t/apr/flatten.t"
+    },
+    "5": {
+        "script": "t/TEST -verbose t/apr/status.t"
+    },
+    "6": {
+        "script": "t/TEST -verbose t/apr/threadrwlock.t"
+    },
+    "7": {
+        "script": "t/TEST -verbose t/apr/base64.t"
+    },
+    "8": {
+        "script": "t/TEST -verbose t/apr/uuid.t"
+    },
+    "9": {
+        "script": "t/TEST -verbose t/apr/bucket.t"
+    },
+    "10": {
+        "script": "t/TEST -verbose t/apr/uri.t"
+    },
+    "11": {
+        "script": "t/TEST -verbose t/apr/date.t"
+    },
+    "12": {
+        "script": "t/TEST -verbose t/apr/threadmutex.t"
+    },
+    "13": {
+        "script": "t/TEST -verbose t/apr/os.t"
+    },
+    "14": {
+        "script": "t/TEST -verbose t/apr/sockaddr.t"
+    },
+    "15": {
+        "script": "t/TEST -verbose t/apr/table.t"
+    },
+    "16": {
+        "script": "t/TEST -verbose t/apr/util.t"
+    },
+    "17": {
+        "script": "t/TEST -verbose t/apr/ipsubnet.t"
+    },
+    "18": {
+        "script": "t/TEST -verbose t/apr/perlio.t"
+    },
+    "19": {
+        "script": "t/TEST -verbose t/apr/socket.t"
+    },
+    "20": {
+        "script": "t/TEST -verbose t/apr/brigade.t"
+    },
+    "21": {
+        "script": "t/TEST -verbose t/apr/string.t"
+    },
+    "22": {
+        "script": "t/TEST -verbose t/error/syntax.t"
+    },
+    "23": {
+        "script": "t/TEST -verbose t/error/runtime.t"
+    },
+    "24": {
+        "script": "t/TEST -verbose t/error/api.t"
+    },
+    "25": {
+        "script": "t/TEST -verbose t/modperl/current_callback.t"
+    },
+    "26": {
+        "script": "t/TEST -verbose t/modperl/merge2.t"
+    },
+    "27": {
+        "script": "t/TEST -verbose t/modperl/env.t"
+    },
+    "28": {
+        "script": "t/TEST -verbose t/modperl/getc.t"
+    },
+    "29": {
+        "script": "t/TEST -verbose t/modperl/post_utf8.t"
+    },
+    "30": {
+        "script": "t/TEST -verbose t/modperl/print_utf8_2.t"
+    },
+    "31": {
+        "script": "t/TEST -verbose t/modperl/setauth.t"
+    },
+    "32": {
+        "script": "t/TEST -verbose t/modperl/readline.t"
+    },
+    "33": {
+        "script": "t/TEST -verbose t/modperl/methodobj.t"
+    },
+    "34": {
+        "script": "t/TEST -verbose t/modperl/stdfd2.t"
+    },
+    "35": {
+        "script": "t/TEST -verbose t/modperl/interpreter.t"
+    },
+    "36": {
+        "script": "t/TEST -verbose t/modperl/method.t"
+    },
+    "37": {
+        "script": "t/TEST -verbose t/modperl/stdfd.t"
+    },
+    "38": {
+        "script": "t/TEST -verbose t/modperl/merge.t"
+    },
+    "39": {
+        "script": "t/TEST -verbose t/modperl/request_rec_perlio_api.t"
+    },
+    "40": {
+        "script": "t/TEST -verbose t/modperl/perl_options.t"
+    },
+    "41": {
+        "script": "t/TEST -verbose t/modperl/printf.t"
+    },
+    "42": {
+        "script": "t/TEST -verbose t/modperl/subenv.t"
+    },
+    "43": {
+        "script": "t/TEST -verbose t/modperl/setupenv2.t"
+    },
+    "44": {
+        "script": "t/TEST -verbose t/modperl/io_nested_with_closed_stds.t"
+    },
+    "45": {
+        "script": "t/TEST -verbose t/modperl/util.t"
+    },
+    "46": {
+        "script": "t/TEST -verbose t/modperl/print.t"
+    },
+    "47": {
+        "script": "t/TEST -verbose t/modperl/merge3.t"
+    },
+    "48": {
+        "script": "t/TEST -verbose t/modperl/dir_config.t"
+    },
+    "49": {
+        "script": "t/TEST -verbose t/modperl/exit.t"
+    },
+    "50": {
+        "script": "t/TEST -verbose t/modperl/perl.t"
+    },
+    "51": {
+        "script": "t/TEST -verbose t/modperl/methodname.t"
+    },
+    "52": {
+        "script": "t/TEST -verbose t/modperl/taint.t"
+    },
+    "53": {
+        "script": "t/TEST -verbose t/modperl/io_with_closed_stds.t"
+    },
+    "54": {
+        "script": "t/TEST -verbose t/modperl/endav.t"
+    },
+    "55": {
+        "script": "t/TEST -verbose t/modperl/print_utf8.t"
+    },
+    "56": {
+        "script": "t/TEST -verbose t/compat/apache_table.t"
+    },
+    "57": {
+        "script": "t/TEST -verbose t/compat/conn_rec.t"
+    },
+    "58": {
+        "script": "t/TEST -verbose t/compat/apache.t"
+    },
+    "59": {
+        "script": "t/TEST -verbose t/compat/apache_file.t"
+    },
+    "60": {
+        "script": "t/TEST -verbose t/compat/apache_util.t"
+    },
+    "61": {
+        "script": "t/TEST -verbose t/compat/apache_uri.t"
+    },
+    "62": {
+        "script": "t/TEST -verbose t/compat/request_body.t"
+    },
+    "63": {
+        "script": "t/TEST -verbose t/compat/request.t"
+    },
+    "64": {
+        "script": "t/TEST -verbose t/compat/apache_module.t"
+    },
+    "65": {
+        "script": "t/TEST -verbose t/perl/signals.t"
+    },
+    "66": {
+        "script": "t/TEST -verbose t/perl/api.t"
+    },
+    "67": {
+        "script": "t/TEST -verbose t/perl/hash_attack.t"
+    },
+    "68": {
+        "script": "t/TEST -verbose t/preconnection/note.t"
+    },
+    "69": {
+        "script": "t/TEST -verbose t/vhost/config.t"
+    },
+    "70": {
+        "script": "t/TEST -verbose t/vhost/log.t"
+    },
+    "71": {
+        "script": "t/TEST -verbose t/api/request_subclass.t"
+    },
+    "72": {
+        "script": "t/TEST -verbose t/api/response.t"
+    },
+    "73": {
+        "script": "t/TEST -verbose t/api/status.t"
+    },
+    "74": {
+        "script": "t/TEST -verbose t/api/query.t"
+    },
+    "75": {
+        "script": "t/TEST -verbose t/api/lookup_uri.t"
+    },
+    "76": {
+        "script": "t/TEST -verbose t/api/aplog.t"
+    },
+    "77": {
+        "script": "t/TEST -verbose t/api/internal_redirect_handler.t"
+    },
+    "78": {
+        "script": "t/TEST -verbose t/api/uri.t"
+    },
+    "79": {
+        "script": "t/TEST -verbose t/api/internal_redirect.t"
+    },
+    "80": {
+        "script": "t/TEST -verbose t/api/conn_rec.t"
+    },
+    "81": {
+        "script": "t/TEST -verbose t/api/request_util.t"
+    },
+    "82": {
+        "script": "t/TEST -verbose t/api/server_const.t"
+    },
+    "83": {
+        "script": "t/TEST -verbose t/api/lookup_uri2.t"
+    },
+    "84": {
+        "script": "t/TEST -verbose t/api/conn_util.t"
+    },
+    "85": {
+        "script": "t/TEST -verbose t/api/server_rec.t"
+    },
+    "86": {
+        "script": "t/TEST -verbose t/api/add_config.t"
+    },
+    "87": {
+        "script": "t/TEST -verbose t/api/show.t"
+    },
+    "88": {
+        "script": "t/TEST -verbose t/api/lookup_misc.t"
+    },
+    "89": {
+        "script": "t/TEST -verbose t/api/rflush.t"
+    },
+    "90": {
+        "script": "t/TEST -verbose t/api/request_rec.t"
+    },
+    "91": {
+        "script": "t/TEST -verbose t/api/sub_request.t"
+    },
+    "92": {
+        "script": "t/TEST -verbose t/api/access.t"
+    },
+    "93": {
+        "script": "t/TEST -verbose t/api/in_out_filters.t"
+    },
+    "94": {
+        "script": "t/TEST -verbose t/api/slurp_filename.t"
+    },
+    "95": {
+        "script": "t/TEST -verbose t/api/process.t"
+    },
+    "96": {
+        "script": "t/TEST -verbose t/api/content_encoding.t"
+    },
+    "97": {
+        "script": "t/TEST -verbose t/api/server_util.t"
+    },
+    "98": {
+        "script": "t/TEST -verbose t/api/command.t"
+    },
+    "99": {
+        "script": "t/TEST -verbose t/api/module.t"
+    },
+    "100": {
+        "script": "t/TEST -verbose t/filter/out_str_api.t"
+    },
+    "101": {
+        "script": "t/TEST -verbose t/filter/out_str_eval.t"
+    },
+    "102": {
+        "script": "t/TEST -verbose t/filter/out_str_buffer.t"
+    },
+    "103": {
+        "script": "t/TEST -verbose t/filter/out_bbs_filebucket.t"
+    },
+    "104": {
+        "script": "t/TEST -verbose t/filter/in_str_lc.t"
+    },
+    "105": {
+        "script": "t/TEST -verbose t/filter/with_subrequest.t"
+    },
+    "106": {
+        "script": "t/TEST -verbose t/filter/in_bbs_body.t"
+    },
+    "107": {
+        "script": "t/TEST -verbose t/filter/both_str_req_add.t"
+    },
+    "108": {
+        "script": "t/TEST -verbose t/filter/in_str_consume.t"
+    },
+    "109": {
+        "script": "t/TEST -verbose t/filter/in_str_declined_read.t"
+    },
+    "110": {
+        "script": "t/TEST -verbose t/filter/in_str_msg.t"
+    },
+    "111": {
+        "script": "t/TEST -verbose t/filter/in_init_basic.t"
+    },
+    "112": {
+        "script": "t/TEST -verbose t/filter/out_str_ctx.t"
+    },
+    "113": {
+        "script": "t/TEST -verbose t/filter/in_str_bin_data.t"
+    },
+    "114": {
+        "script": "t/TEST -verbose t/filter/out_str_lc.t"
+    },
+    "115": {
+        "script": "t/TEST -verbose t/filter/in_error.t"
+    },
+    "116": {
+        "script": "t/TEST -verbose t/filter/out_init_basic.t"
+    },
+    "117": {
+        "script": "t/TEST -verbose t/filter/out_str_reverse.t"
+    },
+    "118": {
+        "script": "t/TEST -verbose t/filter/in_bbs_underrun.t"
+    },
+    "119": {
+        "script": "t/TEST -verbose t/filter/out_str_declined.t"
+    },
+    "120": {
+        "script": "t/TEST -verbose t/filter/out_bbs_basic.t"
+    },
+    "121": {
+        "script": "t/TEST -verbose t/filter/out_str_remove.t"
+    },
+    "122": {
+        "script": "t/TEST -verbose t/filter/out_str_subreq_default.t"
+    },
+    "123": {
+        "script": "t/TEST -verbose t/filter/in_bbs_msg.t"
+    },
+    "124": {
+        "script": "t/TEST -verbose t/filter/out_str_subreq_modperl.t"
+    },
+    "125": {
+        "script": "t/TEST -verbose t/filter/out_bbs_ctx.t"
+    },
+    "126": {
+        "script": "t/TEST -verbose t/filter/in_autoload.t"
+    },
+    "127": {
+        "script": "t/TEST -verbose t/filter/in_bbs_consume.t"
+    },
+    "128": {
+        "script": "t/TEST -verbose t/filter/both_str_con_add.t"
+    },
+    "129": {
+        "script": "t/TEST -verbose t/filter/in_str_sandwich.t"
+    },
+    "130": {
+        "script": "t/TEST -verbose t/filter/in_str_declined.t"
+    },
+    "131": {
+        "script": "t/TEST -verbose t/hooks/error.t"
+    },
+    "132": {
+        "script": "t/TEST -verbose t/hooks/cleanup.t"
+    },
+    "133": {
+        "script": "t/TEST -verbose t/hooks/fixup.t"
+    },
+    "134": {
+        "script": "t/TEST -verbose t/hooks/hookrun.t"
+    },
+    "135": {
+        "script": "t/TEST -verbose t/hooks/cleanup2.t"
+    },
+    "136": {
+        "script": "t/TEST -verbose t/hooks/startup.t"
+    },
+    "137": {
+        "script": "t/TEST -verbose t/hooks/push_handlers.t"
+    },
+    "138": {
+        "script": "t/TEST -verbose t/hooks/set_handlers.t"
+    },
+    "139": {
+        "script": "t/TEST -verbose t/hooks/push_handlers_anon.t"
+    },
+    "140": {
+        "script": "t/TEST -verbose t/hooks/push_handlers_same_phase.t"
+    },
+    "141": {
+        "script": "t/TEST -verbose t/hooks/headerparser.t"
+    },
+    "142": {
+        "script": "t/TEST -verbose t/hooks/stacked_handlers.t"
+    },
+    "143": {
+        "script": "t/TEST -verbose t/hooks/push_handlers_blessed.t"
+    },
+    "144": {
+        "script": "t/TEST -verbose t/hooks/stacked_handlers2.t"
+    },
+    "145": {
+        "script": "t/TEST -verbose t/protocol/echo_bbs2.t"
+    },
+    "146": {
+        "script": "t/TEST -verbose t/protocol/echo_timeout.t"
+    },
+    "147": {
+        "script": "t/TEST -verbose t/protocol/echo_nonblock.t"
+    },
+    "148": {
+        "script": "t/TEST -verbose t/protocol/echo_filter.t"
+    },
+    "149": {
+        "script": "t/TEST -verbose t/protocol/pseudo_http.t"
+    },
+    "150": {
+        "script": "t/TEST -verbose t/protocol/echo_block.t"
+    },
+    "151": {
+        "script": "t/TEST -verbose t/protocol/echo_bbs.t"
+    },
+    "152": {
+        "script": "t/TEST -verbose t/user/rewrite.t"
+    },
+    "153": {
+        "script": "t/TEST -verbose t/apache/scanhdrs.t"
+    },
+    "154": {
+        "script": "t/TEST -verbose t/apache/cgihandler.t"
+    },
+    "155": {
+        "script": "t/TEST -verbose t/apache/read3.t"
+    },
+    "156": {
+        "script": "t/TEST -verbose t/apache/send_cgi_header.t"
+    },
+    "157": {
+        "script": "t/TEST -verbose t/apache/read4.t"
+    },
+    "158": {
+        "script": "t/TEST -verbose t/apache/content_length_header.t"
+    },
+    "159": {
+        "script": "t/TEST -verbose t/apache/add_config.t"
+    },
+    "160": {
+        "script": "t/TEST -verbose t/apache/constants.t"
+    },
+    "161": {
+        "script": "t/TEST -verbose t/apache/conftree.t"
+    },
+    "162": {
+        "script": "t/TEST -verbose t/apache/util.t"
+    },
+    "163": {
+        "script": "t/TEST -verbose t/apache/read2.t"
+    },
+    "164": {
+        "script": "t/TEST -verbose t/apache/discard_rbody.t"
+    },
+    "165": {
+        "script": "t/TEST -verbose t/apache/subprocess.t"
+    },
+    "166": {
+        "script": "t/TEST -verbose t/directive/pod.t"
+    },
+    "167": {
+        "script": "t/TEST -verbose t/directive/env.t"
+    },
+    "168": {
+        "script": "t/TEST -verbose t/directive/perlloadmodule4.t"
+    },
+    "169": {
+        "script": "t/TEST -verbose t/directive/perlmodule.t"
+    },
+    "170": {
+        "script": "t/TEST -verbose t/directive/perlrequire.t"
+    },
+    "171": {
+        "script": "t/TEST -verbose t/directive/perlloadmodule7.t"
+    },
+    "172": {
+        "script": "t/TEST -verbose t/directive/perlloadmodule3.t"
+    },
+    "173": {
+        "script": "t/TEST -verbose t/directive/perldo.t"
+    },
+    "174": {
+        "script": "t/TEST -verbose t/directive/perlloadmodule6.t"
+    },
+    "175": {
+        "script": "t/TEST -verbose t/directive/cmdparms.t"
+    },
+    "176": {
+        "script": "t/TEST -verbose t/directive/perlloadmodule2.t"
+    },
+    "177": {
+        "script": "t/TEST -verbose t/directive/setupenv.t"
+    },
+    "178": {
+        "script": "t/TEST -verbose t/directive/perlloadmodule5.t"
+    },
+    "179": {
+        "script": "t/TEST -verbose t/directive/perlloadmodule.t"
+    },
+    "180": {
+        "script": "t/TEST -verbose -stop-httpd"
+    }
+}

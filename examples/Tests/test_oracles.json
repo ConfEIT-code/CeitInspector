@@ -1,0 +1,22 @@
+{
+  "1": {
+    "oracle": "Success!",
+    "running": false,
+    "timeout": 4,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "2": {
+    "oracle": "Success!",
+    "running": true,
+    "timeout": 4,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  }
+}

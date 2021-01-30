@@ -1,0 +1,11 @@
+{
+    "software_name": "Alluxio",
+    "conf_path": "/opt/alluxio/conf/alluxio-site.properties",
+    "conf_parse_mode": "PlainText",
+    "misconf_mode": "Fuzzing",
+    "test_mode": "Default",
+    "add_new_options": true,
+    "interval": 1,
+    "log_file_path": "/opt/alluxio/logs/master.log",
+    "char2cut": 0
+  }

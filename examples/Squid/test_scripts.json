@@ -1,0 +1,20 @@
+{
+  "1": {
+    "script": "ps -ef | grep /usr/sbin/squid | grep -v grep | awk '{print $2}' | xargs kill -9"
+  },
+  "2": {
+    "script": "/usr/sbin/squid -k parse"
+  },
+  "3": {
+    "script": "/usr/sbin/squid -zX"
+  },
+  "4": {
+    "script": "/usr/sbin/squid -N -d1"
+  },
+  "5": {
+    "script": "squidclient mgr:"
+  },
+  "6": {
+    "script": "/usr/sbin/squid -k shutdown"
+  }
+}

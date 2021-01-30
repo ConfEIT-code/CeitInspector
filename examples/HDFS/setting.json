@@ -1,0 +1,12 @@
+{
+    "software_name": "HDFS",
+    "conf_path": "/opt/hadoop-3.2.1/etc/hadoop/hdfs-site.xml",
+    "conf_parse_mode": "HDFS",
+    "misconf_mode": "Fuzzing",
+    "test_mode": "Default",
+    "add_new_options": true,
+    "interval": 0.5,
+    "log_file_path": "/opt/hadoop-3.2.1/logs/hadoop-root-namenode-12ad135aa2f9.log",
+    "char2cut": 0,
+    "add_new_options": true
+  }

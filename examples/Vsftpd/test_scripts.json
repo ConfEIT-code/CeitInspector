@@ -1,0 +1,29 @@
+{
+  "1": {
+    "script": "ps -ef | grep /usr/sbin/vsftpd | grep -v grep | awk '{print $2}' | xargs kill -9"
+  },
+  "2": {
+    "script": "systemctl start vsftpd.service"
+  },
+  "3": {
+    "script": "systemctl status -l vsftpd.service"
+  },
+  "4": {
+    "script": "wget --spider ftp://127.0.0.1"
+  },
+  "5": {
+    "script": "wget  ftp://ftpadmin@127.0.0.1/var/ftp/public/hello.txt --ftp-password=123456"
+  },
+  "6": {
+    "script": "systemctl stop vsftpd.service"
+  },
+  "7": {
+    "script": "script -c '/usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf'"
+  },
+  "8": {
+    "script": "ps -ef | grep /usr/sbin/vsftpd | grep -v grep | awk '{print $2}' | xargs kill -9"
+  },
+  "9": {
+    "script": "rm hello.tx* --force"
+  }
+}

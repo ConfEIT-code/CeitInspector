@@ -1,0 +1,8 @@
+{
+  "1": {
+    "script": "python mytests/framework.py --normal_run_shut 2"
+  },
+  "2": {
+    "script": "python mytests/framework.py --normal_keep_run 0"
+  }
+}

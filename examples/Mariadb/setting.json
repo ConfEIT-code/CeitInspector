@@ -1,0 +1,12 @@
+{
+  "software_name": "Mariadb",
+  "test_path": "/mariadb-5.5.50/mysql-test",
+  "conf_path": "/mariadb-5.5.50/mysql-test/include/default_my.cnf",
+  "conf_parse_mode": "PlainText",
+  "misconf_mode": "Fuzzing",
+  "test_mode": "MySQL",
+  "add_new_options": false,
+  "interval": 1,
+  "log_file_path": "/mariadb-5.5.50/mysql-test/var/log/mysqld.1.err.warnings",
+  "char2cut": 0
+}

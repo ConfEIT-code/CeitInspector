@@ -1,0 +1,335 @@
+{
+    "optionList": {
+        "1": {
+            "value": "YES",
+            "key": "aof-rewrite-incremental-fsync",
+            "constraint": "BOOL"
+        },
+        "2": {
+            "value1": "pubsub",
+            "value2": "32mb",
+            "value3": "8mb",
+            "value4": "60",
+            "key": "client-output-buffer-limit",
+            "constraint": "STR|UINT[,,mb]|UINT[,,mb]|INT[,]"
+        },
+        "3": {
+            "value": "6379", 
+            "key": "port", 
+            "constraint": "INT[0,65535]"
+        }, 
+        "4": {
+            "value": "127.0.0.1", 
+            "key": "bind", 
+            "constraint": "STR"
+        }, 
+        "5": {
+            "value": "0", 
+            "key": "timeout", 
+            "constraint": "INT[,]"
+        }, 
+        "6": {
+            "value": "0", 
+            "key": "tcp-keepalive", 
+            "constraint": "INT[,]"
+        }, 
+        "7": {
+            "value1": "slave",
+            "value2": "256mb",
+            "value3": "64mb",
+            "value4": "60",
+            "key": "client-output-buffer-limit",
+            "constraint": "STR|UINT[,,mb]|UINT[,,mb]|INT[,]"
+        },
+        "8": {
+            "value": "notice", 
+            "key": "loglevel", 
+            "constraint": "ENUM"
+        }, 
+        "9": {
+            "constraint": "INT[,]", 
+            "value": "511", 
+            "key": "tcp-backlog"
+        }, 
+        "10": {
+            "value": "/tmp/redis.sock", 
+            "key": "unixsocket", 
+            "constraint": "PATH"
+        }, 
+        "11": {
+            "value": "", 
+            "key": "logfile", 
+            "constraint": "STR"
+        }, 
+        "12": {
+            "value": "no", 
+            "key": "syslog-enabled", 
+            "constraint": "BOOL"
+        }, 
+        "13": {
+            "value": "redis", 
+            "key": "syslog-ident", 
+            "constraint": "STR"
+        }, 
+        "14": {
+            "value": "local0",
+            "key": "syslog-facility",
+            "constraint": "ENUM"
+        },
+        "15": {
+            "value": "16",
+            "key": "database",
+            "constraint": "INT[,]"
+        },
+        "16": {
+            "value1": "900",
+            "value2": "1",
+            "key": "save",
+            "constraint": "INT[1,]|INT[1,]"
+        },
+        "17": {
+            "value": "yes",
+            "key": "stop-writes-on-bgsave-error",
+            "constraint": "BOOL"
+        },
+        "18": {
+            "value": "yes",
+            "key": "rdbcompression",
+            "constraint": "BOOL"
+        },
+        "19": {
+            "value": "yes",
+            "key": "rdbchecksum",
+            "constraint": "BOOL"
+        },
+        "20": {
+            "value": "dump.rdb",
+            "key": "dbfilename",
+            "constraint": "PATH"
+        },
+        "21": {
+            "constraint": "PATH",
+            "value": "./",
+            "key": "dir"
+        },
+        "22": {
+            "value": "90",
+            "key": "HZ",
+            "constraint": "INT[,]"
+        },
+        "23": {
+            "value": "yes",
+            "key": "slave-serve-stale-data",
+            "constraint": "BOOL"
+        },
+        "24": {
+            "value": "yes",
+            "key": "slave-read-only",
+            "constraint": "BOOL"
+        },
+        "25": {
+            "value": "no",
+            "key": "repl-diskless-sync",
+            "constraint": "BOOL"
+        },
+        "26": {
+            "value": "5",
+            "key": "repl-diskless-sync-delay",
+            "constraint": "INT[1,]"
+        },
+        "27": {
+            "key": "repl-ping-slave-period",
+            "constraint": "INT[,]",
+            "value": "10"
+        },
+        "28": {
+            "value": "60",
+            "key": "repl-timeout",
+            "constraint": "INT[,]"
+        },
+        "29": {
+            "value": "no",
+            "key": "repl-disable-tcp-nodelay",
+            "constraint": "BOOL"
+        },
+        "30": {
+            "value": "1mb",
+            "key": "repl-backlog-size",
+            "constraint": "UNIT[1,,mb]"
+        },
+        "31": {
+            "constraint": "INT[,]",
+            "value": "3600",
+            "key": "repl-backlog-ttl"
+        },
+        "32": {
+            "value": "100",
+            "key": "slave-priority",
+            "constraint": "INT[,]"
+        },
+        "33": {
+            "value": "10000",
+            "key": "maxclients",
+            "constraint": "INT[,]"
+        },
+        "34": {
+            "constraint": "INT[0,]",
+            "value": "2147483647",
+            "key": "maxmemory"
+        },
+        "35": {
+            "value": "noeviction",
+            "key": "maxmemory-policy",
+            "constraint": "ENUM"
+        },
+        "36": {
+            "constraint": "INT[,]",
+            "value": "5",
+            "key": "maxmemory-samples"
+        },
+        "37": {
+            "value": "no",
+            "key": "appendonly",
+            "constraint": "BOOL"
+        },
+        "38": {
+            "value": "appendonly.aof",
+            "key": "appendfilename",
+            "constraint": "STR"
+        },
+        "39": {
+            "value": "everysec",
+            "key": "appendfsync",
+            "constraint": "ENUM"
+        },
+        "40": {
+            "value": "no",
+            "key": "no-appendfsync-on-rewrite",
+            "constraint": "BOOL"
+        },
+        "41": {
+            "value": "100",
+            "key": "auto-aof-rewrite-percentage",
+            "constraint": "INT[,]"
+        },
+        "42": {
+            "value": "64mb",
+            "key": "auto-aof-rewrite-min-size",
+            "constraint": "UNIT[0,,mb]"
+        },
+        "43": {
+            "constraint": "BOOL",
+            "value": "yes",
+            "key": "aof-load-truncated"
+        },
+        "44": {
+            "constraint": "INT[,]",
+            "value": "5000",
+            "key": "lua-time-limit"
+        },
+        "45": {
+            "value": "yes",
+            "key": "cluster-enabled",
+            "constraint": "BOOL"
+        },
+        "46": {
+            "value": "nodes-6379.conf",
+            "key": "cluster-config-file",
+            "constraint": "PATH"
+        },
+        "47": {
+            "value": "15000",
+            "key": "cluster-node-timeout",
+            "constraint": "INT[,]"
+        },
+        "48": {
+            "value": "10",
+            "key": "cluster-slave-validity-factor",
+            "constraint": "INT[,]"
+        },
+        "49": {
+            "value": "1",
+            "key": "cluster-migration-barrier",
+            "constraint": "INT[,]"
+        },
+        "50": {
+            "value": "yes",
+            "key": "cluster-require-full-coverage",
+            "constraint": "BOOL"
+        },
+        "51": {
+            "constraint": "INT[,]",
+            "value": "10000",
+            "key": "slowlog-log-slower-than"
+        },
+        "52": {
+            "constraint": "INT[,]",
+            "value": "128",
+            "key": "slowlog-max-len"
+        },
+        "53": {
+            "value": "0",
+            "key": "latency-monitor-threshold",
+            "constraint": "INT[,]"
+        },
+        "54": {
+            "value": "",
+            "key": "notify-keyspace-events",
+            "constraint": "STR"
+        },
+        "55": {
+            "value": "512",
+            "key": "hash-max-ziplist-entries",
+            "constraint": "INT[,]"
+        },
+        "56": {
+            "constraint": "INT[,]",
+            "value": "64",
+            "key": "hash-max-ziplist-value"
+        },
+        "57": {
+            "value": "512",
+            "key": "list-max-ziplist-entries",
+            "constraint": "INT[,]"
+        },
+        "58": {
+            "value": "64",
+            "key": "list-max-ziplist-value",
+            "constraint": "INT[,]"
+        },
+        "59": {
+            "value": "512",
+            "key": "set-max-intset-entries",
+            "constraint": "INT[,]"
+        },
+        "60": {
+            "value": "128",
+            "key": "zset-max-ziplist-entries",
+            "constraint": "INT[,]"
+        },
+        "61": {
+            "value": "64",
+            "key": "zset-max-ziplist-value",
+            "constraint": "INT[,]"
+        },
+        "62": {
+            "value": "3000",
+            "key": "hll-sparse-max-bytes",
+            "constraint": "INT[,]"
+        },
+        "63": {
+            "value": "yes",
+            "key": "activerehashing",
+            "constraint": "BOOL"
+        },
+        "64": {
+            "value1": "normal",
+            "value2": "0",
+            "value3": "0",
+            "value4": "0",
+            "key": "client-output-buffer-limit",
+            "constraint": "STR|INT[,]|INT[,]|INT[,]"
+        }
+    },
+    "format": "$key $value"
+}

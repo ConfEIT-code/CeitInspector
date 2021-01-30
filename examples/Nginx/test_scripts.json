@@ -1,0 +1,5 @@
+{
+    "1": {
+        "script": "TEST_NGINX_BINARY=/usr/local/src/nginx-1.15.8/objs/nginx prove . -v"
+    }
+}

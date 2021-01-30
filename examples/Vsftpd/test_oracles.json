@@ -1,0 +1,92 @@
+{
+  "1": {
+    "oracle": "",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "2": {
+    "oracle": "",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "3": {
+    "oracle": "Started Vsftpd ftp daemon",
+    "running": false,
+    "timeout": 5,
+    "ignored": true,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "4": {
+    "oracle": "Logging in as anonymous ... Logged in!",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "5": {
+    "oracle": "saved [0]",
+    "running": false,
+    "timeout": 5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "6": {
+    "oracle": "",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "7": {
+    "oracle": "",
+    "running": true,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "8": {
+    "oracle": "",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "9": {
+    "oracle": "",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  }
+}

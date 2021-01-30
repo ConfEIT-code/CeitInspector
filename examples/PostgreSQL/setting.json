@@ -1,0 +1,12 @@
+{
+  "software_name": "PostgreSQL",
+  "test_path": "/postgresql-11.2/",
+  "conf_path": "/usr/local/pgsql/data/postgresql.conf",
+  "conf_parse_mode": "PlainText",
+  "misconf_mode": "ConfDiagDetector",
+  "test_mode": "Default",
+  "add_new_options": true,
+  "interval": 1,
+  "log_file_path": "",
+  "char2cut": 0
+}

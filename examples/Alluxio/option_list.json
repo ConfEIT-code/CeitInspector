@@ -1,0 +1,70 @@
+{
+    "optionList": {
+        "1": {
+            "value": "localhost",
+            "key": "alluxio.master.hostname",
+            "constraint": "STR"
+        },
+        "2": {
+            "value": "${alluxio.work.dir}/underFSStorage",
+            "key": "alluxio.master.mount.table.root.ufs",
+            "constraint": "PATH[R,N,F]"
+        },
+        "3": {
+            "value": "true", 
+            "key": "alluxio.security.authorization.permission.enabled", 
+            "constraint": "BOOL"
+        }, 
+        "4": {
+            "value": "SIMPLE", 
+            "key": "alluxio.security.authentication.type", 
+            "constraint": "STR"
+        }, 
+        "5": {
+            "value": "1GB", 
+            "key": "alluxio.worker.memory.size", 
+            "constraint": "ENUM"
+        }, 
+        "6": {
+            "value": "1", 
+            "key": "alluxio.worker.tieredstore.levels", 
+            "constraint": "NUM[INT,,,]"
+        }, 
+        "7": {
+            "value": "MEM",
+            "key": "alluxio.worker.tieredstore.level0.alias",
+            "constraint": "STR"
+        },
+        "8": {
+            "value": "/mnt/ramdisk", 
+            "key": "alluxio.worker.tieredstore.level0.dirs.path", 
+            "constraint": "PATH[A,N,F]"
+        }, 
+        "9": {
+            "constraint": "STR", 
+            "key": "alluxio.user.file.readtype.default", 
+            "value": "CACHE_PROMOTE"
+        }, 
+        "10": {
+            "value": "MUST_CACHE", 
+            "key": "alluxio.user.file.writetype.default", 
+            "constraint": "STR"
+        },
+        "11": {
+            "value": "/opt/alluxio",
+            "key": "alluxio.home",
+            "constraint": "PATH[A,N,D]"
+        },
+        "12": {
+            "value": "16M", 
+            "key": "alluxio.user.block.size.bytes.default", 
+            "constraint": "ENUM"
+        }, 
+        "13": {
+            "constraint": "ENUM", 
+            "key": "alluxio.worker.tieredstore.level0.dirs.quota", 
+            "value": "1GB"
+        } 
+    },
+    "format": "$key=$value"
+}

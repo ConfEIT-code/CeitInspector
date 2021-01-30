@@ -1,0 +1,17 @@
+.*
+!.gitignore
+ceitinspector/.DS_Store
+ceitinspector/core/.DS_Store
+ceitinspector/modules/.Ds_Store
+*.txt
+*.log
+*.pyc
+*.zip
+*.rdb
+*.txt2
+*.tar.gz
+*.seg
+*.toc
+*.col
+*.xls
+*.csv

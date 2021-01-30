@@ -1,0 +1,11 @@
+{
+  "software_name": "vsftpd",
+  "conf_path": "/etc/vsftpd/vsftpd.conf",
+  "conf_parse_mode": "PlainText",
+  "misconf_mode": "ConfDiagDetector",
+  "test_mode": "Default",
+  "add_new_options": true,
+  "interval": 0.25,
+  "log_file_path": "/var/log/vsftpd.log",
+  "char2cut": 0
+}

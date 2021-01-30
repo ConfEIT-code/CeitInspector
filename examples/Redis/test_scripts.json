@@ -1,0 +1,12 @@
+{
+    "1": {
+        "script": "redis-server ./redis.conf --port 6380"
+    },
+    "2": {
+        "script": "redis-benchmark -n 1 -q -p 6380"
+    },
+    "3": {
+        "script": "ps -ef | grep redis-server | grep -v grep | awk '{print $2}' | sed -n 2p | xargs kill -9 && echo 'kill successfully'",
+        "script_backup": "ps -ef | grep redis-server | grep -v grep | awk '{print $2}' | wc | awk '{print $1}' | if grep -q 2; then ps -ef | grep redis-server | grep -v grep | awk '{print $2}' | sed -n 2p | xargs kill -9 | echo 'kill successfully' ; fi"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "software_name": "httpd",
+  "test_path": "",
+  "conf_path": "httpd.conf",
+  "conf_parse_mode": "PlainText",
+  "misconf_mode": "ConfTest",
+  "test_mode": "Default",
+  "add_new_options": true,
+  "interval": 0.1,
+  "log_file_path": "./mytests/output.txt",
+  "char2cut": 0
+}

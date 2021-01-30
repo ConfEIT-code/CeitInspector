@@ -1,0 +1,27 @@
+{
+    "1": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 150,
+        "oracle": "is in a healthy state",
+        "log2purge": [ ]
+    },
+    "2": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 90,
+        "oracle": "is in a healthy state",
+        "log2purge": [ ]
+    },
+    "3": {
+        "ignored": false,
+        "running": false,
+        "check_for_absence": true,
+        "log2annotate": [ ],
+        "timeout": 60,
+        "oracle": "Failed the test!",
+        "log2purge": [ ]
+    }
+}

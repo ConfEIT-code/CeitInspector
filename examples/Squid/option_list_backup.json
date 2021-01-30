@@ -1,0 +1,865 @@
+{
+  "optionList": {
+    "1": {
+      "value": "httpready",
+      "key": "accept_filter",
+      "constraint": "ENUM"
+    },
+    "2": {
+      "value": "on",
+      "key": "acl_uses_indirect_client",
+      "constraint": "BOOL"
+    },
+    "3": {
+      "value": "X-Subscriber-ID",
+      "key": "adaptation_masterx_shared_names",
+      "constraint": "STR"
+    },
+    "4": {
+      "value": "off",
+      "key": "adaptation_send_client_ip",
+      "constraint": "BOOL"
+    },
+    "5": {
+      "value": "off",
+      "key": "adaptation_send_username",
+      "constraint": "BOOL"
+    },
+    "6": {
+      "value": "16",
+      "key": "adaptation_service_iteration_limit",
+      "constraint": "INT[,]"
+    },
+    "7": {
+      "value": "on",
+      "key": "adaptation_uses_indirect_client",
+      "constraint": "BOOL"
+    },
+    "8": {
+      "value": "on",
+      "key": "allow_underscore",
+      "constraint": "BOOL"
+    },
+    "9": {
+      "value": "/etc/squid/squid.conf",
+      "key": "announce_file",
+      "constraint": "PATH"
+    },
+    "10": {
+      "value": "tracker.ircache.net",
+      "key": "announce_host",
+      "constraint": "STR"
+    },
+    "11": {
+      "value": "1~day",
+      "key": "announce_period",
+      "constraint": "UNIT[0,,day]"
+    },
+    "12": {
+      "value": "3131",
+      "key": "announce_port",
+      "constraint": "PORT"
+    },
+    "13": {
+      "value": ".yourdomain.com",
+      "key": "append_domain",
+      "constraint": "URL"
+    },
+    "14": {
+      "value": "whois.ra.net",
+      "key": "as_whois_server",
+      "constraint": "URL"
+    },
+    "15": {
+      "value": "1~hour",
+      "key": "authenticate_cache_garbage_interval",
+      "constraint": "UNIT[0,,hour]"
+    },
+    "16": {
+      "value": "1~hour",
+      "key": "authenticate_ttl",
+      "constraint": "UNIT[0,,hour]"
+    },
+    "17": {
+      "value": "10~seconds",
+      "key": "background_ping_rate",
+      "constraint": "UNIT[0,,seconds]"
+    },
+    "18": {
+      "value": "off",
+      "key": "balance_on_multiple_ip",
+      "constraint": "BOOL"
+    },
+    "19": {
+      "value": "off",
+      "key": "buffered_logs",
+      "constraint": "BOOL"
+    },
+    "20": {
+      "value": "/var/log/squid/cache.log",
+      "key": "cache_log",
+      "constraint": "PATH"
+    },
+    "21": {
+      "value": "256~MB",
+      "key": "cache_mem",
+      "constraint": "UNIT[0,,MB]"
+    },
+    "22": {
+      "value": "webmaster",
+      "key": "cache_mgr",
+      "constraint": "STR"
+    },
+    "23": {
+      "value": "on",
+      "key": "cache_miss_revalidate",
+      "constraint": "BOOL"
+    },
+    "24": {
+      "value": "lru",
+      "key": "cache_replacement_policy",
+      "constraint": "ENUM"
+    },
+    "25": {
+      "value": "95",
+      "key": "cache_swap_high",
+      "constraint": "INT[,]"
+    },
+    "26": {
+      "value": "90",
+      "key": "cache_swap_low",
+      "constraint": "INT[,]"
+    },
+    "27": {
+      "value": "off",
+      "key": "check_hostnames",
+      "constraint": "BOOL"
+    },
+    "28": {
+      "value": "on",
+      "key": "client_db",
+      "constraint": "BOOL"
+    },
+    "29": {
+      "value": "50",
+      "key": "client_delay_initial_bucket_level",
+      "constraint": "INT[,]"
+    },
+    "30": {
+      "value": "0",
+      "key": "client_delay_pools",
+      "constraint": "INT[,]"
+    },
+    "31": {
+      "value": "on",
+      "key": "client_dst_passthru",
+      "constraint": "BOOL"
+    },
+    "32": {
+      "value": "2~minutes",
+      "key": "client_idle_pconn_timeout",
+      "constraint": "UNIT[0,,minutes]"
+    },
+    "33": {
+      "value": "1~day",
+      "key": "client_lifetime",
+      "constraint": "UNIT[0,,day]"
+    },
+    "34": {
+      "value": "on",
+      "key": "client_persistent_connections",
+      "constraint": "BOOL"
+    },
+    "35": {
+      "value": "512~KB",
+      "key": "client_request_buffer_max_size",
+      "constraint": "UNIT[0,,KB]"
+    },
+    "36": {
+      "value": "off",
+      "key": "collapsed_forwarding",
+      "constraint": "BOOL"
+    },
+    "37": {
+      "value": "off",
+      "key": "configuration_includes_quoted_values",
+      "constraint": "BOOL"
+    },
+    "38": {
+      "value": "1~minute",
+      "key": "connect_timeout",
+      "constraint": "UNIT[0,,minute]"
+    },
+    "39": {
+      "value": "10~seconds",
+      "key": "dead_peer_timeout",
+      "constraint": "UNIT[0,,seconds]"
+    },
+    "40": {
+      "value": "50",
+      "key": "delay_initial_bucket_level",
+      "constraint": "INT[,]"
+    },
+    "41": {
+      "value": "on",
+      "key": "delay_pool_uses_indirect_client",
+      "constraint": "BOOL"
+    },
+    "42": {
+      "value": "0",
+      "key": "delay_pools",
+      "constraint": "INT[,]"
+    },
+    "43": {
+      "value": "off",
+      "key": "detect_broken_pconn",
+      "constraint": "BOOL"
+    },
+    "44": {
+      "value": "5",
+      "key": "digest_bits_per_entry",
+      "constraint": "INT[,]"
+    },
+    "45": {
+      "value": "on",
+      "key": "digest_generation",
+      "constraint": "BOOL"
+    },
+    "46": {
+      "value": "10",
+      "key": "digest_rebuild_chunk_percentage",
+      "constraint": "INT[,]"
+    },
+    "47": {
+      "value": "1~hour",
+      "key": "digest_rebuild_period",
+      "constraint": "UNIT[0,,hour]"
+    },
+    "48": {
+      "value": "1~hour",
+      "key": "digest_rewrite_period",
+      "constraint": "UNIT[0,,hour]"
+    },
+    "49": {
+      "value": "4096~bytes",
+      "key": "digest_swapout_chunk_size",
+      "constraint": "UNIT[0,,bytes]"
+    },
+    "50": {
+      "value": "/usr/lib64/squid/diskd",
+      "key": "diskd_program",
+      "constraint": "PATH"
+    },
+    "51": {
+      "value": "5~seconds",
+      "key": "dns_retransmit_interval",
+      "constraint": "UNIT[0,,seconds]"
+    },
+    "52": {
+      "value": "30~seconds",
+      "key": "dns_timeout",
+      "constraint": "UNIT[0,,seconds]"
+    },
+    "53": {
+      "value": "off",
+      "key": "dns_v4_first",
+      "constraint": "BOOL"
+    },
+    "54": {
+      "value": "off",
+      "key": "ecap_enable",
+      "constraint": "BOOL"
+    },
+    "55": {
+      "value": "on",
+      "key": "email_err_data",
+      "constraint": "BOOL"
+    },
+    "56": {
+      "value": "/etc/squid/errorpage.css",
+      "key": "err_page_stylesheet",
+      "constraint": "PATH"
+    },
+    "57": {
+      "value": "on",
+      "key": "error_log_languages",
+      "constraint": "BOOL"
+    },
+    "58": {
+      "value": "custom",
+      "key": "esi_parser",
+      "constraint": "STR"
+    },
+    "59": {
+      "value": "on",
+      "key": "eui_lookup",
+      "constraint": "BOOL"
+    },
+    "60": {
+      "value": "25",
+      "key": "forward_max_tries",
+      "constraint": "INT[,]"
+    },
+    "61": {
+      "value": "4~minutes",
+      "key": "forward_timeout",
+      "constraint": "UNIT[0,,minutes]"
+    },
+    "62": {
+      "value": "on",
+      "key": "forwarded_for",
+      "constraint": "BOOL"
+    },
+    "63": {
+      "value": "1024",
+      "key": "fqdncache_size",
+      "constraint": "INT[,]"
+    },
+    "64": {
+      "value": "30~minutes",
+      "key": "ftp_client_idle_timeout",
+      "constraint": "UNIT[0,,minutes]"
+    },
+    "65": {
+      "value": "on",
+      "key": "ftp_eprt",
+      "constraint": "BOOL"
+    },
+    "66": {
+      "value": "off",
+      "key": "ftp_epsv_all",
+      "constraint": "BOOL"
+    },
+    "67": {
+      "value": "on",
+      "key": "ftp_passive",
+      "constraint": "BOOL"
+    },
+    "68": {
+      "value": "on",
+      "key": "ftp_sanitycheck",
+      "constraint": "BOOL"
+    },
+    "69": {
+      "value": "on",
+      "key": "ftp_telnet_protocol",
+      "constraint": "BOOL"
+    },
+    "70": {
+      "value": "on",
+      "key": "global_internal_static",
+      "constraint": "BOOL"
+    },
+    "71": {
+      "value": "off",
+      "key": "half_closed_clients",
+      "constraint": "BOOL"
+    },
+    "72": {
+      "value": "off",
+      "key": "host_verify_strict",
+      "constraint": "BOOL"
+    },
+    "73": {
+      "value": "/etc/hosts",
+      "key": "hosts_file",
+      "constraint": "PATH"
+    },
+    "74": {
+      "value": "4827",
+      "key": "htcp_port",
+      "constraint": "PORT"
+    },
+    "75": {
+      "value": "off",
+      "key": "http_accel_surrogate_remote",
+      "constraint": "BOOL"
+    },
+    "76": {
+      "value": "off",
+      "key": "httpd_suppress_version_string",
+      "constraint": "BOOL"
+    },
+    "77": {
+      "value": "on",
+      "key": "icap_206_enable",
+      "constraint": "BOOL"
+    },
+    "78": {
+      "value": "off",
+      "key": "icap_client_username_encode",
+      "constraint": "BOOL"
+    },
+    "79": {
+      "value": "60",
+      "key": "icap_default_options_ttl",
+      "constraint": "INT[,]"
+    },
+    "80": {
+      "value": "off",
+      "key": "icap_enable",
+      "constraint": "BOOL"
+    },
+    "81": {
+      "value": "on",
+      "key": "icap_persistent_connections",
+      "constraint": "BOOL"
+    },
+    "82": {
+      "value": "on",
+      "key": "icap_preview_enable",
+      "constraint": "BOOL"
+    },
+    "83": {
+      "value": "10",
+      "key": "icap_service_failure_limit",
+      "constraint": "INT[,]"
+    },
+    "84": {
+      "value": "180",
+      "key": "icap_service_revival_delay",
+      "constraint": "INT[,]"
+    },
+    "85": {
+      "value": "/usr/share/squid/icons",
+      "key": "icon_directory",
+      "constraint": "PATH"
+    },
+    "86": {
+      "value": "off",
+      "key": "icp_hit_stale",
+      "constraint": "BOOL"
+    },
+    "87": {
+      "value": "10~seconds",
+      "key": "ident_timeout",
+      "constraint": "UNIT[0,,seconds]"
+    },
+    "88": {
+      "value": "off",
+      "key": "ie_refresh",
+      "constraint": "BOOL"
+    },
+    "89": {
+      "value": "on",
+      "key": "ignore_unknown_nameservers",
+      "constraint": "BOOL"
+    },
+    "90": {
+      "value": "4",
+      "key": "incoming_dns_average",
+      "constraint": "INT[,]"
+    },
+    "91": {
+      "value": "4",
+      "key": "incoming_tcp_average",
+      "constraint": "INT[,]"
+    },
+    "92": {
+      "value": "6",
+      "key": "incoming_udp_average",
+      "constraint": "INT[,]"
+    },
+    "93": {
+      "value": "95",
+      "key": "ipcache_high",
+      "constraint": "INT[,]"
+    },
+    "94": {
+      "value": "90",
+      "key": "ipcache_low",
+      "constraint": "INT[,]"
+    },
+    "95": {
+      "value": "1024",
+      "key": "ipcache_size",
+      "constraint": "INT[,]"
+    },
+    "96": {
+      "value": "on",
+      "key": "log_icp_queries",
+      "constraint": "BOOL"
+    },
+    "97": {
+      "value": "off",
+      "key": "log_mime_hdrs",
+      "constraint": "BOOL"
+    },
+    "98": {
+      "value": "on",
+      "key": "log_uses_indirect_client",
+      "constraint": "BOOL"
+    },
+    "99": {
+      "value": "/usr/lib64/squid/log_file_daemon",
+      "key": "logfile_daemon",
+      "constraint": "PATH"
+    },
+    "100": {
+      "value": "10",
+      "key": "logfile_rotate",
+      "constraint": "INT[,]"
+    },
+    "101": {
+      "value": "mail",
+      "key": "mail_program",
+      "constraint": "ENUM"
+    },
+    "102": {
+      "value": "1~week",
+      "key": "max_stale",
+      "constraint": "UNIT[0,,week]"
+    },
+    "103": {
+      "value": "2000",
+      "key": "maximum_icp_query_timeout",
+      "constraint": "INT[,]"
+    },
+    "104": {
+      "value": "4~MB",
+      "key": "maximum_object_size",
+      "constraint": "UNIT[0,,MB]"
+    },
+    "105": {
+      "value": "512~KB",
+      "key": "maximum_object_size_in_memory",
+      "constraint": "UNIT[0,,KB]"
+    },
+    "106": {
+      "value": "2000",
+      "key": "mcast_icp_query_timeout",
+      "constraint": "INT[,]"
+    },
+    "107": {
+      "value": "gre",
+      "key": "wccp2_return_method",
+      "constraint": "ENUM"
+    },
+    "108": {
+      "value": "10000",
+      "key": "wccp2_weight",
+      "constraint": "INT[,]"
+    },
+    "109": {
+      "value": "on",
+      "key": "memory_cache_shared",
+      "constraint": "BOOL"
+    },
+    "110": {
+      "value": "on",
+      "key": "memory_pools",
+      "constraint": "BOOL"
+    },
+    "111": {
+      "value": "5~MB",
+      "key": "memory_pools_limit",
+      "constraint": "UNIT[0,,MB]"
+    },
+    "112": {
+      "value": "lru",
+      "key": "memory_replacement_policy",
+      "constraint": "ENUM"
+    },
+    "113": {
+      "value": "/etc/squid/mime.conf",
+      "key": "mime_table",
+      "constraint": "PATH"
+    },
+    "114": {
+      "value": "8",
+      "key": "min_dns_poll_cnt",
+      "constraint": "INT[,]"
+    },
+    "115": {
+      "value": "8",
+      "key": "min_tcp_poll_cnt",
+      "constraint": "INT[,]"
+    },
+    "116": {
+      "value": "8",
+      "key": "min_udp_poll_cnt",
+      "constraint": "INT[,]"
+    },
+    "117": {
+      "value": "4",
+      "key": "minimum_direct_hops",
+      "constraint": "INT[,]"
+    },
+    "118": {
+      "value": "400",
+      "key": "minimum_direct_rtt",
+      "constraint": "INT[,]"
+    },
+    "119": {
+      "value": "60~seconds",
+      "key": "minimum_expiry_time",
+      "constraint": "UNIT[0,,seconds]"
+    },
+    "120": {
+      "value": "5",
+      "key": "minimum_icp_query_timeout",
+      "constraint": "INT[,]"
+    },
+    "121": {
+      "value": "1~minute",
+      "key": "negative_dns_ttl",
+      "constraint": "UNIT[0,,minute]"
+    },
+    "122": {
+      "value": "0~seconds",
+      "key": "negative_ttl",
+      "constraint": "UNIT[0,,seconds]"
+    },
+    "123": {
+      "value": "1000",
+      "key": "netdb_high",
+      "constraint": "INT[,]"
+    },
+    "124": {
+      "value": "900",
+      "key": "netdb_low",
+      "constraint": "INT[,]"
+    },
+    "125": {
+      "value": "5~minutes",
+      "key": "netdb_ping_period",
+      "constraint": "UNIT[0,,minutes]"
+    },
+    "126": {
+      "value": "on",
+      "key": "nonhierarchical_direct",
+      "constraint": "BOOL"
+    },
+    "127": {
+      "value": "off",
+      "key": "offline_mode",
+      "constraint": "BOOL"
+    },
+    "128": {
+      "value": "30~seconds",
+      "key": "peer_connect_timeout",
+      "constraint": "UNIT[0,,seconds]"
+    },
+    "129": {
+      "value": "on",
+      "key": "persistent_connection_after_error",
+      "constraint": "BOOL"
+    },
+    "130": {
+      "value": "/var/run/squid.pid",
+      "key": "pid_filename",
+      "constraint": "PATH"
+    },
+    "131": {
+      "value": "4",
+      "key": "wccp_version",
+      "constraint": "INT[,]"
+    },
+    "132": {
+      "value": "15~minutes",
+      "key": "write_timeout",
+      "constraint": "UNIT[0,,minutes]"
+    },
+    "133": {
+      "value": "6~hours",
+      "key": "positive_dns_ttl",
+      "constraint": "UNIT[0,,hours]"
+    },
+    "134": {
+      "value": "off",
+      "key": "prefer_direct",
+      "constraint": "BOOL"
+    },
+    "135": {
+      "value": "off",
+      "key": "query_icmp",
+      "constraint": "BOOL"
+    },
+    "136": {
+      "value": "16~KB",
+      "key": "quick_abort_max",
+      "constraint": "UNIT[0,,KB]"
+    },
+    "137": {
+      "value": "16~KB",
+      "key": "quick_abort_min",
+      "constraint": "UNIT[0,,KB]"
+    },
+    "138": {
+      "value": "95",
+      "key": "quick_abort_pct",
+      "constraint": "INT[,]"
+    },
+    "139": {
+      "value": "16~KB",
+      "key": "read_ahead_gap",
+      "constraint": "UNIT[0,,KB]"
+    },
+    "140": {
+      "value": "15~minutes",
+      "key": "read_timeout",
+      "constraint": "UNIT[0,,minutes]"
+    },
+    "141": {
+      "value": "off",
+      "key": "refresh_all_ims",
+      "constraint": "BOOL"
+    },
+    "142": {
+      "value": "on",
+      "key": "relaxed_header_parser",
+      "constraint": "BOOL"
+    },
+    "143": {
+      "value": "off",
+      "key": "reload_into_ims",
+      "constraint": "BOOL"
+    },
+    "144": {
+      "value": "64~KB",
+      "key": "reply_header_max_size",
+      "constraint": "UNIT[0,,KB]"
+    },
+    "145": {
+      "value": "off",
+      "key": "request_entities",
+      "constraint": "BOOL"
+    },
+    "146": {
+      "value": "64~KB",
+      "key": "request_header_max_size",
+      "constraint": "UNIT[0,,KB]"
+    },
+    "147": {
+      "value": "5~minutes",
+      "key": "request_timeout",
+      "constraint": "UNIT[0,,minutes]"
+    },
+    "148": {
+      "value": "off",
+      "key": "retry_on_error",
+      "constraint": "BOOL"
+    },
+    "149": {
+      "value": "1~minute",
+      "key": "server_idle_pconn_timeout",
+      "constraint": "UNIT[0,,minute]"
+    },
+    "150": {
+      "value": "on",
+      "key": "server_persistent_connections",
+      "constraint": "BOOL"
+    },
+    "151": {
+      "value": "on",
+      "key": "short_icon_urls",
+      "constraint": "BOOL"
+    },
+    "152": {
+      "value": "30~seconds",
+      "key": "shutdown_lifetime",
+      "constraint": "UNIT[0,,seconds]"
+    },
+    "153": {
+      "value": "0",
+      "key": "sleep_after_fork",
+      "constraint": "INT[,]"
+    },
+    "154": {
+      "value": "off",
+      "key": "ssl_unclean_shutdown",
+      "constraint": "BOOL"
+    },
+    "155": {
+      "value": "2~MB",
+      "key": "sslproxy_session_cache_size",
+      "constraint": "UNIT[0,,MB]"
+    },
+    "156": {
+      "value": "300",
+      "key": "sslproxy_session_ttl",
+      "constraint": "INT[,]"
+    },
+    "157": {
+      "value": "13~KB",
+      "key": "store_avg_object_size",
+      "constraint": "UNIT[0,,KB]"
+    },
+    "158": {
+      "value": "least-load",
+      "key": "store_dir_select_algorithm",
+      "constraint": "ENUM"
+    },
+    "159": {
+      "value": "on",
+      "key": "store_id_bypass",
+      "constraint": "BOOL"
+    },
+    "160": {
+      "value": "20",
+      "key": "store_objects_per_bucket",
+      "constraint": "INT[,]"
+    },
+    "161": {
+      "value": "on",
+      "key": "strip_query_terms",
+      "constraint": "BOOL"
+    },
+    "162": {
+      "value": "off",
+      "key": "test_reachability",
+      "constraint": "BOOL"
+    },
+    "163": {
+      "value": "off",
+      "key": "tproxy_uses_indirect_client",
+      "constraint": "BOOL"
+    },
+    "164": {
+      "value": "/usr/lib64/squid/unlinkd",
+      "key": "unlinkd_program",
+      "constraint": "PATH"
+    },
+    "165": {
+      "value": "strip",
+      "key": "uri_whitespace",
+      "constraint": "ENUM"
+    },
+    "166": {
+      "value": "off",
+      "key": "url_rewrite_bypass",
+      "constraint": "BOOL"
+    },
+    "167": {
+      "value": "on",
+      "key": "url_rewrite_host_header",
+      "constraint": "BOOL"
+    },
+    "168": {
+      "value": "off",
+      "key": "vary_ignore_expire",
+      "constraint": "BOOL"
+    },
+    "169": {
+      "value": "on",
+      "key": "via",
+      "constraint": "BOOL"
+    },
+    "170": {
+      "value": "hash",
+      "key": "wccp2_assignment_method",
+      "constraint": "ENUM"
+    },
+    "171": {
+      "value": "gre",
+      "key": "wccp2_forwarding_method",
+      "constraint": "ENUM"
+    },
+    "172": {
+      "value": "on",
+      "key": "wccp2_rebuild_wait",
+      "constraint": "BOOL"
+    }
+  },
+  "format": "$key $value"
+}

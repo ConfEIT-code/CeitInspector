@@ -1,0 +1,11 @@
+{
+    "1": {
+        "script": "alluxio-start.sh master"
+    },
+    "2": {
+        "script": "alluxio-start.sh worker"
+    },
+    "3": {
+        "script": "alluxio runTests"
+    }
+}

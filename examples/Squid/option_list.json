@@ -1,0 +1,1674 @@
+{
+    "optionList": {
+        "1": {
+            "comment": "doc",
+            "value": "httpready", 
+            "key": "accept_filter", 
+            "constraint": "SPECSTR"
+        }, 
+        "2": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "acl_uses_indirect_client", 
+            "constraint": "BOOL"
+        }, 
+        "3": {
+            "comment": "doc",
+            "value": "X-Subscriber-ID", 
+            "key": "adaptation_masterx_shared_names", 
+            "constraint": "SPECSTR"
+        }, 
+        "4": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "adaptation_send_client_ip", 
+            "constraint": "BOOL"
+        }, 
+        "5": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "adaptation_send_username", 
+            "constraint": "BOOL"
+        }, 
+        "6": {
+            "comment": "intra",
+            "value": "16", 
+            "key": "adaptation_service_iteration_limit", 
+            "constraint": "NUM[INT,,,]"
+        }, 
+        "7": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "adaptation_uses_indirect_client", 
+            "constraint": "BOOL"
+        }, 
+        "8": {
+            "dep": "will work if check_hostnames is on",
+            "comment": "doc",
+            "value": "on", 
+            "key": "allow_underscore", 
+            "constraint": "BOOL"
+        }, 
+        "9": {
+            "comment": "doc",
+            "constraint": "ENUM|STR", 
+            "value1": "allow", 
+            "key": "always_direct", 
+            "value2": "localnet"
+        }, 
+        "10": {
+            "comment": "inter",
+            "value": "/etc/squid/squid.conf", 
+            "key": "announce_file", 
+            "constraint": "PATH[,N,F]"
+        }, 
+        "11": {
+            "comment": "inter",
+            "value": "tracker.ircache.net", 
+            "key": "announce_host", 
+            "constraint": "SPECSTR"
+        }, 
+        "12": {
+            "comment": "inter",
+            "value": "1~day",
+            "key": "announce_period", 
+            "constraint": "NUM[LONGLONG,0,,day]"
+        }, 
+        "13": {
+            "comment": "doc",
+            "value": "3131", 
+            "key": "announce_port", 
+            "constraint": "PORT"
+        }, 
+        "14": {
+            "comment": "doc",
+            "value": ".yourdomain.com",
+            "key": "append_domain",
+            "constraint": "URL"
+        },
+        "15": {
+            "comment": "doc",
+            "value": "whois.ra.net",
+            "key": "as_whois_server",
+            "constraint": "URL"
+        },
+        "16": {
+            "comment": "inter",
+            "value": "1~hour",
+            "key": "authenticate_cache_garbage_interval",
+            "constraint": "NUM[LONGLONG,,,hour]"
+        },
+        "17": {
+            "comment": "inter",
+            "value": "1~second",
+            "key": "authenticate_ip_ttl",
+            "constraint": "NUM[INT,,,second]"
+        },
+        "18": {
+            "comment": "inter",
+            "value": "1~hour",
+            "key": "authenticate_ttl",
+            "constraint": "NUM[LONGLONG,,,hour]"
+        },
+        "19": {
+            "comment": "inter",
+            "value": "10~seconds",
+            "key": "background_ping_rate",
+            "constraint": "NUM[LONGLONG,,,seconds]"
+        },
+        "20": {
+            "comment": "doc",
+            "value": "off",
+            "key": "balance_on_multiple_ip",
+            "constraint": "BOOL"
+        },
+        "21": {
+            "comment": "doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "broken_posts",
+            "value2": "buggy_server"
+        },
+        "22": {
+            "comment": "doc",
+            "value": "off",
+            "key": "buffered_logs",
+            "constraint": "BOOL"
+        },
+        "23": {
+            "comment": "inter",
+            "value": "/var/log/squid/cache.log",
+            "key": "cache_log",
+            "constraint": "PATH[,Y,F]"
+        },
+        "24": {
+            "comment": "inter",
+            "value": "256~MB",
+            "key": "cache_mem",
+            "constraint": "NUM[ULONGLONG,,,MB]"
+        },
+        "25": {
+            "comment": "doc",
+            "value": "webmaster",
+            "key": "cache_mgr",
+            "constraint": "SPECSTR"
+        },
+        "26": {
+            "comment": "doc",
+            "value": "on",
+            "key": "cache_miss_revalidate",
+            "constraint": "BOOL"
+        },
+        "27": {
+            "comment": "doc",
+            "key": "cache_peer",
+            "constraint": "SPECSTR|ENUM|PORT|PORT|ENUM",
+            "value5": "default",
+            "value4": "3130",
+            "value3": "3128",
+            "value2": "parent",
+            "value1": "foo.example.com"
+        },
+        "28": {
+            "comment": "doc",
+            "value": "lru",
+            "key": "cache_replacement_policy",
+            "constraint": "ENUM"
+        },
+        "29": {
+            "dep": "must be larger than cache_swap_low",
+            "comment": "doc",
+            "value": "95",
+            "key": "cache_swap_high",
+            "constraint": "NUM[INT,0,100,]"
+        },
+        "30": {
+            "comment": "doc",
+            "value": "90",
+            "key": "cache_swap_low",
+            "constraint": "NUM[INT,0,100,]"
+        },
+        "31": {
+            "comment": "doc",
+            "constraint": "STR|ENUM",
+            "value1": "secret",
+            "key": "cachemgr_passwd",
+            "value2": "shutdown"
+        },
+        "32": {
+            "comment": "doc",
+            "value": "off",
+            "key": "check_hostnames",
+            "constraint": "BOOL"
+        },
+        "33": {
+            "comment": "doc",
+            "value": "on",
+            "key": "client_db",
+            "constraint": "BOOL"
+        },
+        "34": {
+            "comment": "doc",
+            "constraint": "NUM[INT,0,,]|ENUM|STR",
+            "value3": "localnet",
+            "value1": "1",
+            "key": "client_delay_access",
+            "value2": "allow"
+        },
+        "35": {
+            "comment": "intra",
+            "value": "50",
+            "key": "client_delay_initial_bucket_level",
+            "constraint": "NUM[INT,0,65535,]"
+        },
+        "36": {
+            "comment": "inter",
+            "constraint": "NUM[INT,0,,]|NUM[INT,,,]|NUM[LONGLONG,,,]",
+            "value3": "2048",
+            "value1": "1",
+            "key": "client_delay_parameters",
+            "value2": "1024"
+        },
+        "37": {
+            "dep": "It must preceed other client_delay_* options.",
+            "comment": "intra",
+            "value": "10",
+            "key": "client_delay_pools",
+            "constraint": "NUM[INT,,,]"
+        },
+        "38": {
+            "comment": "doc",
+            "value": "on",
+            "key": "client_dst_passthru",
+            "constraint": "BOOL"
+        },
+        "39": {
+            "comment": "intra",
+            "value": "2~minutes",
+            "key": "client_idle_pconn_timeout",
+            "constraint": "NUM[LONGLONG,,,minutes]"
+        },
+        "40": {
+            "comment": "intra",
+            "value": "1~day",
+            "key": "client_lifetime",
+            "constraint": "NUM[LONGLONG,,,day]"
+        },
+        "41": {
+            "comment": "doc",
+            "value": "on",
+            "key": "client_persistent_connections",
+            "constraint": "BOOL"
+        },
+        "42": {
+            "dep": "must be larger than request_header_max_size",
+            "comment": "inter",
+            "value": "512~KB",
+            "key": "client_request_buffer_max_size",
+            "constraint": "NUM[ULONGLONG,,,KB]"
+        },
+        "43": {
+            "comment": "intra",
+            "constraint": "SPECSTR|STR",
+            "value1": "0x00",
+            "key": "clientside_mark",
+            "value2": "localnet"
+        },
+        "44": {
+            "comment": "intra",
+            "constraint": "SPECSTR|STR",
+            "value1": "0x00",
+            "key": "clientside_tos",
+            "value2": "localnet"
+        },
+        "45": {
+            "comment": "doc",
+            "value": "off",
+            "key": "collapsed_forwarding",
+            "constraint": "BOOL"
+        },
+        "46": {
+            "comment": "doc",
+            "value": "off",
+            "key": "configuration_includes_quoted_values",
+            "constraint": "BOOL"
+        },
+        "47": {
+            "comment": "inter",
+            "value": "10",
+            "key": "connect_retries",
+            "constraint": "NUM[INT,,10,]"
+        },
+        "48": {
+            "comment": "intra",
+            "value": "1~minute",
+            "key": "connect_timeout",
+            "constraint": "NUM[LONGLONG,,,minute]"
+        },
+        "49": {
+            "comment": "intra",
+            "value": "10~seconds",
+            "key": "dead_peer_timeout",
+            "constraint": "NUM[LONGLONG,,,seconds]"
+        },
+        "50": {
+            "comment": "intra",
+            "value": "ALL,1",
+            "key": "debug_options",
+            "constraint": "SPECSTR"
+        },
+        "51": {
+            "comment": "doc",
+            "constraint": "NUM[INT,0,,]|ENUM|STR",
+            "value3": "localnet",
+            "value1": "1",
+            "key": "delay_access",
+            "value2": "allow"
+        },
+        "52": {
+            "comment": "doc",
+            "constraint": "NUM[INT,0,,]|NUM[INT,0,,]",
+            "value1": "1",
+            "key": "delay_class",
+            "value2": "2"
+        },
+        "53": {
+            "comment": "doc",
+            "value": "50",
+            "key": "delay_initial_bucket_level",
+            "constraint": "NUM[INT,0,100,]"
+        },
+        "54": {
+            "comment": "doc",
+            "value": "on",
+            "key": "delay_pool_uses_indirect_client",
+            "constraint": "BOOL"
+        },
+        "55": {
+            "comment": "intra",
+            "value": "4",
+            "key": "delay_pools",
+            "constraint": "NUM[INT,,,]"
+        },
+        "56": {
+            "comment": "doc",
+            "constraint": "STR|STR",
+            "value1": "TCP_RESET",
+            "key": "deny_info",
+            "value2": "acl"
+        },
+        "57": {
+            "comment": "doc",
+            "value": "off",
+            "key": "detect_broken_pconn",
+            "constraint": "BOOL"
+        },
+        "58": {
+            "comment": "intra",
+            "value": "5",
+            "key": "digest_bits_per_entry",
+            "constraint": "NUM[INT,,,]"
+        },
+        "59": {
+            "comment": "doc",
+            "value": "on",
+            "key": "digest_generation",
+            "constraint": "BOOL"
+        },
+        "60": {
+            "comment": "doc",
+            "value": "10",
+            "key": "digest_rebuild_chunk_percentage",
+            "constraint": "NUM[INT,0,100,]"
+        },
+        "61": {
+            "comment": "intra",
+            "value": "1~hour",
+            "key": "digest_rebuild_period",
+            "constraint": "NUM[LONGLONG,,,hour]"
+        },
+        "62": {
+            "comment": "intra",
+            "value": "1~hour",
+            "key": "digest_rewrite_period",
+            "constraint": "NUM[LONGLONG,,,hour]"
+        },
+        "63": {
+            "comment": "intra",
+            "value": "4096~bytes",
+            "key": "digest_swapout_chunk_size",
+            "constraint": "NUM[ULONGLONG,,,bytes]"
+        },
+        "64": {
+            "comment": "inter",
+            "value": "/usr/lib64/squid/diskd",
+            "key": "diskd_program",
+            "constraint": "PATH[,N,F]"
+        },
+        "65": {
+            "comment": "doc",
+            "value": "on",
+            "key": "dns_defnames",
+            "constraint": "BOOL"
+        },
+        "66": {
+            "comment": "doc",
+            "value": "on",
+            "key": "dns_multicast_local",
+            "constraint": "BOOL"
+        },
+        "67": {
+            "comment": "intra",
+            "value": "5~seconds",
+            "key": "dns_retransmit_interval",
+            "constraint": "NUM[LONGLONG,,,seconds]"
+        },
+        "68": {
+            "comment": "intra",
+            "value": "30~seconds",
+            "key": "dns_timeout",
+            "constraint": "NUM[LONGLONG,,,seconds]"
+        },
+        "69": {
+            "comment": "doc",
+            "value": "off",
+            "key": "dns_v4_first",
+            "constraint": "BOOL"
+        },
+        "70": {
+            "comment": "doc",
+            "value": "off",
+            "key": "ecap_enable",
+            "constraint": "BOOL"
+        },
+        "71": {
+            "comment": "doc",
+            "value": "on",
+            "key": "email_err_data",
+            "constraint": "BOOL"
+        },
+        "72": {
+            "comment": "inter",
+            "value": "/etc/squid/errorpage.css",
+            "key": "err_page_stylesheet",
+            "constraint": "PATH[,N,F]"
+        },
+        "73": {
+            "comment": "doc",
+            "value": "on",
+            "key": "error_log_languages",
+            "constraint": "BOOL"
+        },
+        "74": {
+            "comment": "doc",
+            "value": "custom",
+            "key": "esi_parser",
+            "constraint": "ENUM"
+        },
+        "75": {
+            "comment": "doc",
+            "value": "on",
+            "key": "eui_lookup",
+            "constraint": "BOOL"
+        },
+        "76": {
+            "comment": "doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "follow_x_forwarded_for",
+            "value2": "localhost"
+        },
+        "77": {
+            "comment": "intra",
+            "value": "25",
+            "key": "forward_max_tries",
+            "constraint": "NUM[INT,,,]"
+        },
+        "78": {
+            "comment": "intra",
+            "value": "4~minutes",
+            "key": "forward_timeout",
+            "constraint": "NUM[LONGLONG,,,minutes]"
+        },
+        "79": {
+            "comment": "doc",
+            "value": "on",
+            "key": "forwarded_for",
+            "constraint": "BOOL"
+        },
+        "80": {
+            "comment": "intra",
+            "value": "1024",
+            "key": "fqdncache_size",
+            "constraint": "NUM[INT,,,]"
+        },
+        "81": {
+            "comment": "intra",
+            "value": "30~minutes",
+            "key": "ftp_client_idle_timeout",
+            "constraint": "NUM[LONGLONG,,,minutes]"
+        },
+        "82": {
+            "comment": "doc",
+            "value": "on",
+            "key": "ftp_eprt",
+            "constraint": "BOOL"
+        },
+        "83": {
+            "dep": "will work if ftp_passive is on",
+            "comment": "doc",
+            "value": "off",
+            "key": "ftp_epsv_all",
+            "constraint": "BOOL"
+        },
+        "84": {
+            "comment": "doc",
+            "value": "on",
+            "key": "ftp_passive",
+            "constraint": "BOOL"
+        },
+        "85": {
+            "comment": "doc",
+            "value": "on",
+            "key": "ftp_sanitycheck",
+            "constraint": "BOOL"
+        },
+        "86": {
+            "comment": "doc",
+            "value": "on",
+            "key": "ftp_telnet_protocol",
+            "constraint": "BOOL"
+        },
+        "87": {
+            "comment": "doc",
+            "value": "Squid@",
+            "key": "ftp_user",
+            "constraint": "STR"
+        },
+        "88": {
+            "comment": "doc",
+            "value": "on",
+            "key": "global_internal_static",
+            "constraint": "BOOL"
+        },
+        "89": {
+            "comment": "doc",
+            "value": "off",
+            "key": "half_closed_clients",
+            "constraint": "BOOL"
+        },
+        "90": {
+            "comment": "intra",
+            "value": "1",
+            "key": "high_page_fault_warning",
+            "constraint": "NUM[INT,,,]"
+        },
+        "91": {
+            "comment": "intra",
+            "value": "1",
+            "key": "high_response_time_warning",
+            "constraint": "NUM[INT,,,]"
+        },
+        "92": {
+            "comment": "doc",
+            "value": "off",
+            "key": "host_verify_strict",
+            "constraint": "BOOL"
+        },
+        "93": {
+            "comment": "inter",
+            "value": "/etc/hosts",
+            "key": "hosts_file",
+            "constraint": "PATH[,N,F]"
+        },
+        "94": {
+            "comment": "inter",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "htcp_access",
+            "value2": "localnet"
+        },
+        "95": {
+            "comment": "inter",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "htcp_clr_access",
+            "value2": "localnet"
+        },
+        "96": {
+            "comment": "inter",
+            "value": "4827",
+            "key": "htcp_port",
+            "constraint": "PORT"
+        },
+        "97": {
+            "comment": "doc",
+            "value": "off",
+            "key": "http_accel_surrogate_remote",
+            "constraint": "BOOL"
+        },
+        "98": {
+            "comment": "inter",
+            "value": "3128",
+            "key": "http_port",
+            "constraint": "PORT"
+        },
+        "99": {
+            "comment": "doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "http_reply_access",
+            "value2": "all"
+        },
+        "100": {
+            "comment": "doc",
+            "value": "off",
+            "key": "httpd_suppress_version_string",
+            "constraint": "BOOL"
+        },
+        "101": {
+            "comment": "doc",
+            "value": "on",
+            "key": "icap_206_enable",
+            "constraint": "BOOL"
+        },
+        "102": {
+            "comment": "doc",
+            "value": "off",
+            "key": "icap_client_username_encode",
+            "constraint": "BOOL"
+        },
+        "103": {
+            "comment": "doc",
+            "value": "X-Client-Username",
+            "key": "icap_client_username_header",
+            "constraint": "SPECSTR"
+        },
+        "104": {
+            "comment": "intra",
+            "value": "1~minute",
+            "key": "icap_connect_timeout",
+            "constraint": "NUM[LONGLONG,,,minute]"
+        },
+        "105": {
+            "comment": "intra",
+            "value": "60",
+            "key": "icap_default_options_ttl",
+            "constraint": "NUM[INT,,,]"
+        },
+        "106": {
+            "comment": "doc",
+            "value": "off",
+            "key": "icap_enable",
+            "constraint": "BOOL"
+        },
+        "107": {
+            "comment": "inter",
+            "value": "1~minute",
+            "key": "icap_io_timeout",
+            "constraint": "NUM[LONGLONG,,,minute]"
+        },
+        "108": {
+            "comment": "doc",
+            "value": "on",
+            "key": "icap_persistent_connections",
+            "constraint": "BOOL"
+        },
+        "109": {
+            "comment": "doc",
+            "value": "on",
+            "key": "icap_preview_enable",
+            "constraint": "BOOL"
+        },
+        "110": {
+            "comment": "intra",
+            "value": "10~MB",
+            "key": "icap_preview_size",
+            "constraint": "NUM[ULONGLONG,,,MB]"
+        },
+        "111": {
+            "comment": "doc",
+            "constraint": "ENUM|STR",
+            "value1": "deny",
+            "key": "icap_retry",
+            "value2": "all"
+        },
+        "112": {
+            "comment": "intra",
+            "value": "5",
+            "key": "icap_retry_limit",
+            "constraint": "NUM[INT,,,]"
+        },
+        "113": {
+            "comment": "inter",
+            "value": "10",
+            "key": "icap_service_failure_limit",
+            "constraint": "NUM[INT,,,]"
+        },
+        "114": {
+            "comment": "intra",
+            "value": "180",
+            "key": "icap_service_revival_delay",
+            "constraint": "NUM[INT,,,]"
+        },
+        "115": {
+            "comment": "inter",
+            "value": "/usr/share/squid/icons",
+            "key": "icon_directory",
+            "constraint": "PATH[,N,D]"
+        },
+        "116": {
+            "comment": "doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "icp_access",
+            "value2": "localnet"
+        },
+        "117": {
+            "comment": "doc",
+            "value": "off",
+            "key": "icp_hit_stale",
+            "constraint": "BOOL"
+        },
+        "118": {
+            "comment": "doc",
+            "value": "3130",
+            "key": "icp_port",
+            "constraint": "PORT"
+        },
+        "119": {
+            "comment": "intra",
+            "value": "2000",
+            "key": "icp_query_timeout",
+            "constraint": "NUM[INT,,,]"
+        },
+        "120": {
+            "comment": "doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "ident_lookup_access",
+            "value2": "localnet"
+        },
+        "121": {
+            "comment": "intra",
+            "value": "10~seconds",
+            "key": "ident_timeout",
+            "constraint": "NUM[LONGLONG,,,seconds]"
+        },
+        "122": {
+            "comment": "doc",
+            "value": "off",
+            "key": "ie_refresh",
+            "constraint": "BOOL"
+        },
+        "123": {
+            "comment": "doc",
+            "value": "on",
+            "key": "ignore_unknown_nameservers",
+            "constraint": "BOOL"
+        },
+        "124": {
+            "comment": "intra",
+            "value": "4",
+            "key": "incoming_dns_average",
+            "constraint": "NUM[INT,,,]"
+        },
+        "125": {
+            "comment": "intra",
+            "value": "4",
+            "key": "incoming_tcp_average",
+            "constraint": "NUM[INT,,,]"
+        },
+        "126": {
+            "comment": "intra",
+            "value": "6",
+            "key": "incoming_udp_average",
+            "constraint": "NUM[INT,,,]"
+        },
+        "127": {
+            "comment": "intra",
+            "value": "95",
+            "key": "ipcache_high",
+            "constraint": "NUM[INT,,,]"
+        },
+        "128": {
+            "comment": "intra",
+            "value": "90",
+            "key": "ipcache_low",
+            "constraint": "NUM[INT,,,]"
+        },
+        "129": {
+            "comment": "intra",
+            "value": "1024",
+            "key": "ipcache_size",
+            "constraint": "NUM[INT,,,]"
+        },
+        "130": {
+            "comment": "doc",
+            "value": "on",
+            "key": "log_icp_queries",
+            "constraint": "BOOL"
+        },
+        "131": {
+            "comment": "doc",
+            "value": "off",
+            "key": "log_mime_hdrs",
+            "constraint": "BOOL"
+        },
+        "132": {
+            "comment": "doc",
+            "value": "on",
+            "key": "log_uses_indirect_client",
+            "constraint": "BOOL"
+        },
+        "133": {
+            "comment": "inter",
+            "value": "/usr/lib64/squid/log_file_daemon",
+            "key": "logfile_daemon",
+            "constraint": "PATH[,N,F]"
+        },
+        "134": {
+            "comment": "intra",
+            "value": "10",
+            "key": "logfile_rotate",
+            "constraint": "NUM[INT,,,]"
+        },
+        "135": {
+            "comment": "doc",
+            "value": "squid@unique_hostname",
+            "key": "mail_from",
+            "constraint": "SPECSTR"
+        },
+        "136": {
+            "comment": "doc",
+            "value": "mail",
+            "key": "mail_program",
+            "constraint": "ENUM"
+        },
+        "137": {
+            "comment": "intra",
+            "value": "0",
+            "key": "max_open_disk_fds",
+            "constraint": "NUM[INT,,,]"
+        },
+        "138": {
+            "comment": "intra",
+            "value": "1~week",
+            "key": "max_stale",
+            "constraint": "NUM[LONGLONG,,,week]"
+        },
+        "139": {
+            "comment": "intra",
+            "value": "2000",
+            "key": "maximum_icp_query_timeout",
+            "constraint": "NUM[INT,,,]"
+        },
+        "140": {
+            "comment": "intra",
+            "value": "4~MB",
+            "key": "maximum_object_size",
+            "constraint": "NUM[LONGLONG,,,MB]"
+        },
+        "141": {
+            "comment": "intra",
+            "value": "512~KB",
+            "key": "maximum_object_size_in_memory",
+            "constraint": "NUM[ULONGLONG,,,KB]"
+        },
+        "142": {
+            "dep":"macro: MULTICAST_MISS_STREAM",
+            "comment":"intra",
+            "value": "2000",
+            "key": "mcast_icp_query_timeout",
+            "constraint": "NUM[INT,,,]"
+        },
+        "143": {
+            "dep":"macro: MULTICAST_MISS_STREAM",
+            "comment":"doc",
+            "value": "3135",
+            "key": "mcast_miss_port",
+            "constraint": "PORT"
+        },
+        "144": {
+            "dep":"macro: MULTICAST_MISS_STREAM",
+            "comment":"intra",
+            "value": "16",
+            "key": "mcast_miss_ttl",
+            "constraint": "NUM[INT,,,]"
+        },
+        "145": {
+            "comment":"doc",
+            "value": "always",
+            "key": "memory_cache_mode",
+            "constraint": "ENUM"
+        },
+        "146": {
+            "comment":"doc",
+            "value": "on",
+            "key": "memory_cache_shared",
+            "constraint": "BOOL"
+        },
+        "147": {
+            "comment":"doc",
+            "value": "on",
+            "key": "memory_pools",
+            "constraint": "BOOL"
+        },
+        "148": {
+            "comment":"intra",
+            "value": "5~MB",
+            "key": "memory_pools_limit",
+            "constraint": "NUM[ULONGLONG,,,MB]"
+        },
+        "149": {
+            "comment":"doc",
+            "value": "lru",
+            "key": "memory_replacement_policy",
+            "constraint": "ENUM"
+        },
+        "150": {
+            "comment":"intra",
+            "value": "/etc/squid/mime.conf",
+            "key": "mime_table",
+            "constraint": "PATH[,N,F]"
+        },
+        "151": {
+            "dep":"macro:USE_POLL",
+            "comment":"intra",
+            "value": "8",
+            "key": "min_dns_poll_cnt",
+            "constraint": "NUM[INT,,,]"
+        },
+        "152": {
+            "dep":"macro:USE_POLL",
+            "value": "8",
+            "key": "min_tcp_poll_cnt",
+            "constraint": "NUM[INT,,,]"
+        },
+        "153": {
+            "dep":"macro:USE_POLL",
+            "comment":"intra",
+            "value": "8",
+            "key": "min_udp_poll_cnt",
+            "constraint": "NUM[INT,,,]"
+        },
+        "154": {
+            "comment":"intra",
+            "value": "4",
+            "key": "minimum_direct_hops",
+            "constraint": "NUM[INT,,,]"
+        },
+        "155": {
+            "comment":"intra",
+            "dep":"macro: USE_ICMP",
+            "value": "400",
+            "key": "minimum_direct_rtt",
+            "constraint": "NUM[INT,,,]"
+        },
+        "156": {
+            "comment":"intra",
+            "value": "60~seconds",
+            "key": "minimum_expiry_time",
+            "constraint": "NUM[LONGLONG,,,seconds]"
+        },
+        "157": {
+            "comment":"intra",
+            "value": "5",
+            "key": "minimum_icp_query_timeout",
+            "constraint": "NUM[INT,,,]"
+        },
+        "158": {
+            "comment":"intra",
+            "value": "0~KB",
+            "key": "minimum_object_size",
+            "constraint": "NUM[LONGLONG,,,KB]"
+        },
+        "159": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "miss_access",
+            "value2": "all"
+        },
+        "160": {
+            "dep":"USE_HTTP_VIOLATIONS",
+            "comment":"intra",
+            "value": "1~minutes",
+            "key": "negative_dns_ttl",
+            "constraint": "NUM[LONGLONG,,,minutes]"
+        },
+        "161": {
+            "dep":"USE_HTTP_VIOLATIONS",
+            "comment":"intra",
+            "value": "0~seconds",
+            "key": "negative_ttl",
+            "constraint": "NUM[LONGLONG,,,seconds]"
+        },
+        "162": {
+            "dep":"macro: USE_ICMP",
+            "comment":"intra",
+            "value": "1000",
+            "key": "netdb_high",
+            "constraint": "NUM[INT,,,]"
+        },
+        "163": {
+            "dep":"macro: USE_ICMP",
+            "comment":"intra",
+            "value": "900",
+            "key": "netdb_low",
+            "constraint": "NUM[INT,,,]"
+        },
+        "164": {
+            "dep":"macro: USE_ICMP",
+            "comment":"intra",
+            "value": "5~minutes",
+            "key": "netdb_ping_period",
+            "constraint": "NUM[LONGLONG,,,minutes]"
+        },
+        "165": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "never_direct",
+            "value2": "all"
+        },
+        "166": {
+            "comment":"doc",
+            "value": "on",
+            "key": "nonhierarchical_direct",
+            "constraint": "BOOL"
+        },
+        "167": {
+            "comment":"doc",
+            "value": "off",
+            "key": "offline_mode",
+            "constraint": "BOOL"
+        },
+        "168": {
+            "comment":"intra",
+            "value": "30~seconds",
+            "key": "peer_connect_timeout",
+            "constraint": "NUM[LONGLONG,,,seconds]"
+        },
+        "169": {
+            "comment":"doc",
+            "value": "on",
+            "key": "persistent_connection_after_error",
+            "constraint": "BOOL"
+        },
+        "170": {
+            "comment":"doc",
+            "value": "/var/run/squid.pid",
+            "key": "pid_filename",
+            "constraint": "PATH[,N,F]"
+        },
+        "171": {
+            "comment":"doc",
+            "value": "0",
+            "key": "pipeline_prefetch",
+            "constraint": "BOOL"
+        },
+        "172": {
+            "comment":"intra",
+            "dep":"must be set larger than negative_dns_ttl",
+            "value": "6~hours",
+            "key": "positive_dns_ttl",
+            "constraint": "NUM[LONGLONG,,,hours]"
+        },
+        "173": {
+            "comment":"doc",
+            "value": "off",
+            "key": "prefer_direct",
+            "constraint": "BOOL"
+        },
+        "174": {
+            "comment":"doc",
+            "value": "off",
+            "key": "query_icmp",
+            "constraint": "BOOL"
+        },
+        "175": {
+            "comment":"intra",
+            "value": "16~KB",
+            "key": "quick_abort_max",
+            "constraint": "NUM[LONGLONG,,,KB]"
+        },
+        "176": {
+            "comment":"intra",
+            "value": "16~KB",
+            "key": "quick_abort_min",
+            "constraint": "NUM[LONGLONG,0,,KB]"
+        },
+        "177": {
+            "comment":"intra",
+            "value": "95",
+            "key": "quick_abort_pct",
+            "constraint": "NUM[INT,,,]"
+        },
+        "178": {
+            "comment":"intra",
+            "value": "1~KB",
+            "key": "range_offset_limit",
+            "constraint": "NUM[ULONGLONG,,,KB]"
+        },
+        "179": {
+            "comment":"intra",
+            "value": "16~KB",
+            "key": "read_ahead_gap",
+            "constraint": "NUM[ULONGLONG,,,KB]"
+        },
+        "180": {
+            "comment":"intra",
+            "value": "15~minutes",
+            "key": "read_timeout",
+            "constraint": "NUM[LONGLONG,,,minutes]"
+        },
+        "181": {
+            "comment":"doc",
+            "value": "off",
+            "key": "refresh_all_ims",
+            "constraint": "BOOL"
+        },
+        "182": {
+            "comment":"doc",
+            "value": "on",
+            "key": "relaxed_header_parser",
+            "constraint": "BOOL"
+        },
+        "183": {
+            "comment":"doc",
+            "value": "off",
+            "key": "reload_into_ims",
+            "constraint": "BOOL"
+        },
+        "184": {
+            "comment":"intra",
+            "value": "10~MB",
+            "key": "reply_body_max_size",
+            "constraint": "NUM[LONGLONG,,,MB]"
+        },
+        "185": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value3": "all",
+            "value1": "Server",
+            "key": "reply_header_access",
+            "value2": "deny"
+        },
+        "186": {
+            "comment":"intra",
+            "value": "64~KB",
+            "key": "reply_header_max_size",
+            "constraint": "NUM[ULONGLONG,,,KB]"
+        },
+        "187": {
+            "comment":"intra",
+            "value": "0",
+            "key": "request_body_max_size",
+            "constraint": "NUM[LONGLONG,,,]"
+        },
+        "188": {
+            "comment":"doc",
+            "value": "off",
+            "key": "request_entities",
+            "constraint": "BOOL"
+        },
+        "189": {
+            "dep":"must < client_request_buffer_max_size",
+            "comment":"intra",
+            "value": "64~KB",
+            "key": "request_header_max_size",
+            "constraint": "NUM[ULONGLONG,,,KB]"
+        },
+        "190": {
+            "comment":"intra",
+            "value": "5~minutes",
+            "key": "request_timeout",
+            "constraint": "NUM[LONGLONG,,,minutes]"
+        },
+        "191": {
+            "comment":"doc",
+            "value": "off",
+            "key": "retry_on_error",
+            "constraint": "BOOL"
+        },
+        "192": {
+            "comment":"intra",
+            "value": "1~minute",
+            "key": "server_idle_pconn_timeout",
+            "constraint": "NUM[LONGLONG,,,minute]"
+        },
+        "193": {
+            "comment":"doc",
+            "value": "on",
+            "key": "server_persistent_connections",
+            "constraint": "BOOL"
+        },
+        "194": {
+            "comment":"doc",
+            "value": "on",
+            "key": "short_icon_urls",
+            "constraint": "BOOL"
+        },
+        "195": {
+            "comment":"intra",
+            "value": "30~seconds",
+            "key": "shutdown_lifetime",
+            "constraint": "NUM[LONGLONG,,,seconds]"
+        },
+        "196": {
+            "comment":"doc",
+            "value": "0",
+            "key": "sleep_after_fork",
+            "constraint": "NUM[INT,1000,,]"
+        },
+        "197": {
+            "comment":"doc",
+            "value": "3401",
+            "key": "snmp_port",
+            "constraint": "PORT"
+        },
+        "198": {
+            "comment":"doc", 
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "spoof_client_ip",
+            "value2": "localnet"
+        },
+        "199": {
+            "dep":"macro:USE_OPENSSL",
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "splice",
+            "key": "ssl_bump",
+            "value2": "localnet"
+        },
+        "200": {
+            "dep":"macro:USE_OPENSSL",
+            "comment":"doc",
+            "value": "off",
+            "key": "ssl_unclean_shutdown",
+            "constraint": "BOOL"
+        },
+        "201": {
+            "dep":"macro:USE_OPENSSL",
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "setValidAfter",
+            "key": "sslproxy_cert_adapt",
+            "value2": "localnet"
+        },
+        "202": {
+            "dep":"macro:USE_OPENSSL",
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "deny",
+            "key": "sslproxy_cert_error",
+            "value2": "all"
+        },
+        "203": {
+            "dep":"macro:USE_OPENSSL",
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "signTrusted",
+            "key": "sslproxy_cert_sign",
+            "value2": "localnet"
+        },
+        "204": {
+            "comment":"doc",
+            "value": "sha1",
+            "key": "sslproxy_cert_sign_hash",
+            "constraint": "ENUM"
+        },
+        "205": {
+            "dep":"macro:USE_OPENSSL",
+            "comment":"doc",
+            "value": "2~MB",
+            "key": "sslproxy_session_cache_size",
+            "constraint": "NUM[ULONGLONG,,,MB]"
+        },
+        "206": {
+            "dep":"macro:USE_OPENSSL",
+            "comment":"doc",
+            "value": "300",
+            "key": "sslproxy_session_ttl",
+            "constraint": "NUM[ULONGLONG,,,]"
+        },
+        "207": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "stats_collection",
+            "value2": "localnet"
+        },
+        "208": {
+            "comment":"intra",
+            "value": "13~KB",
+            "key": "store_avg_object_size",
+            "constraint": "NUM[ULONGLONG,0,,KB]"
+        },
+        "209": {
+            "comment":"doc",
+            "value": "least-load",
+            "key": "store_dir_select_algorithm",
+            "constraint": "ENUM"
+        },
+        "210": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "store_id_access",
+            "value2": "localnet"
+        },
+        "211": {
+            "comment":"doc",
+            "value": "on",
+            "key": "store_id_bypass",
+            "constraint": "BOOL"
+        },
+        "212": {
+            "comment":"doc",
+            "key": "store_id_children",
+            "constraint": "NUM[INT,,,]|STR|STR|STR",
+            "value4": "concurrency=0",
+            "value3": "idle=1",
+            "value2": "startup=0",
+            "value1": "20"
+        },
+        "213": {
+            "comment":"doc",
+            "value": "\"%>a/%>A~%un~%>rm~myip=%la~myport=%lp\"",
+            "key": "store_id_extras",
+            "constraint": "STR"
+        },
+        "214": {
+            "comment":"doc",
+            "constraint": "ENUM|STR|STR",
+            "value3": "!Safe_ports",
+            "value1": "deny",
+            "key": "store_miss",
+            "value2": "localnet"
+        },
+        "215": {
+            "comment":"intra",
+            "value": "20",
+            "key": "store_objects_per_bucket",
+            "constraint": "NUM[INT,0,,]"
+        },
+        "216": {
+            "comment":"doc",
+            "value": "on",
+            "key": "strip_query_terms",
+            "constraint": "BOOL"
+        },
+        "217": {
+            "comment":"doc",
+            "constraint": "IP|STR",
+            "value1": "127.0.0.1",
+            "key": "tcp_outgoing_address",
+            "value2": "localnet"
+        },
+        "218": {
+            "comment":"doc",
+            "constraint": "SPECSTR|STR",
+            "value1": "0x20",
+            "key": "tcp_outgoing_mark",
+            "value2": "localnet"
+        },
+        "219": {
+            "comment":"doc",
+            "constraint": "SPECSTR|STR",
+            "value1": "0x20",
+            "key": "tcp_outgoing_tos",
+            "value2": "localnet"
+        },
+        "220": {
+            "comment":"intra",
+            "value": "80~KB",
+            "key": "tcp_recv_bufsize",
+            "constraint": "NUM[ULONGLONG,,,KB]"
+        },
+        "221": {
+            "dep":"macro:USE_ICMP",
+            "comment":"doc",
+            "value": "off",
+            "key": "test_reachability",
+            "constraint": "BOOL"
+        },
+        "222": {
+            "dep":"macro:FOLLOW_X_FORWARDED_FOR, LINUX_NETFILTER",
+            "comment":"doc",
+            "value": "off",
+            "key": "tproxy_uses_indirect_client",
+            "constraint": "BOOL"
+        },
+        "223": {
+            "comment":"doc",
+            "value": "127.0.0.1",
+            "key": "udp_incoming_address",
+            "constraint": "IP"
+        },
+        "224": {
+            "comment":"doc",
+            "value": "127.0.0.1",
+            "key": "udp_outgoing_address",
+            "constraint": "IP"
+        },
+        "225": {
+            "comment":"doc",
+            "value": "027",
+            "key": "umask",
+            "constraint": "SPECSTR"
+        },
+        "226": {
+            "comment":"doc",
+            "value": "hostname",
+            "key": "unique_hostname",
+            "constraint": "STR"
+        },
+        "227": {
+            "dep":"macro:USE_UNLINKD",
+            "comment":"doc",
+            "value": "/usr/lib64/squid/unlinkd",
+            "key": "unlinkd_program",
+            "constraint": "PATH[,N,D]"
+        },
+        "228": {
+            "comment":"doc",
+            "value": "strip",
+            "key": "uri_whitespace",
+            "constraint": "ENUM"
+        },
+        "229": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "url_rewrite_access",
+            "value2": "localnet"
+        },
+        "230": {
+            "comment":"doc",
+            "value": "off",
+            "key": "url_rewrite_bypass",
+            "constraint": "BOOL"
+        },
+        "231": {
+            "comment":"doc",
+            "key": "url_rewrite_children",
+            "constraint": "NUM[INT,,,]|STR|STR|STR",
+            "value4": "concurrency=0",
+            "value3": "idle=1",
+            "value2": "startup=0",
+            "value1": "20"
+        },
+        "232": {
+            "comment":"doc",
+            "value": "\"%>a/%>A~%un~%>rm~myip=%la~myport=%lp\"",
+            "key": "url_rewrite_extras",
+            "constraint": "STR"
+        },
+        "233": {
+            "comment":"doc",
+            "value": "on",
+            "key": "url_rewrite_host_header",
+            "constraint": "BOOL"
+        },
+        "234": {
+            "comment":"doc",
+            "value": "off",
+            "key": "vary_ignore_expire",
+            "constraint": "BOOL"
+        },
+        "235": {
+            "comment":"doc",
+            "value": "on",
+            "key": "via",
+            "constraint": "BOOL"
+        },
+        "236": {
+            "comment":"doc",
+            "value": "string",
+            "key": "visible_hostname",
+            "constraint": "SPECSTR"
+        },
+        "237": {
+            "dep":"macro: USE_WCCPv2",
+            "comment":"doc",
+            "value": "127.0.0.1",
+            "key": "wccp2_address",
+            "constraint": "IP"
+        },
+        "238": {
+            "dep":"macro: USE_WCCPv2",
+            "comment":"doc",
+            "value": "hash",
+            "key": "wccp2_assignment_method",
+            "constraint": "ENUM"
+        },
+        "239": {
+            "dep":"macro: USE_WCCPv2",
+            "comment":"doc",
+            "value": "gre",
+            "key": "wccp2_forwarding_method",
+            "constraint": "ENUM"
+        },
+        "240": {
+            "dep":"macro: USE_WCCPv2",
+            "comment":"doc",
+            "value": "on",
+            "key": "wccp2_rebuild_wait",
+            "constraint": "BOOL"
+        },
+        "241": {
+            "dep":"macro: USE_WCCPv2",
+            "comment":"doc",
+            "value": "gre",
+            "key": "wccp2_return_method",
+            "constraint": "ENUM"
+        },
+        "242": {
+            "dep":"macro: USE_WCCPv2",
+            "comment":"doc",
+            "constraint": "ENUM|NUM[INT,,,]",
+            "value1": "standard",
+            "key": "wccp2_service",
+            "value2": "0"
+        },
+        "243": {
+            "dep":"macro: USE_WCCPv2",
+            "comment":"doc",
+            "value": "10000",
+            "key": "wccp2_weight",
+            "constraint": "NUM[INT,,,]"
+        },
+        "244": {
+            "dep":"macro: USE_WCCP",
+            "comment":"doc",
+            "value": "127.0.0.1",
+            "key": "wccp_address",
+            "constraint": "IP"
+        },
+        "245": {
+            "dep":"macro: USE_WCCP",
+            "comment":"doc",
+            "value": "4",
+            "key": "wccp_version",
+            "constraint": "ENUM"
+        },
+        "246": {
+            "comment":"doc",
+            "value": "1",
+            "key": "workers",
+            "constraint": "NUM[INT,0,,]"
+        },
+        "247": {
+            "comment":"doc",
+            "value": "15~minutes",
+            "key": "write_timeout",
+            "constraint": "NUM[LONGLONG,,,minutes]"
+        },
+        "248": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "none",
+            "key": "access_log",
+            "value2": "localnet"
+        },
+        "249": {
+            "comment":"doc",
+            "constraint": "STR|STR|STR",
+            "value3": "444",
+            "value1": "SSL_ports",
+            "key": "acl",
+            "value2": "port"
+        },
+        "250": {
+            "comment":"doc",
+            "constraint": "STR|SPECSTR|STR",
+            "value3": "localnet",
+            "value1": "X-Debug",
+            "key": "adaptation_meta",
+            "value2": "1"
+        },
+        "251": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "adapted_http_access",
+            "value2": "all"
+        },
+        "252": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "deny",
+            "key": "cache",
+            "value2": "localnet"
+        },
+        "253": {
+            "comment":"doc",
+            "constraint": "STR|ENUM|STR",
+            "value3": "localnet",
+            "value1": "foo.example.com",
+            "key": "cache_peer_access",
+            "value2": "allow"
+        },
+        "254": {
+            "dep":"Requires client_db to be enabled",
+            "comment":"doc",
+            "value": "20",
+            "key": "client_ip_max_connections",
+            "constraint": "NUM[INT,,,]"
+        },
+        "255": {
+            "comment":"doc",
+            "value": "255.255.255.0",
+            "key": "client_netmask",
+            "constraint": "IP"
+        },
+        "256": {
+            "comment":"intra",
+            "value": "/confuzz",
+            "key": "coredump_dir",
+            "constraint": "PATH[,N,D]"
+        },
+        "257": {
+            "comment":"doc",
+            "value": "100",
+            "key": "dns_packet_max",
+            "constraint": "NUM[INT,,,]"
+        },
+        "258": {
+            "comment":"doc",
+            "value": "errmessage",
+            "key": "err_html_text",
+            "constraint": "STR"
+        },
+        "259": {
+            "comment":"doc",
+            "value": "en",
+            "key": "error_default_language",
+            "constraint": "STR"
+        },
+        "260": {
+            "dep":"macro: USE_ERR_LOCALES ?",
+            "comment":"doc",
+            "value": "/confuzz",
+            "key": "error_directory",
+            "constraint": "PATH[,N,D]"
+        },
+        "261": {
+            "comment":"doc",
+            "constraint": "ENUM|STR",
+            "value1": "allow",
+            "key": "ftp_epsv",
+            "value2": "localnet"
+        },
+        "262": {
+            "comment":"doc",
+            "value": "23",
+            "key": "ftp_port",
+            "constraint": "PORT"
+        }
+    },
+    "format": "$key $value"
+}

@@ -1,0 +1,18 @@
+{
+  "software_name": "Httpd",
+  "test_path": "/mod_perl-2.0.10/",
+  "conf_path": "/mod_perl-2.0.10/t/conf/httpd.conf",
+  "conf_parse_mode": "PlainText",
+  "misconf_mode": "ConfDiagDetector",
+  "test_mode": "Httpd",
+  "add_new_options": true,
+  "interval": 0.5,
+  "log_file_path": "/mod_perl-2.0.10/t/logs/error_log",
+  "char2cut": 0,
+  "signal_file_2_read": "/Docker/Signal/read.dat",
+  "signal_file_2_write": "/Docker/Signal/write.dat",
+  "convert_all_t_files": true,
+  "t_dir": "/mod_perl-2.0.10/t",
+  "backup_all_t_files": false,
+  "httpd_backup_dir": "/Docker/backup"
+}

@@ -1,0 +1,55 @@
+{
+    "optionList": {
+        "1": {
+            "value": "false",
+            "key": "dfs.namenode.datanode.registration.ip-hostname-check",
+            "constraint": "BOOL"
+        },
+        "2": {
+            "value": "true",
+            "key": "dfs.webhdfs.enabled",
+            "constraint": "BOOL"
+        },
+        "3": {
+            "value": "false", 
+            "key": "dfs.permissions.enabled", 
+            "constraint": "BOOL"
+        }, 
+        "4": {
+            "value": "file:///hadoop/dfs/name", 
+            "key": "dfs.namenode.name.dir", 
+            "constraint": "PATH"
+        }, 
+        "5": {
+            "value": "0.0.0.0", 
+            "key": "dfs.namenode.rpc-bind-host", 
+            "constraint": "STR"
+        }, 
+        "6": {
+            "value": "0.0.0.0", 
+            "key": "dfs.namenode.servicerpc-bind-host", 
+            "constraint": "STR"
+        }, 
+        "7": {
+            "value": "0.0.0.0",
+            "key": "dfs.namenode.http-bind-host",
+            "constraint": "STR"
+        },
+        "8": {
+            "value": "0.0.0.0", 
+            "key": "dfs.namenode.https-bind-host", 
+            "constraint": "STR"
+        }, 
+        "9": {
+            "constraint": "BOOL", 
+            "key": "dfs.client.use.datanode.hostname", 
+            "value": "true"
+        }, 
+        "10": {
+            "value": "true", 
+            "key": "dfs.datanode.use.datanode.hostname", 
+            "constraint": "BOOL"
+        }
+    },
+    "format": "<property><name>$key</name><value>$value</value></property>"
+}

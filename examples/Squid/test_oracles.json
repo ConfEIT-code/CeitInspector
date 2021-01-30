@@ -1,0 +1,69 @@
+{
+  "1": {
+    "oracle": "",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "2": {
+    "oracle": "Initializing https proxy context",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+      "Processing"
+    ],
+    "log2purge": [
+      "d{4}/d{2}/d{2} d{2}:d{2}:d{2}|"
+    ]
+  },
+  "3": {
+    "oracle": "No cache_dir stores are configured.",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+      "Processing"
+    ],
+    "log2purge": [
+      "d{4}/d{2}/d{2} d{2}:d{2}:d{2}.d{3}|"
+    ]
+  },
+  "4": {
+    "oracle": "Accepting HTTP Socket connections",
+    "running": true,
+    "timeout": 2,
+    "ignored": false,
+    "log2annotate": [
+      "Processing"
+    ],
+    "log2purge": [
+      "d{4}/d{2}/d{2} d{2}:d{2}:d{2}|"
+    ]
+  },
+  "5": {
+    "oracle": "HTTP/1.1 200 OK",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "6": {
+    "oracle": "",
+    "running": false,
+    "timeout": 0.5,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  }
+}
+

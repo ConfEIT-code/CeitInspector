@@ -1,0 +1,1943 @@
+{
+    "optionList": {
+        "1": {
+            "comment" : "doc",
+            "key": "aio_write",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "2": {
+            "comment" : "doc",
+            "key": "chunked_transfer_encoding",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "3": {
+            "comment" : "intra",
+            "key": "client_body_buffer_size",
+            "value": "8k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "4": {
+            "comment" : "intra",
+            "key": "client_body_in_file_only",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "5": {
+            "comment" : "doc",
+            "key": "client_body_in_single_buffer",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "6": {
+            "comment" : "intra",
+            "key": "client_body_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "7": {
+            "comment" : "intra",
+            "key": "client_header_buffer_size",
+            "value": "1k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "8": {
+            "comment":"intra",
+            "key": "client_header_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "9": {
+            "comment":"intra",
+            "key": "client_max_body_size",
+            "value": "1m",
+            "constraint": "NUM[INT,0,,m]",
+            "locale": "http"
+        },
+        "10": {
+            "comment":"intra",
+            "key": "connection_pool_size",
+            "value": "256",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "11": {
+            "comment":"doc",
+            "key": "directio",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "12": {
+            "comment":"intra",
+            "key": "directio_alignment",
+            "value": "512",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "13": {
+            "comment":"doc",
+            "key": "disable_symlinks",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "14": {
+            "comment":"doc",
+            "key": "etag",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "15": {
+            "comment":"doc",
+            "key": "if_modified_since",
+            "value": "exact",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "16": {
+            "comment":"doc",
+            "key": "ignore_invalid_headers",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "17": {
+            "comment":"doc",
+            "key": "keepalive_disable",
+            "value": "msie6",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "18": {
+            "comment":"intra",
+            "key": "keepalive_requests",
+            "value": "100",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "19": {
+            "comment":"intra",
+            "key": "limit_rate",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "20": {
+            "comment":"intra",
+            "key": "limit_rate_after",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "21": {
+            "comment":"doc",
+            "key": "lingering_close",
+            "value": "on",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "22": {
+            "comment":"intra, deps When lingering_close is in effect, ",
+            "key": "lingering_time",
+            "value": "30s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "23": {
+            "comment":"intra, deps When lingering_close is in effect, ",            
+            "key": "lingering_timeout",
+            "value": "5s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "24": {
+            "comment":"doc",
+            "key": "log_not_found",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "25": {
+            "comment":"doc",
+            "key": "log_subrequest",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "26": {
+            "comment":"doc",
+            "key": "merge_slashes",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "27": {
+            "comment":"doc",
+            "key": "msie_padding",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "28": {
+            "comment":"doc",
+            "key": "msie_refresh",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "29": {
+            "comment":"doc",
+            "key": "open_file_cache",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "30": {
+            "comment":"doc",
+            "key": "open_file_cache_errors",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "31": {
+            "comment":"intra, value relationship open_file_cache",
+            "key": "open_file_cache_min_uses",
+            "value": "1",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "32": {
+            "comment":"intra Sets a time after which open_file_cache elements should be validated.",
+            "key": "open_file_cache_valid",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "33": {
+            "comment":"doc",
+            "key": "port_in_redirect",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "34": {
+            "comment":"intra",
+            "key": "postpone_output",
+            "value": "1460",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "35": {
+            "comment":"intra",
+            "key": "read_ahead",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "36": {
+            "comment":"doc",
+            "key": "recursive_error_pages",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "37": {
+            "comment":"intra",
+            "key": "request_pool_size",
+            "value": "4k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "38": {
+            "comment":"doc",
+            "key": "reset_timedout_connection",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "39": {
+            "comment":"intra",
+            "key": "resolver_timeout",
+            "value": "30s",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "40": {
+            "comment":"doc",
+            "key": "satisfy",
+            "value": "all",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "41": {
+            "comment":"intra",
+            "key": "send_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "42": {
+            "comment":"intra",
+            "key": "sendfile_max_chunk",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "43": {
+            "comment":"doc",
+            "key": "server_name_in_redirect",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "44": {
+            "comment":"intra",
+            "key": "server_names_hash_bucket_size",
+            "value": "32",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "45": {
+            "comment":"intra",
+            "key": "server_names_hash_max_size",
+            "value": "512",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "46": {
+            "comment":"doc",
+            "key": "server_tokens",
+            "value": "on",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "47": {
+            "comment":"doc",
+            "key": "tcp_nodelay",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "48": {
+            "comment":"doc",
+            "key": "tcp_nopush",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "49": {
+            "comment":"intra",
+            "key": "types_hash_bucket_size",
+            "value": "64",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "50": {
+            "comment":"intra",
+            "key": "types_hash_max_size",
+            "value": "1024",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "51": {
+            "comment":"doc",
+            "key": "underscores_in_headers",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "52": {
+            "comment":"intra",
+            "key": "variables_hash_bucket_size",
+            "value": "64",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "53": {
+            "comment":"intra",
+            "key": "variables_hash_max_size",
+            "value": "1024",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "54": {
+            "comment":"doc",
+            "key": "accept_mutex",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "events"
+        },
+        "55": {
+            "comment":"intra If accept_mutex is enabled",
+            "key": "accept_mutex_delay",
+            "value": "500ms",
+            "constraint": "NUM[INT,0,,ms]",
+            "locale": "events"
+        },
+        "56": {
+            "comment":"doc",
+            "key": "daemon",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "main"
+        },
+        "57": {
+            "comment":"doc",
+            "key": "env",
+            "value": "TZ",
+            "constraint": "SPECSTR",
+            "locale": "main"
+        },
+        "58": {
+            "comment":"inter",
+            "key": "lock_file",
+            "value": "logs/nginx.lock",
+            "constraint": "PATH[,Y,F]",
+            "locale": "main"
+        },
+        "59": {
+            "comment":"doc",
+            "key": "master_process",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "main"
+        },
+        "60": {
+            "comment":"doc",
+            "key": "multi_accept",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "events"
+        },
+        "61": {
+            "comment":"doc",
+            "key": "pcre_jit",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "main"
+        },
+        "62": {
+            "comment":"inter",
+            "key": "pid",
+            "value": "logs/nginx.pid",
+            "constraint": "PATH[,Y,F]",
+            "locale": "main"
+        },
+        "63": {
+            "comment":"intra",
+            "key": "worker_aio_requests",
+            "value": "32",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "events"
+        },
+        "64": {
+            "comment":"intra",
+            "key": "worker_connections",
+            "value": "512",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "events"
+        },
+        "65": {
+            "comment":"doc intra",
+            "key": "worker_priority",
+            "value": "0",
+            "constraint": "NUM[INT,-20,20,]",
+            "locale": "main"
+        },
+        "66": {
+            "comment":"intra",
+            "key": "worker_processes",
+            "value": "1",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "main"
+        },
+        "67": {
+            "comment":"doc",
+            "key": "expires",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "68": {
+            "comment":"doc",
+            "key": "ancient_browser_value",
+            "value": "1",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "69": {
+            "comment":"doc",
+            "key": "modern_browser_value",
+            "value": "1",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "70": {
+            "comment":"doc",
+            "key": "auth_basic",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "71": {
+            "comment":"doc",
+            "key": "auth_request",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "72": {
+            "comment":"doc",
+            "key": "autoindex",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "73": {
+            "comment":"doc",
+            "key": "autoindex_exact_size",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "74": {
+            "comment":"doc",
+            "key": "autoindex_format",
+            "value": "html",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "75": {
+            "comment":"doc",
+            "key": "autoindex_localtime",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "76": {
+            "comment":"doc",
+            "key": "rewrite_log",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "77": {
+            "comment":"doc",
+            "key": "uninitialized_variable_warn",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "78": {
+            "comment":"doc",
+            "key": "charset",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "79": {
+            "comment":"doc",
+            "key": "charset_types",
+            "value": "text/html",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "80": {
+            "comment":"doc",
+            "key": "override_charset",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "81": {
+            "comment":"doc",
+            "key": "create_full_put_path",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "82": {
+            "comment":"doc",
+            "key": "dav_access",
+            "value": "user:rw",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "83": {
+            "comment":"doc",
+            "key": "dav_methods",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "84": {
+            "comment":"intra",
+            "key": "min_delete_depth",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "85": {
+            "comment":"intra",
+            "key": "fastcgi_buffer_size",
+            "value": "4k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "86": {
+            "comment":"doc",
+            "key": "fastcgi_buffering",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "87": {
+            "comment":"intra fastcgi_busy_buffers_size must be equal to or greater than the maximum of the value of fastcgi_buffer_size and one of the fastcgi_buffers",
+            "key": "fastcgi_busy_buffers_size",
+            "value": "8k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "88": {
+            "comment":"doc",
+            "key": "fastcgi_cache",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "89": {
+            "comment":"doc",
+            "key": "fastcgi_cache_background_update",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "90": {
+            "comment":"doc",
+            "key": "fastcgi_cache_lock",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "91": {
+            "comment":"intra need to enable NGX_HTTP_CACHE",
+            "key": "fastcgi_cache_lock_age",
+            "value": "5s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "92": {
+            "comment":"intra need to enable NGX_HTTP_CACHE",
+            "key": "fastcgi_cache_lock_timeout",
+            "value": "5s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "93": {
+            "comment":"intra need to enable NGX_HTTP_CACHE",
+            "key": "fastcgi_cache_min_uses",
+            "value": "1",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "94": {
+            "comment":"doc",
+            "key": "fastcgi_cache_revalidate",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "95": {
+            "comment":"doc",
+            "key": "fastcgi_cache_use_stale",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "96": {
+            "comment":"intra",
+            "key": "fastcgi_connect_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "97": {
+            "comment":"doc",
+            "key": "fastcgi_force_ranges",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "98": {
+            "comment":"doc",
+            "key": "fastcgi_ignore_client_abort",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "99": {
+            "comment":"doc",
+            "key": "fastcgi_intercept_errors",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "100": {
+            "comment":"doc",
+            "key": "fastcgi_keep_conn",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "101": {
+            "comment":"intra need to enable fastcgi_buffering",
+            "key": "fastcgi_limit_rate",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "102": {
+            "comment":"intra fastcgi_max_temp_file_size must be equal to zero to disable temporary files usage or must be equal to or greater than the maximum of the value of fastcgi_buffer_size and one of the fastcgi_buffers",
+            "key": "fastcgi_max_temp_file_size",
+            "value": "1024m",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "103": {
+            "comment":"intra",
+            "key": "fastcgi_next_upstream_timeout",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "104": {
+            "comment":"intra",
+            "key": "fastcgi_next_upstream_tries",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "105": {
+            "comment":"doc",
+            "key": "fastcgi_pass_request_body",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "106": {
+            "comment":"doc",
+            "key": "fastcgi_pass_request_headers",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "107": {
+            "comment":"intra",
+            "key": "fastcgi_read_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "108": {
+            "comment":"doc",
+            "key": "fastcgi_request_buffering",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "109": {
+            "comment":"intra  This directive is ignored on Linux, Solaris, and Windows",
+            "key": "fastcgi_send_lowat",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "110": {
+            "comment":"intra",
+            "key": "fastcgi_send_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "111": {
+            "comment":"doc",
+            "key": "fastcgi_store",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "112": {
+            "comment":"doc",
+            "key": "fastcgi_store_access",
+            "value": "user:rw",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "113": {
+            "comment":"intra  fastcgi_temp_file_write_size must be equal to or greater than the maximum of the value of fastcgi_buffer_size and one of the fastcgi_buffers",
+            "key": "fastcgi_temp_file_write_size",
+            "value": "8k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "114": {
+            "comment":"doc",
+            "key": "geoip_proxy_recursive",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "115": {
+            "comment":"doc",
+            "key": "gunzip",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "116": {
+            "comment":"doc",
+            "key": "gzip",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "117": {
+            "comment":"doc",
+            "key": "gzip_comp_level",
+            "value": "1",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "118": {
+            "comment":"doc",
+            "key": "gzip_http_version",
+            "value": "1.1",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "119": {
+            "comment":"intra",
+            "key": "gzip_min_length",
+            "value": "20",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "120": {
+            "comment":"doc",
+            "key": "gzip_proxied",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "121": {
+            "comment":"doc",
+            "key": "gzip_types",
+            "value": "text/html",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "122": {
+            "comment":"doc",
+            "key": "gzip_vary",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "123": {
+            "comment":"doc",
+            "key": "gzip_static",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "124": {
+            "comment":"intra",
+            "key": "image_filter_buffer",
+            "value": "1M",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "125": {
+            "comment":"doc",
+            "key": "image_filter_interlace",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "126": {
+            "comment" : "intra",
+            "key": "image_filter_jpeg_quality",
+            "value": "75",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "127": {
+            "comment" : "intra",
+            "key": "image_filter_sharpen",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "128": {
+            "comment": "doc",
+            "key": "image_filter_transparency",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "129": {
+            "comment":"intra",
+            "key": "image_filter_webp_quality",
+            "value": "80",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "130": {
+            "comment":"doc",
+            "key": "index",
+            "value": "index.html",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "131": {
+            "comment":"doc",
+            "key": "limit_conn_log_level",
+            "value": "error",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "132": {
+            "comment":"intra",
+            "key": "limit_conn_status",
+            "value": "503",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "133": {
+            "comment" : "doc",
+            "key": "limit_req_log_level",
+            "value": "error",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "134": {
+            "doc":"intra",
+            "key": "limit_req_status",
+            "value": "503",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "135": {
+            "comment": "intra",
+            "key": "map_hash_bucket_size",
+            "value": "32",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "136": {
+            "comment": "intra",
+            "key": "map_hash_max_size",
+            "value": "2048",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "137": {
+            "comment": "intra",
+            "key": "memcached_buffer_size",
+            "value": "4k",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "138": {
+            "comment": "intra",
+            "key": "memcached_connect_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "139": {
+            "comment": "intra",
+            "key": "memcached_next_upstream_timeout",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "140": {
+            "comment": "intra",
+            "key": "memcached_next_upstream_tries",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "141": {
+            "comment": "intra",
+            "key": "memcached_read_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "142": {
+            "comment": "intra",
+            "key": "memcached_send_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "143": {
+            "comment": "doc",
+            "key": "mirror",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "144": {
+            "comment": "doc",
+            "key": "mirror_request_body",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "145": { 
+            "comment": "intra Its size cannot exceed the specified mp4_max_buffer_size",
+            "key": "mp4_buffer_size",
+            "value": "512K",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "146": {
+            "comment": "intra",
+            "key": "mp4_max_buffer_size",
+            "value": "10M",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "147": {
+            "comment": "intra",
+            "key": "proxy_buffer_size",
+            "value": "4k",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "148": {
+            "comment": "doc",
+            "key": "proxy_buffering",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "149": { 
+            "comment": "intra must be equal to or greater than the maximum of the value of proxy_buffer_size and one of the proxy_buffers",
+            "key": "proxy_busy_buffers_size",
+            "value": "8k",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "150": {
+            "comment": "doc",
+            "key": "proxy_cache_background_update",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "151": {
+            "comment": "doc",
+            "key": "proxy_cache_convert_head",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "152": {
+            "comment": "doc",
+            "key": "proxy_cache_key",
+            "value": "$scheme$proxy_host$request_uri",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "153": {
+            "comment": "doc",
+            "key": "proxy_cache_lock",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "154": {
+            "comment": "intra",
+            "key": "proxy_cache_lock_age",
+            "value": "5s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "155": {
+            "comment": "intra",
+            "key": "proxy_cache_lock_timeout",
+            "value": "5s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "156": {
+            "comment": "intra",
+            "key": "proxy_cache_min_uses",
+            "value": "1",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "157": {
+            "comment": "doc",
+            "key": "proxy_cache_revalidate",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "158": {
+            "comment": "doc",
+            "key": "proxy_cache_use_stale",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "159": { 
+            "comment": "intra It should be noted that this timeout cannot usually exceed 75 seconds.",
+            "key": "proxy_connect_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "160": {
+            "comment": "doc",
+            "key": "proxy_cookie_domain",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "161": {
+            "comment": "doc",
+            "key": "proxy_cookie_path",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "162": {
+            "comment": "doc",
+            "key": "proxy_force_ranges",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "163": {
+            "comment": "intra",
+            "key": "proxy_headers_hash_bucket_size",
+            "value": "64",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "164": {
+            "comment": "intra",
+            "key": "proxy_headers_hash_max_size",
+            "value": "512",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "165": {
+            "comment": "doc",
+            "key": "proxy_http_version",
+            "value": "1.0",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "166": {
+            "comment": "doc",
+            "key": "proxy_ignore_client_abort",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "167": {
+            "comment": "doc",
+            "key": "proxy_intercept_errors",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "168": { 
+            "comment": "intra The limitation works only if proxy_buffering is enabled",
+            "key": "proxy_limit_rate",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "169": { 
+            "comment": "intra proxy_max_temp_file_size must be equal to or greater than the maximum of the value of proxy_buffer_size and one of the proxy_buffers",
+            "key": "proxy_max_temp_file_size",
+            "value": "1024m",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "170": {
+            "comment": "intra",
+            "key": "proxy_next_upstream_timeout",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "171": {
+            "comment": "intra",
+            "key": "proxy_next_upstream_tries",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "172": {
+            "comment": "doc",
+            "key": "proxy_pass_request_body",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "173": {
+            "comment": "doc",
+            "key": "proxy_pass_request_headers",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "174": {
+            "comment": "intra",
+            "key": "proxy_read_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "175": {
+            "comment": "doc",
+            "key": "proxy_request_buffering",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "176": { 
+            "comment": "intra This directive is ignored on Linux, Solaris, and Windows.",
+            "key": "proxy_send_lowat",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "177": {
+            "comment": "intra",
+            "key": "proxy_send_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "178": {
+            "comment": "doc",
+            "key": "proxy_ssl_ciphers",
+            "value": "DEFAULT",
+            "constraint": "SPECSTR",
+            "locale": "http"
+        },
+        "179": {
+            "comment": "doc",
+            "key": "proxy_ssl_name",
+            "value": "$proxy_host",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "180": {
+            "comment": "doc",
+            "key": "proxy_ssl_server_name",
+            "value": "off",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "181": {
+            "comment": "doc",
+            "key": "proxy_ssl_session_reuse",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "182": {
+            "comment": "doc",
+            "key": "proxy_ssl_verify",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "183": {
+            "comment": "intra",
+            "key": "proxy_ssl_verify_depth",
+            "value": "1",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "184": {
+            "comment": "doc",
+            "key": "proxy_store",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "185": {
+            "comment": "doc",
+            "key": "proxy_store_access",
+            "value": "user:rw",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "186": { 
+            "comment": "intra proxy_temp_file_write_size must be equal to or greater than the maximum of the value of proxy_buffer_size and one of the proxy_buffers",
+            "key": "proxy_temp_file_write_size",
+            "value": "8k",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "187": {
+            "comment": "doc",
+            "key": "real_ip_header",
+            "value": "X-Real-IP",
+            "constraint": "SPECSTR",
+            "locale": "http"
+        },
+        "188": {
+            "comment": "doc",
+            "key": "real_ip_recursive",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "189": {
+            "comment": "intra",
+            "key": "scgi_buffer_size",
+            "value": "4k",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "190": {
+            "comment": "doc",
+            "key": "scgi_buffering",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "191": { 
+            "comment": "intra scgi_busy_buffers_size must be equal to or greater than the maximum of the value of scgi_buffer_size and one of the scgi_buffers",
+            "key": "scgi_busy_buffers_size",
+            "value": "8k",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "192": {
+            "comment": "doc",
+            "key": "scgi_cache",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "193": {
+            "comment": "doc",
+            "key": "scgi_cache_background_update",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "194": {
+            "comment": "doc",
+            "key": "scgi_cache_lock",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "195": {
+            "comment": "intra",
+            "key": "scgi_cache_lock_age",
+            "value": "5s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "196": {
+            "comment": "intra",
+            "key": "scgi_cache_lock_timeout",
+            "value": "5s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "197": {
+            "comment": "intra",
+            "key": "scgi_cache_min_uses",
+            "value": "1",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "198": {
+            "comment": "doc",
+            "key": "scgi_cache_revalidate",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "199": {
+            "comment": "doc",
+            "key": "scgi_cache_use_stale",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "200": {
+            "comment": "intra",
+            "key": "scgi_connect_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "201": {
+            "comment": "doc",
+            "key": "scgi_force_ranges",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "202": {
+            "comment": "doc",
+            "key": "scgi_ignore_client_abort",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "203": {
+            "comment": "doc",
+            "key": "scgi_intercept_errors",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "204": {
+            "comment": "doc. dep: will work if scgi_buffering is on",
+            "key": "scgi_limit_rate",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "205": {
+            "comment": "doc. dep: will work if scgi_buffering is on",
+            "key": "scgi_max_temp_file_size",
+            "value": "1024m",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "206": {
+            "comment": "doc",
+            "key": "scgi_next_upstream_timeout",
+            "value": "0",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "207": {
+            "comment": "doc",
+            "key": "scgi_next_upstream_tries",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "208": {
+            "comment": "doc",
+            "key": "scgi_pass_request_body",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "209": {
+            "comment": "doc",
+            "key": "scgi_pass_request_headers",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "210": {
+            "comment": "doc",
+            "key": "scgi_read_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "211": {
+            "comment": "doc",
+            "key": "scgi_request_buffering",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "212": {
+            "comment": "doc",
+            "key": "scgi_send_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "213": {
+            "comment": "doc",
+            "key": "scgi_store",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "214": {
+            "comment": "intra",
+            "key": "scgi_store_access",
+            "value": "user:rw",
+            "constraint": "SPECSTR",
+            "locale": "http"
+        },
+        "215": {
+            "comment": "intra. dep: be equal to or greater than scgi_buffer_size and scgi_buffers",
+            "key": "scgi_temp_file_write_size",
+            "value": "8k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "216": {
+            "comment": "doc",
+            "key": "ssi",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "217": {
+            "comment": "doc",
+            "key": "ssi_last_modified",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "218": {
+            "comment": "intra",
+            "key": "ssi_min_file_chunk",
+            "value": "1k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "219": {
+            "comment": "doc",
+            "key": "ssi_silent_errors",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "220": {
+            "comment": "intra ??? MIME type",
+            "key": "ssi_types",
+            "value": "text/html",
+            "constraint": "SPECSTR",
+            "locale": "http"
+        },
+        "221": {
+            "comment": "intra",
+            "key": "ssi_value_length",
+            "value": "256",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "222": {
+            "comment": "doc",
+            "key": "ssl",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "223": {
+            "comment": "intra",
+            "key": "ssl_buffer_size",
+            "value": "16k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "224": {
+            "comment": "intra",
+            "key": "ssl_ciphers",
+            "value": "HIGH:!aNULL:!MD5",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "225": {
+            "comment": "intra",
+            "key": "ssl_ecdh_curve",
+            "value": "auto",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "226": {
+            "comment": "doc",
+            "key": "ssl_prefer_server_ciphers",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "227": {
+            "comment": "doc",
+            "key": "ssl_session_cache",
+            "value": "none",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "228": {
+            "comment": "doc",
+            "key": "ssl_session_tickets",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "229": {
+            "comment": "intra",
+            "key": "ssl_session_timeout",
+            "value": "5m",
+            "constraint": "NUM[INT,0,,m]",
+            "locale": "http"
+        },
+        "230": {
+            "comment": "doc",
+            "key": "ssl_stapling",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "231": {
+            "comment": "doc",
+            "key": "ssl_stapling_verify",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "232": {
+            "comment": "doc",
+            "key": "ssl_verify_client",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "233": {
+            "comment": "intra",
+            "key": "ssl_verify_depth",
+            "value": "1",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "234": {
+            "comment": "doc",
+            "key": "sub_filter_last_modified",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "235": {
+            "comment": "doc",
+            "key": "sub_filter_once",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "236": {
+            "comment": "intra",
+            "key": "sub_filter_types",
+            "value": "text/html",
+            "constraint": "SPECSTR",
+            "locale": "http"
+        },
+        "237": {
+            "comment": "doc",
+            "key": "userid",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "238": {
+            "comment": "intra",
+            "key": "userid_domain",
+            "value": "none",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "239": {
+            "comment": "intra",
+            "key": "userid_expires",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "240": {
+            "comment": "intra",
+            "key": "userid_mark",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "241": {
+            "comment": "intra",
+            "key": "userid_name",
+            "value": "uid",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "242": {
+            "comment": "intra",
+            "key": "userid_p3p",
+            "value": "none",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "243": {
+            "comment": "intra ???",
+            "key": "userid_path",
+            "value": "/",
+            "constraint": "PATH[A,N,D]",
+            "locale": "http"
+        },
+        "244": {
+            "comment": "intra",
+            "key": "uwsgi_buffer_size",
+            "value": "4k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "245": {
+            "comment": "doc",
+            "key": "uwsgi_buffering",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "246": {
+            "comment": "intra. dep: will work if uwsgi_buffering is on. must be equal to or greater than uwsgi_buffer_size and uwsgi_buffers",
+            "key": "uwsgi_busy_buffers_size",
+            "value": "8k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        },
+        "247": {
+            "comment" : "???",
+            "key": "uwsgi_cache",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "248": {
+            "comment": "doc",
+            "key": "uwsgi_cache_background_update",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "249": {
+            "comment": "doc",
+            "key": "uwsgi_cache_lock",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "250": {
+            "comment": "intra",
+            "key": "uwsgi_cache_lock_age",
+            "value": "5s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "251": {
+            "comment": "intra",
+            "key": "uwsgi_cache_lock_timeout",
+            "value": "5s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "252": {
+            "comment": "intra",
+            "key": "uwsgi_cache_min_uses",
+            "value": "1",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "253": {
+            "comment": "doc",
+            "key": "uwsgi_cache_revalidate",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "254": {
+            "comment": "doc",
+            "key": "uwsgi_cache_use_stale",
+            "value": "off",
+            "constraint": "ENUM",
+            "locale": "http"
+        },
+        "255": {
+            "comment": "intra",
+            "key": "uwsgi_connect_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "256": {
+            "comment": "doc",
+            "key": "uwsgi_force_ranges",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "257": {
+            "comment": "doc",
+            "key": "uwsgi_ignore_client_abort",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "258": {
+            "comment": "doc",
+            "key": "uwsgi_intercept_errors",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "259": {
+            "comment": "intra. dep: will work if uwsgi_buffering is on.",
+            "key": "uwsgi_limit_rate",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "260": {
+            "comment": "intra. dep: will work if uwsgi_buffering is on. must be equal to or greater than  uwsgi_buffer_size and uwsgi_buffers",
+            "key": "uwsgi_max_temp_file_size",
+            "value": "1024m",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "261": {
+            "comment": "intra",
+            "key": "uwsgi_modifier1",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "262": {
+            "comment": "intra",
+            "key": "uwsgi_modifier2",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "263": {
+            "comment": "intra",
+            "key": "uwsgi_next_upstream_timeout",
+            "value": "0",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "264": {
+            "comment": "intra",
+            "key": "uwsgi_next_upstream_tries",
+            "value": "0",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "265": {
+            "comment": "doc",
+            "key": "uwsgi_pass_request_body",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "266": {
+            "comment": "doc",
+            "key": "uwsgi_pass_request_headers",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "267": {
+            "comment": "intra",
+            "key": "uwsgi_read_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "268": {
+            "comment": "doc",
+            "key": "uwsgi_request_buffering",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "269": {
+            "comment": "intra",
+            "key": "uwsgi_send_timeout",
+            "value": "60s",
+            "constraint": "NUM[INT,0,,s]",
+            "locale": "http"
+        },
+        "270": {
+            "key": "uwsgi_ssl_ciphers",
+            "value": "DEFAULT",
+            "constraint": "STR",
+            "locale": "http"
+        },
+        "271": {
+            "comment": "doc",
+            "key": "uwsgi_ssl_server_name",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "272": {
+            "comment": "doc",
+            "key": "uwsgi_ssl_session_reuse",
+            "value": "on",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "273": {
+            "comment": "doc",
+            "key": "uwsgi_ssl_verify",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "274": {
+            "comment": "intra",
+            "key": "uwsgi_ssl_verify_depth",
+            "value": "1",
+            "constraint": "NUM[INT,0,,]",
+            "locale": "http"
+        },
+        "275": {
+            "comment": "doc",
+            "key": "uwsgi_store",
+            "value": "off",
+            "constraint": "BOOL",
+            "locale": "http"
+        },
+        "276": {
+            "comment": "intra",
+            "key": "uwsgi_store_access",
+            "value": "user:rw",
+            "constraint": "SPECSTR",
+            "locale": "http"
+        },
+        "277": {
+            "comment": "intra. dep: must be equal to or greater than uwsgi_buffer_size and uwsgi_buffers",
+            "key": "uwsgi_temp_file_write_size",
+            "value": "8k",
+            "constraint": "NUM[INT,0,,k]",
+            "locale": "http"
+        }
+    },
+    "format": "$key $value;"
+}

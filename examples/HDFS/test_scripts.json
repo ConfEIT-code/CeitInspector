@@ -1,0 +1,29 @@
+{
+    "1": {
+        "script": "hdfs --daemon stop namenode"
+    },
+    "2": {
+        "script": "hdfs --daemon start namenode && sleep 35"
+    },
+    "3": {
+        "script": "hadoop fs -mkdir test-hdfs"
+    },
+    "4": {
+        "script": "hadoop fs -mkdir test-hdfs/test"
+    },
+    "5": {
+        "script": "hadoop fs -ls test-hdfs"
+    },
+    "6": {
+        "script": "echo 'file put test' > testfile.txt & hadoop fs -put testfile.txt test-hdfs/test/testfile.txt"
+    },
+    "7": {
+        "script": "hadoop fs -cat test-hdfs/test/testfile.txt"
+    },
+    "8": {
+        "script": "hadoop fs -rm -r test-hdfs"
+    },
+    "9": {
+        "script": "hadoop fs -ls"
+    }
+}

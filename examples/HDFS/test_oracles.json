@@ -1,0 +1,74 @@
+{
+    "1": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 5,
+        "oracle": "",
+        "log2purge": [ ]
+    },
+    "2": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 60,
+        "oracle": "",
+        "log2purge": [ ]
+    },
+    "3": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 5,
+        "oracle": "",
+        "log2purge": [ ]
+    },
+    "4": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 5,
+        "oracle": "",
+        "log2purge": [ ]
+    },
+    "5": {
+        "ignored": false,
+        "running": true,
+        "log2annotate": [ ],
+        "timeout": 10,
+        "oracle": "test-hdfs/test",
+        "log2purge": [ ]
+    },
+    "6": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 5,
+        "oracle": "",
+        "log2purge": [ ]
+    },
+    "7": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 10,
+        "oracle": "file put test",
+        "log2purge": [ ]
+    },
+    "8": {
+        "ignored": false,
+        "running": true,
+        "log2annotate": [ ],
+        "timeout": 5,
+        "oracle": "",
+        "log2purge": [ ]
+    },
+    "9": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 5,
+        "oracle": "",
+        "log2purge": [ ]
+    }
+}

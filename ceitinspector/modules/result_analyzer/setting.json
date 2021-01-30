@@ -1,0 +1,11 @@
+{
+  "software_name": "Squid",
+  "conf_path": "/etc/squid/squid.conf",
+  "conf_parse_mode": "PlainText",
+  "misconf_mode": "ConfErr",
+  "test_mode": "Default",
+  "add_new_options": true,
+  "interval": 0.25,
+  "log_file_path": "/var/log/squid/cache.log",
+  "char2cut": 0
+}

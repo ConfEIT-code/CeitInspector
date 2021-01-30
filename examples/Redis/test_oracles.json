@@ -1,0 +1,26 @@
+{
+    "1": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 0.5,
+        "oracle": "The server is now ready to accept connections on port 6380",
+        "log2purge": [ ]
+    },
+    "2": {
+        "ignored": false,
+        "running": true,
+        "log2annotate": [ ],
+        "timeout": 2,
+        "oracle": "MSET (10 keys):",
+        "log2purge": [ ]
+    },
+    "3": {
+        "ignored": false,
+        "running": false,
+        "log2annotate": [ ],
+        "timeout": 0.5,
+        "oracle": "kill successfully",
+        "log2purge": [ ]
+    }
+}

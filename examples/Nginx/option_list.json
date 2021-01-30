@@ -1,0 +1,12 @@
+{
+    "optionList": {
+        "1": {
+            "comment" : "doc",
+            "key": "aio_write",
+            "value": "123on",
+            "constraint": "BOOL",
+            "locale": "http"
+        }
+    },
+    "format": "$key $value;"
+}

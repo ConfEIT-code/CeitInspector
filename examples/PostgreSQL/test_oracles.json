@@ -1,0 +1,33 @@
+{
+  "1": {
+    "oracle": "",
+    "running": false,
+    "timeout": 10,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "2": {
+    "oracle": "All 189 tests passed. ",
+    "running": true,
+    "timeout": 300,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  },
+  "3": {
+    "oracle": "server stopped",
+    "running": false,
+    "timeout": 10,
+    "ignored": false,
+    "log2annotate": [
+    ],
+    "log2purge": [
+    ]
+  }
+}
+

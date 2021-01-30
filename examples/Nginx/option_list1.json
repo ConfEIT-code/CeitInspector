@@ -1,0 +1,34 @@
+{
+    "optionList": {
+
+    "1": {
+            "comment" : "intra",
+            "key": "client_body_buffer_size",
+            "value": "8k",
+            "constraint": "NUM[LONGLONG,0,,k]",
+            "locale": "http"
+        },
+        "2": {
+            "comment" : "intra",
+            "key": "client_body_timeout",
+            "value": "60s",
+            "constraint": "NUM[LONGLONG,0,,s]",
+            "locale": "http"
+        },
+        "3": {
+            "comment": "intra",
+            "key": "uwsgi_send_timeout",
+            "value": "60s",
+            "constraint": "NUM[LONGLONG,0,,s]",
+            "locale": "http"
+        },
+        "4": {
+            "comment": "intra. dep: must be equal to or greater than uwsgi_buffer_size and uwsgi_buffers",
+            "key": "uwsgi_temp_file_write_size",
+            "value": "8k",
+            "constraint": "NUM[LONGLONG,0,,k]",
+            "locale": "http"
+        }
+    },
+    "format": "$key $value;"
+}

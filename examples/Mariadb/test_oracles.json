@@ -1,0 +1,73 @@
+{
+  "1": {
+    "oracle": "tests were successful",
+    "running": false,
+    "timeout": 60,
+    "ignored": false,
+    "log2annotate": [ "unknown variable"
+    ],
+    "log2purge": [
+    ]
+  },
+  "2": {
+    "oracle": "tests were successful",
+    "running": false,
+    "timeout": 200,
+    "ignored": false,
+    "log2annotate": ["unknown variable"
+    ],
+    "log2purge": [
+    ]
+  },
+  "3": {
+    "oracle": "tests were successful",
+    "running": false,
+    "timeout": 60,
+    "ignored": false,
+    "log2annotate": ["unknown variable"
+    ],
+    "log2purge": [
+    ]
+  },
+  "4": {
+    "oracle": "tests were successful",
+    "running": false,
+    "timeout": 90,
+    "ignored": false,
+    "log2annotate": ["unknown variable"
+    ],
+    "log2purge": [
+    ]
+  },
+  "5": {
+    "oracle": "tests were successful",
+    "running": false,
+    "timeout": 60,
+    "ignored": false,
+    "log2annotate": ["unknown variable"
+    ],
+    "log2purge": [
+    ]
+  },
+  "6": {
+    "oracle": "tests were successful",
+    "running": false,
+    "timeout": 650,
+    "ignored": false,
+    "log2annotate": ["unknown variable"
+    ],
+    "log2purge": [
+    ]
+  },
+  "7": {
+    "oracle": "tests were successful",
+    "running": false,
+    "timeout": 100,
+    "ignored": false,
+    "log2annotate": ["unknown variable"
+    ],
+    "log2purge": [
+    ]
+  }
+}
+

@@ -1,0 +1,10 @@
+{
+    "1": {
+        "ignored": false,
+        "running": true,
+        "log2annotate": [ ],
+        "timeout": "default",
+        "oracle": "All tests successful.",
+        "log2purge": [ ]
+    }
+}

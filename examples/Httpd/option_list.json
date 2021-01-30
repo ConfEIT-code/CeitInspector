@@ -1,0 +1,512 @@
+{
+    "optionList": {
+        "1": {
+            "value": "Default", 
+            "key": "AcceptPathInfo", 
+            "constraint": "ENUM"
+        }, 
+        "2": {
+            "value": ".htaccess", 
+            "key": "AccessFileName", 
+            "constraint": "PATH[R,N,F]"
+        }, 
+        "3": {
+            "value": "Off", 
+            "key": "AddDefaultCharset", 
+            "constraint": "STR"
+        }, 
+        "4": {
+            "value": "Off", 
+            "key": "AllowEncodedSlashes", 
+            "constraint": "ENUM"
+        }, 
+        "5": {
+            "constraint": "STR|STR", 
+            "value1": "\"PDF~file\"", 
+            "key": "AddAlt", 
+            "value2": "*.pdf"
+        }, 
+        "6": {
+            "constraint": "STR|SPECSTR", 
+            "value1": "gzip", 
+            "key": "AddAltByEncoding", 
+            "value2": "x-gzip"
+        }, 
+        "7": {
+            "constraint": "STR|SPECSTR", 
+            "value1": "'plain~text'", 
+            "key": "AddAltByType", 
+            "value2": "text/plain"
+        }, 
+        "8": {
+            "constraint": "SPECSTR|STR", 
+            "value1": "EUC-JP", 
+            "key": "AddCharset", 
+            "value2": ".euc"
+        }, 
+        "9": {
+            "constraint": "STR|STR", 
+            "value1": "\"The~planet~Mars\"", 
+            "key": "AddDescription", 
+            "value2": "mars.gif"
+        }, 
+        "10": {
+            "constraint": "SPECSTR|STR", 
+            "value1": "x-gzip", 
+            "key": "AddEncoding", 
+            "value2": ".gz"
+        }, 
+        "11": {
+            "constraint": "SPECSTR|STR", 
+            "value1": "cgi-script", 
+            "key": "AddHandler", 
+            "value2": ".cgi"
+        }, 
+        "12": {
+            "constraint": "PATH[R,N,F]|STR", 
+            "value1": "icons/backup.png", 
+            "key": "AddIcon", 
+            "value2": ".gif"
+        }, 
+        "13": {
+            "constraint": "PATH[R,N,F]|SPECSTR", 
+            "value1": "icons/compress.png", 
+            "key": "AddIconByEncoding", 
+            "value2": "x-compress"
+        }, 
+        "14": {
+            "constraint": "PATH[R,N,F]|SPECSTR", 
+            "value1": "icons/backup.png", 
+            "key": "AddIconByType", 
+            "value2": "image/*"
+        }, 
+        "15": {
+            "constraint": "SPECSTR|STR", 
+            "value1": "fr", 
+            "key": "AddLanguage", 
+            "value2": ".fr"
+        }, 
+        "16": {
+            "constraint": "SPECSTR|PATH[R,N,F]", 
+            "value1": "INCLUDES;DEFLATE", 
+            "key": "AddOutputFilter", 
+            "value2": "shtml"
+        }, 
+        "17": {
+            "constraint": "SPECSTR|PATH[R,N,F]", 
+            "value1": "image/gif", 
+            "key": "AddType", 
+            "value2": ".gif"
+        }, 
+        "18": {
+            "constraint": "STR|STR", 
+            "value1": "\"/image\"", 
+            "key": "Alias", 
+            "value2": "\"/ftp/pub/image\""
+        }, 
+        "19": {
+            "constraint": "STR|STR", 
+            "value1": "\"^/icons(/|$)(.*)\"", 
+            "key": "AliasMatch", 
+            "value2": "\"/usr/local/apache/icons$1$2\""
+        }, 
+        "20": {
+            "constraint": "STR|SPECSTR", 
+            "value1": "MSIE", 
+            "key": "BrowserMatch", 
+            "value2": "!javascript"
+        }, 
+        "21": {
+            "constraint": "STR|SPECSTR", 
+            "value1": "mac", 
+            "key": "BrowserMatchNoCase", 
+            "value2": "platform=macintosh"
+        }, 
+        "22": {
+            "value": "Off", 
+            "key": "ContentDigest", 
+            "constraint": "BOOL"
+        }, 
+        "23": {
+            "value": "/confuzz", 
+            "key": "CoreDumpDirectory", 
+            "constraint": "PATH[B,N,D]"
+        }, 
+        "24": {
+            "constraint": "PATH[R,N,F]|STR", 
+            "value1": "\"logs/access_log\"", 
+            "key": "CustomLog", 
+            "value2": "common"
+        }, 
+        "25": {
+            "value": "/confuzz", 
+            "key": "DefaultRuntimeDir", 
+            "constraint": "PATH[B,N,D]"
+        }, 
+        "26": {
+            "value": "none", 
+            "key": "DefaultType", 
+            "constraint": "SPECSTR"
+        }, 
+        "27": {
+            "value": "/icon/unknown.png", 
+            "key": "DefaultIcon", 
+            "constraint": "PATH[R,N,F]"
+        }, 
+        "28": {
+            "value": "Off", 
+            "key": "DirectoryCheckHandler", 
+            "constraint": "BOOL"
+        }, 
+        "29": {
+            "value": "index.html", 
+            "key": "DirectoryIndex", 
+            "constraint": "URL"
+        }, 
+        "30": {
+            "value": "off", 
+            "key": "DirectoryIndexRedirect", 
+            "constraint": "ENUM"
+        }, 
+        "31": {
+            "value": "On", 
+            "key": "DirectorySlash", 
+            "constraint": "BOOL"
+        }, 
+        "32": {
+            "value": "On", 
+            "key": "EnableMMAP", 
+            "constraint": "BOOL"
+        }, 
+        "33": {
+            "value": "On", 
+            "key": "EnableSendfile", 
+            "constraint": "BOOL"
+        }, 
+        "34": {
+            "value": "Off", 
+            "key": "ExtendedStatus", 
+            "constraint": "BOOL"
+        }, 
+        "35": {
+            "constraint": "ENUM|ENUM|ENUM", 
+            "value3": "Allow0.9", 
+            "value1": "Strict", 
+            "key": "HttpProtocolOptions", 
+            "value2": "LenientMethods"
+        }, 
+        "36": {
+            "value": "/not-404.php", 
+            "key": "FallbackResource", 
+            "constraint": "URL"
+        }, 
+        "37": {
+            "value": "HEADER.html", 
+            "key": "HeaderName", 
+            "constraint": "PATH[R,N,F]"
+        }, 
+        "38": {
+            "constraint": "STR", 
+            "value": "\"markup ...\"", 
+            "key": "IndexHeadInsert" 
+        }, 
+        "39": {
+            "value": "README*", 
+            "key": "IndexIgnore", 
+            "constraint": "STR"
+        }, 
+        "40": {
+            "value": "ON", 
+            "key": "IndexIgnoreReset", 
+            "constraint": "BOOL"
+        }, 
+        "41": {
+            "value": "Charset=UTF-8", 
+            "key": "IndexOptions", 
+            "constraint": "SPECSTR"
+        }, 
+        "42": {
+            "constraint": "ENUM|ENUM", 
+            "value1": "Ascending", 
+            "key": "IndexOrderDefault", 
+            "value2": "Name"
+        }, 
+        "43": {
+            "value": "/css/style.css", 
+            "key": "IndexStyleSheet", 
+            "constraint": "PATH[R,N,F]"
+        }, 
+        "44": {
+            "value": "On", 
+            "key": "KeepAlive", 
+            "constraint": "BOOL"
+        }, 
+        "45": {
+            "value": "5", 
+            "key": "KeepAliveTimeout", 
+            "constraint": "NUM[INT,,,]"
+        }, 
+        "46": {
+            "value": "10", 
+            "key": "LimitInternalRecursion", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "47": {
+            "value": "0", 
+            "key": "LimitRequestBody", 
+            "constraint": "NUM[INT,0,2147483647,]"
+        }, 
+        "48": {
+            "value": "100", 
+            "key": "LimitRequestFields", 
+            "constraint": "NUM[INT,0,32767,]"
+        }, 
+        "49": {
+            "value": "8190", 
+            "key": "LimitRequestFieldSize", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "50": {
+            "value": "8190", 
+            "key": "LimitRequestLine", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "51": { 
+            "value": "1000000", 
+            "key": "LimitXMLRequestBody", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "52": {
+            "value": "80", 
+            "key": "Listen", 
+            "constraint": "PORT"
+        }, 
+        "53": {
+            "comment": "This directive influences the calculation of the MinSpareThreads and MaxSpareThreads lower bound values. The number of children processes needs to be a multiple of the number of buckets to optimally accept connections.",
+            "value": "1", 
+            "key": "ListenCoresBucketsRatio", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "54": { 
+            "value": "0", 
+            "key": "MaxConnectionsPerChild", 
+            "constraint": "NUM[INT,,,]"
+        }, 
+        "55": { 
+            "value": "100", 
+            "key": "MaxKeepAliveRequests", 
+            "constraint": "NUM[INT,,,]"
+        }, 
+        "56": { 
+            "value": "2048", 
+            "key": "MaxMemFree", 
+            "constraint": "NUM[LONG,0,,]"
+        }, 
+        "57": { 
+            "value": "20", 
+            "key": "MaxRangeOverlaps", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "58": { 
+            "value": "20", 
+            "key": "MaxRangeReversals", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "59": { 
+            "value": "200", 
+            "key": "MaxRanges", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "60": { 
+            "value": "16", 
+            "key": "MaxRequestWorkers", 
+            "constraint": "NUM[INT,,,]"
+        }, 
+        "61": {
+            "value": "10", 
+            "key": "MaxSpareServers", 
+            "constraint": "NUM[INT,,,]"
+        }, 
+        "62": { 
+            "value": "250", 
+            "key": "MaxSpareThreads", 
+            "constraint": "NUM[INT,,,]"
+        }, 
+        "63": {
+            "value": "2048", 
+            "key": "MaxThreads", 
+            "constraint": "NUM[INT,1,2048,]"
+        }, 
+        "64": {
+            "value": "Off", 
+            "key": "MergeTrailers", 
+            "constraint": "BOOL"
+        }, 
+        "65": { 
+            "value": "2",
+            "key": "MinSpareServers", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "66": {
+            "comment":"Additional processes/threads might be created if ListenCoresBucketsRatio is enabled.",
+            "value": "2",
+            "key": "MinSpareThreads", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "67": {
+            "value": "default", 
+            "key": "Mutex", 
+            "constraint": "ENUM"
+        }, 
+        "68": {
+            "value": "127.0.0.1", 
+            "key": "NameVirtualHost", 
+            "constraint": "IP"
+        }, 
+        "69": {
+            "value": "logs/httpd.pid", 
+            "key": "PidFile", 
+            "constraint": "PATH[B,Y,F]"
+        }, 
+        "70": {
+            "value": "http/1.1", 
+            "key": "Protocols", 
+            "constraint": "ENUM"
+        }, 
+        "71": {
+            "value": "On", 
+            "key": "ProtocolsHonorOrder", 
+            "constraint": "BOOL"
+        }, 
+        "72": {
+            "value": "Off", 
+            "key": "QualifyRedirectURL", 
+            "constraint": "BOOL"
+        }, 
+        "73": { 
+            "value": "0", 
+            "key": "ReceiveBufferSize", 
+            "constraint": "NUM[INT,512,,]"
+        }, 
+        "74": {
+            "value": "DOTALL", 
+            "key": "RegexDefaultOptions", 
+            "constraint": "ENUM"
+        }, 
+        "75": { 
+            "value": "1",
+            "key": "RLimitCPU", 
+            "constraint": "NUM[LONG,,,]"
+        }, 
+        "76": { 
+            "value": "1",
+            "key": "RLimitMEM", 
+            "constraint": "NUM[LONG,,,]"
+        }, 
+        "77": { 
+            "value": "1",
+            "key": "RLimitNPROC", 
+            "constraint": "NUM[LONG,,,]"
+        }, 
+        "78": {
+            "value": ".html", 
+            "key": "RemoveHandler", 
+            "constraint": "ENUM"
+        }, 
+        "79": {
+            "value": "shtml", 
+            "key": "RemoveOutputFilter", 
+            "constraint": "ENUM"
+        }, 
+        "80": {
+            "value": ".cgi", 
+            "key": "RemoveType", 
+            "constraint": "ENUM"
+        }, 
+        "81": {
+            "value": "Off", 
+            "key": "SeeRequestTail", 
+            "constraint": "BOOL"
+        }, 
+        "82": {
+            "comment":"deps  unless EnableSendfile is set to OFF. ",
+            "value": "0", 
+            "key": "SendBufferSize", 
+            "constraint": "NUM[INT,,512,]"
+        }, 
+        "83": {
+            "value": "liwang2015@nudt.edu.cn", 
+            "key": "ServerAdmin", 
+            "constraint": "URL"
+        }, 
+        "84": { 
+            "value": "5", 
+            "key": "ServerLimit", 
+            "constraint": "NUM[INT,,200000,]"
+        }, 
+        "85": {
+            "value": "http://localhost:80", 
+            "key": "ServerName", 
+            "constraint": "URL"
+        }, 
+        "86": {
+            "value": "/usr/local/apache", 
+            "key": "ServerRoot", 
+            "constraint": "PATH[A,N,D]"
+        }, 
+        "87": {
+            "value": "Off", 
+            "key": "ServerSignature", 
+            "constraint": "BOOL"
+        }, 
+        "88": {
+            "value": "Full", 
+            "key": "ServerTokens", 
+            "constraint": "ENUM"
+        }, 
+        "89": {
+            "value": "none", 
+            "key": "SetHandler", 
+            "constraint": "SPECSTR"
+        }, 
+        "90": {
+            "comment":"see MinSpareThreads, MaxSpareThreads, MinSpareServers, MaxSpareServers",
+            "value": "1",
+            "key": "StartServers", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "91": {
+
+            "comment":"see MinSpareThreads, MaxSpareThreads, MinSpareServers, MaxSpareServers",
+            "value": "1", 
+            "key": "StartThreads", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "92": {
+            "value": "60", 
+            "key": "TimeOut", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "93": {
+            "value": "On", 
+            "key": "TraceEnable", 
+            "constraint": "BOOL"
+        }, 
+        "94": {
+            "value": "Off", 
+            "key": "UseCanonicalName", 
+            "constraint": "BOOL"
+        }, 
+        "95": {
+            "value": "Off", 
+            "key": "UseCanonicalPhysicalPort", 
+            "constraint": "BOOL"
+        },
+        "96": {
+            "value": "Off", 
+            "key": "BufferedLogs", 
+            "constraint": "BOOL"
+        }
+    }, 
+    "format": "$key $value"
+}

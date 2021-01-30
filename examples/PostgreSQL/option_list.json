@@ -1,0 +1,1400 @@
+{
+    "optionList": {
+        "1": {
+            "comment": "doc",
+            "value": "'localhost'", 
+            "key": "listen_addresses", 
+            "constraint": "URL"
+        }, 
+        "2": {
+            "comment": "doc",
+            "value": "5432", 
+            "key": "port", 
+            "constraint": "PORT"
+        }, 
+        "3": { 
+            "comment": "intra",
+            "value": "100", 
+            "key": "max_connections", 
+            "constraint": "NUM[INT,1,262143,]"
+        }, 
+        "4": {
+            "comment": "intra",
+            "value": "3", 
+            "key": "superuser_reserved_connections", 
+            "constraint": "NUM[INT,0,262143,]"
+        }, 
+        "5": {
+            "comment1": "doc",
+            "comment": "inter 1",
+            "value": "'/tmp'",
+            "key": "unix_socket_directories", 
+            "constraint": "PATH[,N,D]"
+        }, 
+        "6": {
+            "comment": "doc",
+            "value": "''", 
+            "key": "unix_socket_group", 
+            "constraint": "SPECSTR"
+        }, 
+        "7": {
+            "comment": "doc",
+            "value": "'0777'", 
+            "key": "unix_socket_permissions", 
+            "constraint": "PERMISSION"
+        }, 
+        "8": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "bonjour", 
+            "constraint": "BOOL"
+        }, 
+        "9": {
+            "comment": "doc",
+            "value": "''", 
+            "key": "bonjour_name", 
+            "constraint": "STR"
+        }, 
+        "10": { 
+            "comment": "intra",
+            "value": "60", 
+            "key": "authentication_timeout", 
+            "constraint": "NUM[INT,1,600,]"
+        }, 
+        "11": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "ssl", 
+            "constraint": "BOOL"
+        }, 
+        "12": {
+            "comment": "doc",
+            "value": "'HIGH:MEDIUM:+3DES:!aNULL'", 
+            "key": "ssl_ciphers", 
+            "constraint": "SPECSTR"
+        }, 
+        "13": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "ssl_prefer_server_ciphers", 
+            "constraint": "BOOL"
+        }, 
+        "14": {
+            "comment": "doc",
+            "value": "'prime256v1'", 
+            "key": "ssl_ecdh_curve", 
+            "constraint": "ENUM"
+        }, 
+        "15": { 
+            "comment": "doc",
+            "value": "''", 
+            "key": "ssl_dh_params_file", 
+            "constraint": "PATH[,,F]"
+        }, 
+        "16": {
+            "comment": "inter 1",
+            "value": "'server.crt'", 
+            "key": "ssl_cert_file", 
+            "constraint": "PATH[,N,F]"
+        }, 
+        "17": {
+            "comment": "inter 1",
+            "value": "'server.key'", 
+            "key": "ssl_key_file", 
+            "constraint": "PATH[,N,F]"
+        }, 
+        "18": {
+            "comment": "inter 1",
+            "value": "''", 
+            "key": "ssl_ca_file", 
+            "constraint": "PATH[,N,F]"
+        }, 
+        "19": {
+            "comment": "inter 1",
+            "value": "''", 
+            "key": "ssl_crl_file", 
+            "constraint": "PATH[,N,F]"
+        }, 
+        "20": {
+            "comment": "doc",
+            "value": "md5", 
+            "key": "password_encryption", 
+            "constraint": "ENUM"
+        }, 
+        "21": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "db_user_namespace", 
+            "constraint": "BOOL"
+        }, 
+        "22": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "row_security", 
+            "constraint": "BOOL"
+        }, 
+        "23": {
+            "comment": "inter 1",
+            "value": "''", 
+            "key": "krb_server_keyfile", 
+            "constraint": "PATH[,N,F]"
+        }, 
+        "24": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "krb_caseins_users", 
+            "constraint": "BOOL"
+        }, 
+        "25": { 
+            "comment": "intra",
+            "value": "0", 
+            "key": "tcp_keepalives_idle", 
+            "constraint": "NUM[INT,0,2147483647,]"
+        }, 
+        "26": {
+            "comment": "intra",
+            "value": "0", 
+            "key": "tcp_keepalives_interval", 
+            "constraint": "NUM[INT,0,2147483647,]"
+        }, 
+        "27": {
+            "comment": "intra",
+            "value": "0", 
+            "key": "tcp_keepalives_count", 
+            "constraint": "NUM[INT,0,2147483647,]"
+        }, 
+        "28": { 
+            "comment": "intra",
+            "value": "1024", 
+            "key": "shared_buffers", 
+            "constraint": "NUM[INT,16,1073741823,]"
+        }, 
+        "29": {
+            "comment": "doc",
+            "value": "try", 
+            "key": "huge_pages", 
+            "constraint": "ENUM"
+        }, 
+        "30": {
+            "comment": "intra",
+            "value": "1024", 
+            "key": "temp_buffers", 
+            "constraint": "NUM[INT,100,1073741823,]"
+        }, 
+        "31": {
+            "comment": "intra",
+            "value": "0", 
+            "key": "max_prepared_transactions", 
+            "constraint": "NUM[INT,0,262143,]"
+        }, 
+        "32": { 
+            "comment": "intra",
+            "value": "4096", 
+            "key": "work_mem", 
+            "constraint": "NUM[INT,64,2097152,]"
+        }, 
+        "33": { 
+            "comment": "intra",
+            "value": "65536", 
+            "key": "maintenance_work_mem", 
+            "constraint": "NUM[INT,1024,2097152,]"
+        }, 
+        "34": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "restart_after_crash", 
+            "constraint": "BOOL"
+        },
+        "35": { 
+            "comment": "intra",
+            "value": "-1", 
+            "key": "autovacuum_work_mem", 
+            "constraint": "NUM[INT,-1,2097152,]"
+        }, 
+        "36": { 
+            "comment": "intra",
+            "value": "100", 
+            "key": "max_stack_depth", 
+            "constraint": "NUM[INT,100,2097152,]"
+        }, 
+        "37": {
+            "comment": "doc",
+            "value": "posix", 
+            "key": "dynamic_shared_memory_type", 
+            "constraint": "ENUM"
+        }, 
+        "38": {
+            "comment": "intra",
+            "value": "-1", 
+            "key": "temp_file_limit", 
+            "constraint": "NUM[INT,-1,2147483647,]"
+        }, 
+        "39": {
+            "comment": "intra",
+            "value": "1000", 
+            "key": "max_files_per_process", 
+            "constraint": "NUM[INT,25,2147483647,]"
+        }, 
+        "40": {
+            "comment": "doc",
+            "value": "''", 
+            "key": "shared_preload_libraries", 
+            "constraint": "SPECSTR"
+        }, 
+        "41": {
+            "comment": "intra",
+            "value": "0", 
+            "key": "vacuum_cost_delay", 
+            "constraint": "NUM[INT,0,100,]"
+        }, 
+        "42": {
+            "comment": "intra",
+            "value": "1", 
+            "key": "vacuum_cost_page_hit", 
+            "constraint": "NUM[INT,0,10000,]"
+        }, 
+        "43": {
+            "comment": "intra",
+            "value": "10", 
+            "key": "vacuum_cost_page_miss", 
+            "constraint": "NUM[INT,0,10000,]"
+        }, 
+        "44": {
+            "comment": "intra",
+            "value": "20", 
+            "key": "vacuum_cost_page_dirty", 
+            "constraint": "NUM[INT,0,10000,]"
+        }, 
+        "45": {
+            "comment": "intra",
+            "value": "200", 
+            "key": "vacuum_cost_limit", 
+            "constraint": "NUM[INT,1,10000,]"
+        }, 
+        "46": {
+            "comment": "intra",
+            "value": "200", 
+            "key": "bgwriter_delay", 
+            "constraint": "NUM[INT,10,10000,]"
+        }, 
+        "47": {
+            "comment": "intra",
+            "value": "100", 
+            "key": "bgwriter_lru_maxpages", 
+            "constraint": "NUM[INT,0,1073741823,]"
+        }, 
+        "48": {
+            "comment": "intra",
+            "value": "2.0", 
+            "key": "bgwriter_lru_multiplier", 
+            "constraint": "NUM[DOUBLE,0.0,10.0,]"
+        }, 
+        "49": {
+            "comment": "intra",
+            "value": "0", 
+            "key": "bgwriter_flush_after", 
+            "constraint": "NUM[INT,0,256,]"
+        }, 
+        "50": { 
+            "comment": "intra",
+            "value": "1", 
+            "key": "effective_io_concurrency", 
+            "constraint": "NUM[INT,0,1000,]"
+        }, 
+        "51": {
+            "comment": "intra",
+            "value": "8", 
+            "key": "max_worker_processes", 
+            "constraint": "NUM[INT,0,262143,]"
+        }, 
+        "52": {
+            "comment": "intra",
+            "value": "2", 
+            "key": "max_parallel_workers_per_gather", 
+            "constraint": "NUM[INT,0,1024,]"
+        }, 
+        "53": { 
+            "deps": "note that a setting for this value which is higher than max_worker_processes will have no effect",
+            "comment": "intra",
+            "value": "8", 
+            "key": "max_parallel_workers", 
+            "constraint": "NUM[INT,0,1024,]"
+        }, 
+        "54": {
+            "comment": "doc",
+            "value": "-1", 
+            "key": "old_snapshot_threshold", 
+            "constraint": "NUM[INT,-1,86400,]"
+        }, 
+        "55": {
+            "comment": "doc",
+            "value": "0", 
+            "key": "backend_flush_after", 
+            "constraint": "NUM[INT,0,256,]"
+        }, 
+        "56": {
+            "comment": "doc",
+            "value": "replica", 
+            "key": "wal_level", 
+            "constraint": "ENUM"
+        }, 
+        "57": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "fsync", 
+            "constraint": "BOOL"
+        }, 
+        "58": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "synchronous_commit", 
+            "constraint": "ENUM"
+        }, 
+        "59": {
+            "comment": "doc",
+            "value": "fsync", 
+            "key": "wal_sync_method", 
+            "constraint": "ENUM"
+        }, 
+        "60": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "full_page_writes", 
+            "constraint": "BOOL"
+        }, 
+        "61": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "wal_compression", 
+            "constraint": "BOOL"
+        }, 
+        "62": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "wal_log_hints", 
+            "constraint": "BOOL"
+        }, 
+        "63": {
+            "comment": "doc",
+            "value": "-1", 
+            "key": "wal_buffers", 
+            "constraint": "NUM[INT,-1,,]"
+        }, 
+        "64": {
+            "comment": "intra",
+            "value": "200", 
+            "key": "wal_writer_delay", 
+            "constraint": "NUM[INT,1,10000,]"
+        }, 
+        "65": {
+            "comment": "intra",
+            "value": "1048576", 
+            "key": "wal_writer_flush_after", 
+            "constraint": "NUM[INT,0,2147483647,]"
+        }, 
+        "66": {
+            "comment": "intra",
+            "value": "0", 
+            "key": "commit_delay", 
+            "constraint": "NUM[INT,0,100000,]"
+        }, 
+        "67": {
+            "comment": "intra",
+            "value": "5", 
+            "key": "commit_siblings", 
+            "constraint": "NUM[INT,0,1000,]"
+        }, 
+        "68": {
+            "comment": "doc",
+            "value": "300", 
+            "key": "checkpoint_timeout", 
+            "constraint": "NUM[INT,30,86400,]"
+        }, 
+        "69": {
+            "comment": "intra",
+            "value": "1024", 
+            "key": "max_wal_size", 
+            "constraint": "NUM[INT,2,2097152,]"
+        }, 
+        "70": {
+            "comment": "intra",
+            "value": "80", 
+            "key": "min_wal_size", 
+            "constraint": "NUM[INT,2,2097152,]"
+        }, 
+        "71": {
+            "comment": "intra",
+            "value": "0.5", 
+            "key": "checkpoint_completion_target", 
+            "constraint": "NUM[FLOAT,0.0,1.0,]"
+        }, 
+        "72": {
+            "comment": "doc",
+            "value": "0", 
+            "key": "checkpoint_flush_after", 
+            "constraint": "NUM[INT,0,256,]"
+        }, 
+        "73": {
+            "comment": "intra",
+            "value": "30", 
+            "key": "checkpoint_warning", 
+            "constraint": "NUM[INT,0,2147483647,]"
+        }, 
+        "74": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "archive_mode", 
+            "constraint": "BOOL"
+        }, 
+        "75": {
+            "comment": "doc",
+            "value": "''", 
+            "key": "archive_command", 
+            "constraint": "STR"
+        }, 
+        "76": {
+            "comment": "intra",
+            "value": "0", 
+            "key": "archive_timeout", 
+            "constraint": "NUM[INT,0,1073741823,]"
+        }, 
+        "77": { 
+            "deps": "the parameter cannot be set higher than max_connections",
+            "comment": "intra",
+            "value": "10", 
+            "key": "max_wal_senders", 
+            "constraint": "NUM[INT,0,262143,]"
+        }, 
+        "78": {
+            "comment": "intra",
+            "value": "0", 
+            "key": "wal_keep_segments", 
+            "constraint": "NUM[INT,0,2147483647,]"
+        }, 
+        "79": {
+            "comment": "intra",
+            "value": "60", 
+            "key": "wal_sender_timeout", 
+            "constraint": "NUM[INT,0,2147483647,]"
+        }, 
+        "80": { 
+            "deps":"Setting it to a lower value than the number of currently existing replication slots will prevent the server from starting.",
+            "comment": "intra",
+            "value": "10", 
+            "key": "max_replication_slots", 
+            "constraint": "NUM[INT,0,262143,]"
+        }, 
+        "81": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "track_commit_timestamp", 
+            "constraint": "BOOL"
+        }, 
+        "82": {
+            "comment": "doc",
+            "value": "''", 
+            "key": "synchronous_standby_names", 
+            "constraint": "STR"
+        }, 
+        "83": {
+            "comment": "intra",
+            "value": "0", 
+            "key": "vacuum_defer_cleanup_age", 
+            "constraint": "NUM[INT,0,1000000,]"
+        }, 
+        "84": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "hot_standby", 
+            "constraint": "BOOL"
+        }, 
+        "85": {
+            "comment": "intra",
+            "value": "30", 
+            "key": "max_standby_archive_delay", 
+            "constraint": "NUM[INT,-1,2147483647,]"
+        }, 
+        "86": {
+            "comment": "intra",
+            "value": "30", 
+            "key": "max_standby_streaming_delay", 
+            "constraint": "NUM[INT,-1,2147483647,]"
+        }, 
+        "87": {
+            "comment": "intra",
+            "value": "10", 
+            "key": "wal_receiver_status_interval", 
+            "constraint": "NUM[INT,0,2147484,]"
+        }, 
+        "88": {
+            "comment": "doc",
+            "value": "off", 
+            "key": "hot_standby_feedback", 
+            "constraint": "BOOL"
+        }, 
+        "89": {
+            "comment": "intra",
+            "value": "60", 
+            "key": "wal_receiver_timeout", 
+            "constraint": "NUM[INT,0,2147483647,]"
+        }, 
+        "90": {
+            "comment": "intra",
+            "value": "5", 
+            "key": "wal_retrieve_retry_interval", 
+            "constraint": "NUM[INT,1,2147483647,]"
+        }, 
+        "91": {
+            "comment": "intra",
+            "value": "4", 
+            "key": "max_logical_replication_workers", 
+            "constraint": "NUM[INT,0,262143,]"
+        }, 
+        "92": {
+            "comment": "intra",
+            "value": "2", 
+            "key": "max_sync_workers_per_subscription", 
+            "constraint": "NUM[INT,0,262143,]"
+        }, 
+        "93": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_bitmapscan", 
+            "constraint": "BOOL"
+        }, 
+        "94": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_hashagg", 
+            "constraint": "BOOL"
+        }, 
+        "95": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_hashjoin", 
+            "constraint": "BOOL"
+        }, 
+        "96": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_indexscan", 
+            "constraint": "BOOL"
+        }, 
+        "97": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_indexonlyscan", 
+            "constraint": "BOOL"
+        }, 
+        "98": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_material", 
+            "constraint": "BOOL"
+        }, 
+        "99": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_mergejoin", 
+            "constraint": "BOOL"
+        }, 
+        "100": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_nestloop", 
+            "constraint": "BOOL"
+        }, 
+        "101": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_seqscan", 
+            "constraint": "BOOL"
+        }, 
+        "102": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_sort", 
+            "constraint": "BOOL"
+        }, 
+        "103": {
+            "comment": "doc",
+            "value": "on", 
+            "key": "enable_tidscan", 
+            "constraint": "BOOL"
+        }, 
+        "104": {
+            "comment": "intra",
+            "value": "1.0", 
+            "key": "seq_page_cost", 
+            "constraint": "NUM[FLOAT,0,,]"
+        }, 
+        "105": {
+            "comment": "intra",
+            "value": "4.0", 
+            "key": "random_page_cost", 
+            "constraint": "NUM[FLOAT,0,,]"
+        }, 
+        "106": {
+            "comment": "intra",
+            "value": "0.01", 
+            "key": "cpu_tuple_cost", 
+            "constraint": "NUM[FLOAT,0,,]"
+        }, 
+        "107": {
+            "comment": "intra",
+            "value": "0.005", 
+            "key": "cpu_index_tuple_cost", 
+            "constraint": "NUM[FLOAT,0,,]"
+        }, 
+        "108": {
+            "comment": "intra",
+            "value": "0.0025", 
+            "key": "cpu_operator_cost", 
+            "constraint": "NUM[FLOAT,0,,]"
+        }, 
+        "109": {
+            "comment": "intra",
+            "value": "0.1", 
+            "key": "parallel_tuple_cost", 
+            "constraint": "NUM[FLOAT,0,,]"
+        }, 
+        "110": {
+            "comment": "intra",
+            "value": "1000.0", 
+            "key": "parallel_setup_cost", 
+            "constraint": "NUM[FLOAT,0,,]"
+        }, 
+        "111": {
+            "comment": "intra",
+            "value": "8388608", 
+            "key": "min_parallel_table_scan_size", 
+            "constraint": "NUM[INT,0,715827882,]"
+        }, 
+        "112": {
+            "comment": "intra",
+            "value": "524288", 
+            "key": "min_parallel_index_scan_size", 
+            "constraint": "NUM[INT,0,715827882,]"
+        }, 
+        "113": {
+            "comment" : "intra",
+            "value": "524288", 
+            "key": "effective_cache_size", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "114": {
+            "comment":"doc",
+            "value": "on", 
+            "key": "geqo", 
+            "constraint": "BOOL"
+        }, 
+        "115": {
+            "comment":"intra",
+            "value": "12", 
+            "key": "geqo_threshold", 
+            "constraint": "NUM[INT,2,,]"
+        }, 
+        "116": {
+            "comment":"intra",
+            "value": "5", 
+            "key": "geqo_effort", 
+            "constraint": "NUM[INT,1,10,]"
+        }, 
+        "117": {
+            "comment":"intra",
+            "value": "0", 
+            "key": "geqo_pool_size", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "118": {
+            "comment":"intra",
+            "value": "0", 
+            "key": "geqo_generations", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "119": {
+            "comment":"intra",
+            "value": "2.0", 
+            "key": "geqo_selection_bias", 
+            "constraint": "NUM[DOUBLE,1.5,2.0,]"
+        }, 
+        "120": {
+            "comment":"intra",
+            "value": "0.0", 
+            "key": "geqo_seed", 
+            "constraint": "NUM[DOUBLE,0.0,1.0,]"
+        }, 
+        "121": {
+            "comment":"intra",
+            "value": "100", 
+            "key": "default_statistics_target", 
+            "constraint": "NUM[INT,1,10000,]"
+        }, 
+        "122": {
+            "comment":"doc",
+            "value": "partition", 
+            "key": "constraint_exclusion", 
+            "constraint": "ENUM"
+        }, 
+        "123": {
+            "comment":"intra",
+            "value": "0.1", 
+            "key": "cursor_tuple_fraction", 
+            "constraint": "NUM[DOUBLE,0.0,1.0,]"
+        }, 
+        "124": {
+            "comment":"intra",
+            "value": "8", 
+            "key": "from_collapse_limit", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "125": {
+            "comment":"intra",
+            "value": "8", 
+            "key": "join_collapse_limit", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "126": {
+            "comment":"doc",
+            "value": "off", 
+            "key": "force_parallel_mode", 
+            "constraint": "BOOL"
+        }, 
+        "127": {
+            "comment":"doc",
+            "value": "'stderr'", 
+            "key": "log_destination", 
+            "constraint": "ENUM"
+        }, 
+        "128": {
+            "comment" :"doc, deps for 130",
+            "value": "on", 
+            "key": "logging_collector", 
+            "constraint": "BOOL"
+        }, 
+        "129": {
+            "comment" : "inter 1, deps from 128",
+            "value": "'log'", 
+            "key": "log_directory", 
+            "constraint": "PATH[,Y,D]"
+        }, 
+        "130": {
+            "comment" : "inter 1, deps from 128",
+            "value": "'postgresql-%Y-%m-%d_%H%M%S.log'", 
+            "key": "log_filename", 
+            "constraint": "PATH[,Y,F]"
+        }, 
+        "131": {
+            "comment" : "doc",
+            "value": "'0600'", 
+            "key": "log_file_mode", 
+            "constraint": "PERMISSION"
+        }, 
+        "132": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_truncate_on_rotation", 
+            "constraint": "BOOL"
+        }, 
+        "133": {
+            "comment" : "intra",
+            "value": "1440", 
+            "key": "log_rotation_age", 
+            "constraint": "NUM[INT,0,2147484,]"
+        }, 
+        "134": {
+            "comment" : "intra",
+            "value": "10240", 
+            "key": "log_rotation_size", 
+            "constraint": "NUM[INT,0,2147484,]"
+        }, 
+        "135": {
+            "comment" : "doc",
+            "value": "'LOCAL0'", 
+            "key": "syslog_facility", 
+            "constraint": "ENUM"
+        }, 
+        "136": {
+            "comment" : "doc",
+            "value": "'postgres'", 
+            "key": "syslog_ident", 
+            "constraint": "STR"
+        }, 
+        "137": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "syslog_sequence_numbers", 
+            "constraint": "BOOL"
+        }, 
+        "138": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "syslog_split_messages", 
+            "constraint": "BOOL"
+        }, 
+        "139": {
+            "comment" : "doc",
+            "value": "'PostgreSQL'", 
+            "key": "event_source", 
+            "constraint": "STR"
+        }, 
+        "140": {
+            "comment" : "doc",
+            "value": "notice", 
+            "key": "client_min_messages", 
+            "constraint": "ENUM"
+        }, 
+        "141": {
+            "comment" : "doc",
+            "value": "warning", 
+            "key": "log_min_messages", 
+            "constraint": "ENUM"
+        }, 
+        "142": {
+            "comment" : "doc",
+            "value": "error", 
+            "key": "log_min_error_statement", 
+            "constraint": "ENUM"
+        }, 
+        "143": {
+            "comment" : "intra",
+            "value": "-1", 
+            "key": "log_min_duration_statement", 
+            "constraint": "NUM[INT,-1,,]"
+        }, 
+        "144": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "debug_print_parse", 
+            "constraint": "BOOL"
+        }, 
+        "145": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "debug_print_rewritten", 
+            "constraint": "BOOL"
+        }, 
+        "146": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "debug_print_plan", 
+            "constraint": "BOOL"
+        }, 
+        "147": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "debug_pretty_print", 
+            "constraint": "BOOL"
+        }, 
+        "148": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_checkpoints", 
+            "constraint": "BOOL"
+        }, 
+        "149": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_connections", 
+            "constraint": "BOOL"
+        }, 
+        "150": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_disconnections", 
+            "constraint": "BOOL"
+        },  
+        "151": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_duration", 
+            "constraint": "BOOL"
+        }, 
+        "152": {
+            "comment" : "doc",
+            "value": "default", 
+            "key": "log_error_verbosity", 
+            "constraint": "ENUM"
+        }, 
+        "153": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_hostname", 
+            "constraint": "BOOL"
+        }, 
+        "154": {
+            "comment" : "doc",
+            "value": "'%m~[%p]~'", 
+            "key": "log_line_prefix", 
+            "constraint": "STR"
+        }, 
+        "155": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_lock_waits", 
+            "constraint": "BOOL"
+        }, 
+        "156": {
+            "comment" : "doc",
+            "value": "none", 
+            "key": "log_statement", 
+            "constraint": "ENUM"
+        }, 
+        "157": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_replication_commands", 
+            "constraint": "BOOL"
+        }, 
+        "158": {
+            "comment" : "intra",
+            "value": "-1", 
+            "key": "log_temp_files", 
+            "constraint": "NUM[INT,-1,,]"
+        }, 
+        "159": {
+            "comment" : "doc",
+            "value": "GMT", 
+            "key": "log_timezone", 
+            "constraint": "SPECSTR"
+        }, 
+        "160": {
+            "comment" : "doc",
+            "value": "''", 
+            "key": "cluster_name", 
+            "constraint": "STR"
+        }, 
+        "161": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "update_process_title", 
+            "constraint": "BOOL"
+        }, 
+        "162": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "track_activities", 
+            "constraint": "BOOL"
+        }, 
+        "163": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "track_counts", 
+            "constraint": "BOOL"
+        }, 
+        "164": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "track_io_timing", 
+            "constraint": "BOOL"
+        }, 
+        "165": {
+            "comment" : "doc",
+            "value": "none", 
+            "key": "track_functions", 
+            "constraint": "ENUM"
+        }, 
+        "166": {
+            "comment" : "intra",
+            "value": "1024", 
+            "key": "track_activity_query_size", 
+            "constraint": "NUM[INT,100,102400,]"
+        }, 
+        "167": {
+            "comment" : "inter 2, will create",
+            "value": "'pg_stat_tmp'", 
+            "key": "stats_temp_directory", 
+            "constraint": "PATH[,N,D]"
+        }, 
+        "168": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_parser_stats", 
+            "constraint": "BOOL"
+        }, 
+        "169": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_planner_stats", 
+            "constraint": "BOOL"
+        }, 
+        "170": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_executor_stats", 
+            "constraint": "BOOL"
+        }, 
+        "171": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "log_statement_stats", 
+            "constraint": "BOOL"
+        }, 
+        "172": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "autovacuum", 
+            "constraint": "BOOL"
+        }, 
+        "173": {
+            "comment" : "intra",
+            "value": "-1", 
+            "key": "log_autovacuum_min_duration", 
+            "constraint": "NUM[INT,-1,,]"
+        }, 
+        "174": {
+            "comment" : "intra",
+            "value": "3", 
+            "key": "autovacuum_max_workers", 
+            "constraint": "NUM[INT,1,262143,]"
+        }, 
+        "175": {
+            "comment" : "intra",
+            "value": "60", 
+            "key": "autovacuum_naptime", 
+            "constraint": "NUM[INT,1,2097152,]"
+        }, 
+        "176": {
+            "comment" : "intra",
+            "value": "50", 
+            "key": "autovacuum_vacuum_threshold", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "177": {
+            "comment" : "intra",
+            "value": "50", 
+            "key": "autovacuum_analyze_threshold", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "178": {
+            "comment" : "intra",
+            "value": "0.2", 
+            "key": "autovacuum_vacuum_scale_factor", 
+            "constraint": "NUM[DOUBLE,0.0,100.0,]"
+        }, 
+        "179": {
+            "comment" : "intra",
+            "value": "0.1", 
+            "key": "autovacuum_analyze_scale_factor", 
+            "constraint": "NUM[DOUBLE,0.0,100.0,]"
+        }, 
+        "180": {
+            "value": "200000000", 
+            "key": "autovacuum_freeze_max_age", 
+            "constraint": "NUM[INT,10000,2000000000,]"
+        }, 
+        "181": {
+            "comment":"intra",
+            "value": "400000000", 
+            "key": "autovacuum_multixact_freeze_max_age", 
+            "constraint": "NUM[INT,10000,2000000000,]"
+        }, 
+        "182": {
+            "comment":"intra",
+            "value": "20", 
+            "key": "autovacuum_vacuum_cost_delay", 
+            "constraint": "NUM[INT,-1,100,]"
+        }, 
+        "183": {
+            "comment":"intra",
+            "value": "-1", 
+            "key": "autovacuum_vacuum_cost_limit", 
+            "constraint": "NUM[INT,-1,10000,]"
+        }, 
+        "184": {
+            "comment" : "inter 2",
+            "value": "'\"$user\",~public'", 
+            "key": "search_path", 
+            "constraint": "STR"
+        }, 
+        "185": {
+            "comment" : "doc",
+            "value": "''", 
+            "key": "default_tablespace", 
+            "constraint": "SPECSTR"
+        }, 
+        "186": {
+            "comment" : "doc",
+            "value": "''", 
+            "key": "temp_tablespaces", 
+            "constraint": "SPECSTR"
+        }, 
+        "187": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "check_function_bodies", 
+            "constraint": "BOOL"
+        }, 
+        "188": {
+            "comment" : "doc",
+            "value": "'read~committed'",
+            "key": "default_transaction_isolation", 
+            "constraint": "ENUM"
+        }, 
+        "189": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "default_transaction_read_only", 
+            "constraint": "BOOL"
+        }, 
+        "190": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "default_transaction_deferrable", 
+            "constraint": "BOOL"
+        }, 
+        "191": {
+            "comment" : "doc",
+            "value": "origin", 
+            "key": "session_replication_role", 
+            "constraint": "ENUM"
+        }, 
+        "192": {
+            "comment" : "intra",
+            "value": "0", 
+            "key": "statement_timeout", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "193": {
+            "comment" : "intra",
+            "value": "1000", 
+            "key": "lock_timeout", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "194": {
+            "comment" : "intra",
+            "value": "0", 
+            "key": "idle_in_transaction_session_timeout", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "195": {
+            "comment" : "intra",
+            "value": "50000000", 
+            "key": "vacuum_freeze_min_age", 
+            "constraint": "NUM[INT,0,1000000000,]"
+        }, 
+        "196": {
+            "comment" : "intra",
+            "value": "150000000", 
+            "key": "vacuum_freeze_table_age", 
+            "constraint": "NUM[INT,0,2000000000,]"
+        }, 
+        "197": {
+            "comment" : "intra",
+            "value": "5000000", 
+            "key": "vacuum_multixact_freeze_min_age", 
+            "constraint": "NUM[INT,0,1000000000,]"
+        }, 
+        "198": {
+            "comment" : "intra",
+            "value": "150000000", 
+            "key": "vacuum_multixact_freeze_table_age", 
+            "constraint": "NUM[INT,0,2000000000,]"
+        }, 
+        "199": {
+            "comment" : "doc",
+            "value": "hex", 
+            "key": "bytea_output", 
+            "constraint": "ENUM"
+        }, 
+        "200": {
+            "comment" : "doc",
+            "value": "base64", 
+            "key": "xmlbinary", 
+            "constraint": "ENUM"
+        }, 
+        "201": {
+            "comment" : "doc",
+            "value": "content", 
+            "key": "xmloption", 
+            "constraint": "ENUM"
+        }, 
+        "202": {
+            "comment" : "intra",
+            "value": "0", 
+            "key": "gin_fuzzy_search_limit", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "203": {
+            "comment" : "intra",
+            "value": "4096", 
+            "key": "gin_pending_list_limit", 
+            "constraint": "NUM[INT,64,2097152,]"
+        }, 
+        "204": {
+            "comment" : "doc",
+            "value": "'iso,~mdy'", 
+            "key": "datestyle", 
+            "constraint": "STR"
+        }, 
+        "205": {
+            "comment" : "doc",
+            "value": "postgres", 
+            "key": "intervalstyle", 
+            "constraint": "ENUM"
+        }, 
+        "206": {
+            "comment" : "doc",
+            "value": "'US/Eastern'", 
+            "key": "timezone", 
+            "constraint": "SPECSTR"
+        }, 
+        "207": {
+            "comment" : "doc",
+            "value": "'Default'", 
+            "key": "timezone_abbreviations", 
+            "constraint": "SPECSTR"
+        }, 
+        "208": {
+            "comment" : "intra",
+            "value": "0", 
+            "key": "extra_float_digits", 
+            "constraint": "NUM[INT,-15,3,]"
+        }, 
+		"209": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "exit_on_error", 
+            "constraint": "BOOL"
+        }, 
+        "210": {
+            "comment" : "doc",
+            "value": "C", 
+            "key": "lc_messages", 
+            "constraint": "STR"
+        }, 
+        "211": {
+            "comment" : "doc",
+            "value": "'en_US.UTF-8'", 
+            "key": "lc_monetary", 
+            "constraint": "STR"
+        }, 
+        "212": {
+            "comment" : "doc",
+            "value": "C", 
+            "key": "lc_numeric", 
+            "constraint": "SPECSTR"
+        }, 
+        "213": {
+            "comment" : "doc",
+            "value": "C", 
+            "key": "lc_time", 
+            "constraint": "SPECSTR"
+        }, 
+        "214": {
+            "comment" : "doc",
+            "value": "'pg_catalog.english'", 
+            "key": "default_text_search_config", 
+            "constraint": "SPECSTR"
+        }, 
+        "215": {
+            "comment" : "inter 1",
+            "value": "'$libdir'", 
+            "key": "dynamic_library_path", 
+            "constraint": "PATH[,N,D]"
+        }, 
+        "216": {
+            "comment" : "doc",
+            "value": "''", 
+            "key": "local_preload_libraries", 
+            "constraint": "SPECSTR"
+        }, 
+        "217": {
+            "comment" : "doc",
+            "value": "''", 
+            "key": "session_preload_libraries", 
+            "constraint": "SPECSTR"
+        }, 
+        "218": {
+            "comment" : "intra",
+            "value": "1000", 
+            "key": "deadlock_timeout", 
+            "constraint": "NUM[INT,1,,]"
+        }, 
+        "219": {
+            "comment" : "intra",
+            "value": "64", 
+            "key": "max_locks_per_transaction", 
+            "constraint": "NUM[INT,10,,]"
+        }, 
+        "220": {
+            "comment" : "intra",
+            "value": "64", 
+            "key": "max_pred_locks_per_transaction", 
+            "constraint": "NUM[INT,10,,]"
+        }, 
+        "221": {
+            "comment" : "intra",
+            "value": "-2", 
+            "key": "max_pred_locks_per_relation", 
+            "constraint": "NUM[INT,,,]"
+        }, 
+        "222": {
+            "comment" : "intra",
+            "value": "2", 
+            "key": "max_pred_locks_per_page", 
+            "constraint": "NUM[INT,0,,]"
+        }, 
+        "223": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "array_nulls", 
+            "constraint": "BOOL"
+        }, 
+        "224": {
+            "comment" : "doc",
+            "value": "safe_encoding", 
+            "key": "backslash_quote", 
+            "constraint": "ENUM"
+        }, 
+        "225": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "default_with_oids", 
+            "constraint": "BOOL"
+        }, 
+        "226": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "escape_string_warning", 
+            "constraint": "BOOL"
+        }, 
+        "227": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "lo_compat_privileges", 
+            "constraint": "BOOL"
+        }, 
+        "228": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "operator_precedence_warning", 
+            "constraint": "BOOL"
+        }, 
+        "229": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "quote_all_identifiers", 
+            "constraint": "BOOL"
+        }, 
+        "230": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "standard_conforming_strings", 
+            "constraint": "BOOL"
+        }, 
+        "231": {
+            "comment" : "doc",
+            "value": "on", 
+            "key": "synchronize_seqscans", 
+            "constraint": "BOOL"
+        }, 
+        "232": {
+            "comment" : "doc",
+            "value": "off", 
+            "key": "transform_null_equals", 
+            "constraint": "BOOL"
+        }  
+    }, 
+    "format": "$key = $value"
+}

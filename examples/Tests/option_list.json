@@ -1,0 +1,51 @@
+{
+  "optionList": {
+    "1": {
+      "key": "string",
+      "value": "this_is_a_string",
+      "constraint": "STR"
+    },
+    "2": {
+      "key": "number",
+      "value": "64",
+      "constraint": "NUM[UINT,0,128,]"
+    },
+    "3": {
+      "key": "path",
+      "value": "/hello/confuzz",
+      "constraint": "PATH[A,N,F]"
+    },
+    "4": {
+      "key": "url",
+      "value": "www.baidu.com",
+      "constraint": "URL"
+    },
+    "5": {
+      "key": "ip",
+      "value": "1.1.1.1",
+      "constraint": "IP"
+    },
+    "6": {
+      "key": "permission",
+      "value": "0777",
+      "constraint": "PERMISSION"
+    },
+    "7": {
+      "key": "port",
+      "value": "23",
+      "constraint": "PORT"
+    },
+    "8": {
+      "key": "boolean",
+      "value": "on",
+      "constraint": "BOOL"
+    },
+    "9": {
+      "key": "specstring",
+      "value": "this_is_a_specstring",
+      "constraint": "SPECSTR"
+    }
+
+  },
+  "format": "$key = $value"
+}
